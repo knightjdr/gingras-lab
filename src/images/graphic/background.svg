@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+<style type="text/css">
+	.st0{fill:#12C2E9;opacity: 0.2;}
+	.st1{fill:#F64F59;opacity: 0.2;}
+	.st2{fill:#C471ED;opacity: 0.2;}
+</style>
+<g>
+	<circle class="st0" cx="112" cy="156" r="5"/>
+</g>
+<g>
+	<circle class="st0" cx="294" cy="478" r="7.5"/>
+</g>
+<g>
+	<circle class="st0" cx="554" cy="190" r="4"/>
+</g>
+<g>
+	<circle class="st1" cx="300" cy="95" r="7.5"/>
+</g>
+<g>
+	<circle class="st1" cx="460" cy="415" r="5"/>
+</g>
+<g>
+	<circle class="st2" cx="254" cy="300" r="5"/>
+</g>
+<g>
+	<circle class="st1" cx="781" cy="101" r="6"/>
+</g>
+<g>
+	<circle class="st2" cx="706" cy="370" r="4"/>
+</g>
+</svg>

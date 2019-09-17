@@ -1,0 +1,28 @@
+.contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.contact header {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+.contact header img {
+  margin-left: 15px;
+}
+.contact h2 {
+  font-size: 1.2em;
+}
+.contact section {
+  margin: 30px 0;
+  max-width: 900px;
+  width: calc(100vw - 40px);
+}
+
+.contact address {
+  font-style: normal;
+}
+.contact address:not(:last-of-type) {
+  margin-bottom: 30px;
+}

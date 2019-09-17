@@ -1,0 +1,49 @@
+.publications {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.publications header {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+.publications header img {
+  margin-left: 15px;
+}
+.publications h2 {
+  font-size: 1.2em;
+}
+.publications section {
+  margin: 30px 0;
+  max-width: 900px;
+  width: calc(100vw - 40px);
+}
+
+.publications ul {
+  list-style: none;
+  padding-left: 0;
+}
+.publications ul:not(:last-of-type) {
+  margin-bottom: 40px;
+}
+.publications ul > li:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.publications__links > a:not(:last-of-type) {
+  margin-right: 10px;
+}
+.publications__links-year {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 20px 0;
+}
+.publications__links-year > a:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+}
