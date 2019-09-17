@@ -1,0 +1,72 @@
+.resources {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.resources header {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+.resources header img {
+  margin-left: 15px;
+}
+.resources section {
+  margin: 30px 0;
+  max-width: 900px;
+  width: calc(100vw - 40px);
+}
+
+.resources h2 {
+  font-size: 1.3em;
+}
+.resources h3 {
+  color: var(--accentColor);
+  font-size: 1.1em;
+}
+
+.resources__resource > ul {
+  list-style: none;
+  padding-left: 0;
+}
+.resources__resource > ul > li {
+  padding-bottom: 15px;
+}
+.resources__resource > ul > li:not(:last-of-type) {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+  margin-bottom: 30px;
+}
+.resources__resource-description {
+  align-items: center;
+  display: flex;
+}
+.resources__resource-description .resource__image {
+  margin-left: 15px;
+}
+
+.resources__links {
+  margin-bottom: 30px;
+}
+.resources__links > a {
+  margin-right: 10px;
+}
+
+.resources__resource:not(:last-of-type) {
+  border-bottom: 2px solid rgba(51, 51, 51, 0.1);
+}
+.resources__resource header {
+  margin-bottom: 0;
+}
+
+.resource__gene-info .resource__image {
+  min-width: 400px;
+}
+.resource__prohits-viz .resource__image {
+  min-width: 300px;
+}
+
+@media (max-width: 849px) {
+  .resource__image {
+    display: none;
+  }
+}

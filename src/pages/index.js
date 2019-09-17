@@ -16,9 +16,9 @@ import './home.css';
 
 export const query = graphql`
   query {
-    anneClaudeGingras: file(relativePath: { eq: "picture/anneclaude-gingras-home.png" }) {
+    anneClaudeGingras: file(relativePath: { eq: "picture/anneclaude-gingras-home.jpg" }) {
       childImageSharp {
-        fixed(width: 200, height: 268, toFormat: JPG) {
+        fixed(width: 200, height: 268) {
           ...GatsbyImageSharpFixed_withWebp
         }
       }

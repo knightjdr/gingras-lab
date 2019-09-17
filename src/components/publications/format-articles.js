@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'gatsby';
 
 import articles from '../../../scripts/publications/output/publications';
 
@@ -78,12 +79,12 @@ const formatArticles = () => {
       <div className="publications__links-year">
         {
           yearOrder.map((year) => (
-            <a
-              href={`publications/#${year}`}
+            <Link
               key={year}
+              to={`/publications/#${year}`}
             >
               {year}
-            </a>
+            </Link>
           ))
         }
       </div>
