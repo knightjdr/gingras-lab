@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Head from '../../components/head';
+import Link from '../../components/link/link';
 
 import './404.css';
 
@@ -12,9 +13,9 @@ const NotFoundPage = () => (
       <p>
         The page you were looking for could not be found.
       </p>
-      <a className="missing__link" href="/">
+      <Link className="missing__link" to="/">
         Home
-      </a>
+      </Link>
     </div>
   </>
 );

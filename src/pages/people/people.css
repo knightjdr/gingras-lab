@@ -56,15 +56,22 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .people__photos figure {
   margin: 30px 0;
+  max-width: 100%;
 }
 .people__photos figcaption {
   text-align: center;
 }
 .people__photos img {
   height: auto;
-  max-width: 100%;
-  width: 100%;
+}
+
+.people__photos .christmas-2018 {
+  width: 1180px;
+}
+.people__photos .appreciation-day-2018 {
+  width: 1123px;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import Head from '../../components/head';
 import Layout from '../../components/layout';
+import Link from '../../components/link/link';
 
 import CCM from '../../images/research/ccm-stripak.svg';
 import Microscope from '../../images/icon/microscope.svg';
@@ -27,11 +27,11 @@ const Research = () => (
           />
         </header>
         <div className="research__links">
-          <Link className="nav-link" to="/research/#proteomics">Proteomics</Link>
-          <Link className="nav-link" to="/research/#systemsbiology">Systems biology</Link>
-          <Link className="nav-link" to="/research/#signalling">Signalling</Link>
-          <Link className="nav-link" to="/research/#ccm">CCM</Link>
-          <Link className="nav-link" to="/research/#funding">Funding</Link>
+          <Link nav to="/research/#proteomics">Proteomics</Link>
+          <Link nav to="/research/#systemsbiology">Systems biology</Link>
+          <Link nav to="/research/#signalling">Signalling</Link>
+          <Link nav to="/research/#ccm">CCM</Link>
+          <Link nav to="/research/#funding">Funding</Link>
         </div>
         <section id="proteomics">
           <h2>Enabling tools for proteomics</h2>
@@ -76,16 +76,16 @@ const Research = () => (
             lab and the LTRI proteomics group:
           </p>
           <ul>
-            <li><a href="http://www.cihr-irsc.gc.ca">Canadian Institutes of Health Research</a></li>
-            <li><a href="http://www.nserc-crsng.gc.ca">Natural Sciences and Engineering Research Council</a></li>
-            <li><a href="https://www.cancer.ca/research">Canadian Cancer Society Research Institute</a></li>
-            <li><a href="https://www.crs-src.ca/">Cancer Research Society</a></li>
-            <li><a href="https://www.genomecanada.ca">Genome Canada</a></li>
-            <li><a href="https://www.ontariogenomics.ca/">Ontario Genomics Institute</a></li>
-            <li><a href="https://www.innovation.ca/">Canada Foundation for Innovation</a></li>
-            <li><a href="https://www.nih.gov/">National Institutes of Health</a></li>
-            <li><a href="http://www.cihr-irsc.gc.ca/e/13147.html">CIHR Institute of Genetics</a></li>
-            <li><a href="http://www.chairs-chaires.gc.ca/home-accueil-eng.aspx">Canada Research Chair</a></li>
+            <li><Link to="http://www.cihr-irsc.gc.ca">Canadian Institutes of Health Research</Link></li>
+            <li><Link to="http://www.nserc-crsng.gc.ca">Natural Sciences and Engineering Research Council</Link></li>
+            <li><Link to="https://www.cancer.ca/research">Canadian Cancer Society Research Institute</Link></li>
+            <li><Link to="https://www.crs-src.ca/">Cancer Research Society</Link></li>
+            <li><Link to="https://www.genomecanada.ca">Genome Canada</Link></li>
+            <li><Link to="https://www.ontariogenomics.ca/">Ontario Genomics Institute</Link></li>
+            <li><Link to="https://www.innovation.ca/">Canada Foundation for Innovation</Link></li>
+            <li><Link to="https://www.nih.gov/">National Institutes of Health</Link></li>
+            <li><Link to="http://www.cihr-irsc.gc.ca/e/13147.html">CIHR Institute of Genetics</Link></li>
+            <li><Link to="http://www.chairs-chaires.gc.ca/home-accueil-eng.aspx">Canada Research Chair</Link></li>
           </ul>
         </section>
       </section>

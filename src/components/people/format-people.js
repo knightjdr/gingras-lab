@@ -1,6 +1,8 @@
 import React from 'react';
 import Img from 'gatsby-image';
 
+import Link from '../link/link';
+
 import peopleList from './people-list';
 
 const formatPeople = (images) => (
@@ -13,12 +15,12 @@ const formatPeople = (images) => (
       <div>
         <h2>{person.name}</h2>
         <h3>{person.title}</h3>
-        <a
-          className="nav-link"
-          href={`mailto:${person.email}`}
+        <Link
+          nav
+          to={`mailto:${person.email}`}
         >
           {person.email}
-        </a>
+        </Link>
       </div>
     </div>
   ))

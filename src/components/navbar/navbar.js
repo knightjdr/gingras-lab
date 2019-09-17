@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Link } from 'gatsby';
 
+import Link from '../link/link';
 import Menu from './menu-container';
 
 import './navbar.css';

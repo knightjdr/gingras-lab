@@ -1,10 +1,11 @@
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Head from '../../components/head';
 import Layout from '../../components/layout';
+import Link from '../../components/link/link';
 
 import Database from '../../images/icon/database.svg';
 import File from '../../images/icon/file-alt.svg';
@@ -56,10 +57,10 @@ const Resources = ({ data }) => (
           />
         </header>
         <div className="resources__links">
-          <Link className="nav-link" to="/resources/#software">Software</Link>
-          <Link className="nav-link" to="/resources/#protocols">Protocols</Link>
-          <Link className="nav-link" to="/resources/#reagents">Reagents</Link>
-          <Link className="nav-link" to="/resources/#data">Data</Link>
+          <Link nav to="/resources/#software">Software</Link>
+          <Link nav to="/resources/#protocols">Protocols</Link>
+          <Link nav to="/resources/#reagents">Reagents</Link>
+          <Link nav to="/resources/#data">Data</Link>
         </div>
         <section className="resources__resource">
           <header>
@@ -82,8 +83,8 @@ const Resources = ({ data }) => (
                     organisms and gene reports are customizable.
                   </p>
                   <ul>
-                    <li><a href="https://gene-info.org">GIX</a></li>
-                    <li><a href="https://www.nature.com/articles/s41592-019-0477-9">Publication</a></li>
+                    <li><Link to="https://gene-info.org">GIX</Link></li>
+                    <li><Link to="https://www.nature.com/articles/s41592-019-0477-9">Publication</Link></li>
                   </ul>
                 </div>
                 <div className="resource__image">
@@ -108,8 +109,8 @@ const Resources = ({ data }) => (
                     resource should facilitate interaction proteomics analysis and visualization.
                   </p>
                   <ul>
-                    <li><a href="https://prohits-viz.lunenfeld.ca">ProHits-viz</a></li>
-                    <li><a href="https://www.nature.com/articles/nmeth.4330">Publication</a></li>
+                    <li><Link to="https://prohits-viz.lunenfeld.ca">ProHits-viz</Link></li>
+                    <li><Link to="https://www.nature.com/articles/nmeth.4330">Publication</Link></li>
                   </ul>
                 </div>
                 <div className="resource__image">
@@ -125,42 +126,42 @@ const Resources = ({ data }) => (
               <p>
                 Guomin (Frank) Liu and colleagues in the Gingras,
                 {' '}
-                <a href="https://www.nesvilab.org/">Nesvizhskii</a>
+                <Link to="https://www.nesvilab.org/">Nesvizhskii</Link>
                 ,
                 {' '}
-                <a href="http://proteomics.ucsd.edu/">Bandeira</a>
+                <Link to="http://proteomics.ucsd.edu/">Bandeira</Link>
                 ,
                 {' '}
-                <a href="https://www.cssblab.org/">Choi</a>
+                <Link to="https://www.cssblab.org/">Choi</Link>
                 ,
                 {' '}
-                <a href="https://www.iric.ca/en/research/principal-investigators/michael-tyers/">Tyers</a>
+                <Link to="https://www.iric.ca/en/research/principal-investigators/michael-tyers/">Tyers</Link>
                 {' '}
                 and
                 {' '}
-                <a href="http://www.raughtlab.ca/homev2.php">Raught</a>
+                <Link to="http://www.raughtlab.ca/homev2.php">Raught</Link>
                 {' '}
                 labs release a major update to the ProHits LIMS. In ProHits 4.0, Data Independent
                 Acquisition (DIA) is handled through
                 {' '}
-                <a href="http://diaumpire.sourceforge.net/">DIA-Umpire</a>
+                <Link to="http://diaumpire.sourceforge.net/">DIA-Umpire</Link>
                 ,
                 {' '}
-                <a href="http://proteomics.ucsd.edu/software-tools/msplit-dia//">MSPLIT-DIA</a>
+                <Link to="http://proteomics.ucsd.edu/software-tools/msplit-dia//">MSPLIT-DIA</Link>
                 ,
                 {' '}
-                <a href=" http://mapdia.sourceforge.net/Main.html">mapDIA</a>
+                <Link to=" http://mapdia.sourceforge.net/Main.html">mapDIA</Link>
                 {' '}
                 and
                 {' '}
-                <a href=" http://saint-apms.sourceforge.net/Main.html">SAINT-intensity</a>
+                <Link to=" http://saint-apms.sourceforge.net/Main.html">SAINT-intensity</Link>
                 .
                 ProHits 4.0 also facilitates data deposition in public repositories such as
                 MassIVE and the transfer of data to new visualization tools we have developed.
               </p>
               <ul>
-                <li><a href="http://prohitsms.com/Prohits_download/list.php">ProHits</a></li>
-                <li><a href="https://www.sciencedirect.com/science/article/pii/S1874391916301749?via%3Dihub">Publication</a></li>
+                <li><Link to="http://prohitsms.com/Prohits_download/list.php">ProHits</Link></li>
+                <li><Link to="https://www.sciencedirect.com/science/article/pii/S1874391916301749?via%3Dihub">Publication</Link></li>
               </ul>
             </li>
             <li>
@@ -174,7 +175,7 @@ const Resources = ({ data }) => (
               <p>
                 Chih-Chiang Tsou from the
                 {' '}
-                <a href="https://www.nesvilab.org/">Nesvizhskii lab</a>
+                <Link to="https://www.nesvilab.org/">Nesvizhskii lab</Link>
                 {' '}
                 developed, in collaboration with the Gingras lab, DIA-Umpire, an integrated platform
                 for untargeted and semi-targeted identification and quantification from Data
@@ -185,8 +186,8 @@ const Resources = ({ data }) => (
                 addition to being available as a stand-alone tool.
               </p>
               <ul>
-                <li><a href="http://diaumpire.sourceforge.net">DIA-Umpire</a></li>
-                <li><a href="https://www.nature.com/nmeth/journal/v12/n3/full/nmeth.3255.html">Publication</a></li>
+                <li><Link to="http://diaumpire.sourceforge.net">DIA-Umpire</Link></li>
+                <li><Link to="https://www.nature.com/nmeth/journal/v12/n3/full/nmeth.3255.html">Publication</Link></li>
               </ul>
             </li>
             <li>
@@ -194,7 +195,7 @@ const Resources = ({ data }) => (
               <p>
                 Jian Wang from the
                 {' '}
-                <a href="http://proteomics.ucsd.edu/">Bandeira lab</a>
+                <Link to="http://proteomics.ucsd.edu/">Bandeira lab</Link>
                 {' '}
                 developed, in collaboration with the Gingras lab, MSPLIT-DIA, a spectral library
                 matching tool for Data Independent Analysis. MSPLIT-DIA demultiplexes complex
@@ -204,8 +205,8 @@ const Resources = ({ data }) => (
                 libraries for targeted re-extraction.
               </p>
               <ul>
-                <li><a href="http://proteomics.ucsd.edu/software-tools/msplit-dia/">MSPLIT</a></li>
-                <li><a href="http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3655.html">Publication</a></li>
+                <li><Link to="http://proteomics.ucsd.edu/software-tools/msplit-dia/">MSPLIT</Link></li>
+                <li><Link to="http://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3655.html">Publication</Link></li>
               </ul>
             </li>
             <li>
@@ -213,54 +214,54 @@ const Resources = ({ data }) => (
               <p>
                 Significance Analysis of INTeractome (SAINT) tools for interaction scoring were
                 initially developed for unsupervised analysis of interactome data (
-                <a href="https://science.sciencemag.org/content/328/5981/1043.long">Science, 2010</a>
+                <Link to="https://science.sciencemag.org/content/328/5981/1043.long">Science, 2010</Link>
                 ),
                 {' '}
                 but rapidly adapted by
                 {' '}
-                <a href="https://www.cssblab.org/">Hyungwon Choi</a>
+                <Link to="https://www.cssblab.org/">Hyungwon Choi</Link>
                 {' '}
                 (
-                <a href="https://www.nature.com/nmeth/journal/v8/n1/full/nmeth.1541.html">Nat Methods, 2011</a>
+                <Link to="https://www.nature.com/nmeth/journal/v8/n1/full/nmeth.1541.html">Nat Methods, 2011</Link>
                 ),
                 for semi-supervised analysis of spectral-count based interaction proteomics data
                 using negative controls. More recent advances include the extension to intensity
                 data (
-                <a href="https://pubs.acs.org/doi/abs/10.1021/pr201185r">JPR, 2012</a>
+                <Link to="https://pubs.acs.org/doi/abs/10.1021/pr201185r">JPR, 2012</Link>
                 ),
                 {' '}
                 the implementation of the computationally efficient SAINTexpress
                 (
-                <a href="https://www.sciencedirect.com/science/article/pii/S1874391913005381?via%3Dihub">J Proteomics, 2015</a>
+                <Link to="https://www.sciencedirect.com/science/article/pii/S1874391913005381?via%3Dihub">J Proteomics, 2015</Link>
                 )
                 and in 2016, the extension of the SAINT-intensity framework to peptides and
                 transitions, for adaptation to Data Independent Analysis (DIA) data
                 (
-                <a href="https://onlinelibrary.wiley.com/doi/10.1002/pmic.201500499/abstract">Proteomics, 2016</a>
+                <Link to="https://onlinelibrary.wiley.com/doi/10.1002/pmic.201500499/abstract">Proteomics, 2016</Link>
                 ).
               </p>
               <ul>
                 <li>
-                  <a href="http://saint-apms.sourceforge.net/Main.html">SAINT</a>
+                  <Link to="http://saint-apms.sourceforge.net/Main.html">SAINT</Link>
                   {' '}
                   is maintained by
                   {' '}
-                  <a href="https://www.cssblab.org">Hyungwon Choi</a>
+                  <Link to="https://www.cssblab.org">Hyungwon Choi</Link>
                   .
                 </li>
                 <li>
                   SAINT scoring is implemented within the
                   {' '}
-                  <a href="http://prohitsms.com">ProHits LIMS</a>
+                  <Link to="http://prohitsms.com">ProHits LIMS</Link>
                   ,
                   {' '}
                   in the Contaminant Repository for Affinity Purification
                   (
-                  <a href="https://crapome.org/">CRAPome</a>
+                  <Link to="https://crapome.org/">CRAPome</Link>
                   )
                   and for use with our visualization tools
                   (
-                  <a href="https://prohits-viz.lunenfeld.ca/">ProHits-viz</a>
+                  <Link to="https://prohits-viz.lunenfeld.ca/">ProHits-viz</Link>
                   ).
                 </li>
               </ul>
@@ -276,23 +277,23 @@ const Resources = ({ data }) => (
                 and/or reviewers. Developed by JianPian Zhang and Guomin (Frank) Liu.
               </p>
               <ul>
-                <li><a href="https://prohits-web.lunenfeld.ca/">ProHits-web</a></li>
-                <li><a href="https://stke.sciencemag.org/content/6/302/rs15.long">Publication</a></li>
+                <li><Link to="https://prohits-web.lunenfeld.ca/">ProHits-web</Link></li>
+                <li><Link to="https://stke.sciencemag.org/content/6/302/rs15.long">Publication</Link></li>
                 <li>
                   Major datasets currently in ProHits-web include: the HSP90 co-chaperone
                   specificity dataset
                   (
-                  <a href="https://www.sciencedirect.com/science/article/pii/S0092867414007405">Taipale et al., Cell, 2014</a>
+                  <Link to="https://www.sciencedirect.com/science/article/pii/S0092867414007405">Taipale et al., Cell, 2014</Link>
                   ),
                   {' '}
                   an interaction dataset for the myotubularin phosphatases
                   (
-                  <a href="https://www.mcponline.org/content/14/4/946.long">St-Denis et al., Mol Cell Proteomics, 2015</a>
+                  <Link to="https://www.mcponline.org/content/14/4/946.long">St-Denis et al., Mol Cell Proteomics, 2015</Link>
                   )
                   and a comprehensive map of the centrosome-cilium interface
                   {' '}
                   (
-                  <a href="https://www.sciencedirect.com/science/article/pii/S009286741501421X">Gupta et al., Cell, 2015</a>
+                  <Link to="https://www.sciencedirect.com/science/article/pii/S009286741501421X">Gupta et al., Cell, 2015</Link>
                   ).
                 </li>
               </ul>
@@ -305,14 +306,14 @@ const Resources = ({ data }) => (
               </p>
               <ul>
                 <li>
-                  <a href="https://crapome.org/">CRAPome</a>
+                  <Link to="https://crapome.org/">CRAPome</Link>
                   ,
                   designed by Datta Mellacheruvu and Zach Wright
                   (
-                  <a href="https://www.nesvilab.org/">Nesvizhskii lab</a>
+                  <Link to="https://www.nesvilab.org/">Nesvizhskii lab</Link>
                   ).
                 </li>
-                <li><a href="https://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2557.html">Publication</a></li>
+                <li><Link to="https://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.2557.html">Publication</Link></li>
               </ul>
             </li>
             <li>
@@ -322,8 +323,8 @@ const Resources = ({ data }) => (
                 (Frank) Liu and JianPian Zhang.
               </p>
               <ul>
-                <li><a href="http://prohitsms.com">ProHits</a></li>
-                <li><a href="https://www.nature.com/articles/nbt1010-1015">Publication</a></li>
+                <li><Link to="http://prohitsms.com">ProHits</Link></li>
+                <li><Link to="https://www.nature.com/articles/nbt1010-1015">Publication</Link></li>
               </ul>
             </li>
             <li>
@@ -334,8 +335,8 @@ const Resources = ({ data }) => (
                 control runs).
               </p>
               <ul>
-                <li><a href="http://saint-apms.sourceforge.net/Main.html">SAINT</a></li>
-                <li><a href="https://science.sciencemag.org/content/328/5981/1043">Publication</a></li>
+                <li><Link to="http://saint-apms.sourceforge.net/Main.html">SAINT</Link></li>
+                <li><Link to="https://science.sciencemag.org/content/328/5981/1043">Publication</Link></li>
               </ul>
             </li>
             <li>
@@ -345,14 +346,14 @@ const Resources = ({ data }) => (
               </p>
               <ul>
                 <li>
-                  <a href="http://nestedcluster.sourceforge.net/">Nested cluster</a>
+                  <Link to="http://nestedcluster.sourceforge.net/">Nested cluster</Link>
                   ,
                   developed by
                   {' '}
-                  <a href="https://www.cssblab.org/">Hyungwon Choi</a>
+                  <Link to="https://www.cssblab.org/">Hyungwon Choi</Link>
                   .
                 </li>
-                <li><a href="https://www.embopress.org/doi/full/10.1038/msb.2010.41">Publication</a></li>
+                <li><Link to="https://www.embopress.org/doi/full/10.1038/msb.2010.41">Publication</Link></li>
               </ul>
             </li>
           </ul>
@@ -371,85 +372,85 @@ const Resources = ({ data }) => (
               <h3>Affinity-purification coupled to mass spectrometry in human cells</h3>
               <h4>Protocols</h4>
               <ul>
-                <li><a href="/doc/Mammalian TAP protocols.pdf">Mammalian TAP AP-MS</a></li>
-                <li><a href="/doc/Gingras lab protocol for FLAG AP.pdf">Mammalian FLAG AP-MS</a></li>
+                <li><Link to="/doc/Mammalian TAP protocols.pdf">Mammalian TAP AP-MS</Link></li>
+                <li><Link to="/doc/Gingras lab protocol for FLAG AP.pdf">Mammalian FLAG AP-MS</Link></li>
               </ul>
               <p>
                 Sources:
                 {' '}
-                <a href="https://www.mcponline.org/content/4/11/1725.long">Gingras et al., Mol Cell Proteomics, 2005</a>
+                <Link to="https://www.mcponline.org/content/4/11/1725.long">Gingras et al., Mol Cell Proteomics, 2005</Link>
                 ;
                 {' '}
-                <a href="https://www.sciencedirect.com/science/article/pii/S1046202307000394?via%3Dihub">Chen and Gingras, Methods, 2007</a>
+                <Link to="https://www.sciencedirect.com/science/article/pii/S1046202307000394?via%3Dihub">Chen and Gingras, Methods, 2007</Link>
                 ;
                 {' '}
-                <a href="http://www.jbc.org/content/283/43/29273.long">Chen et al., J Biol Chem, 2008</a>
+                <Link to="http://www.jbc.org/content/283/43/29273.long">Chen et al., J Biol Chem, 2008</Link>
                 ;
                 {' '}
-                <a href="https://www.mcponline.org/content/8/1/157.long">Goudreault et al., Mol Cell Proteomics, 2009</a>
+                <Link to="https://www.mcponline.org/content/8/1/157.long">Goudreault et al., Mol Cell Proteomics, 2009</Link>
               </p>
             </li>
             <li>
               <h3>Mammlian FLAG AP-MS Protocols</h3>
               <h4>Protocols</h4>
               <ul>
-                <li><a href="/doc/Anti-FLAG Magnetic beads 2012.pdf">Anti-FLAG AP-MS with Magnetic beads 2012</a></li>
-                <li><a href="/doc/Anti-FLAG Agarose beads 2012.pdf">Anti-FLAG AP-MS with Agarose beads 2012</a></li>
-                <li><a href="/doc/293 Flp-In FLAG magnetic AP -  July 2013.pdf">293 Flp-In FLAG magnetic AP - July 2013</a></li>
+                <li><Link to="/doc/Anti-FLAG Magnetic beads 2012.pdf">Anti-FLAG AP-MS with Magnetic beads 2012</Link></li>
+                <li><Link to="/doc/Anti-FLAG Agarose beads 2012.pdf">Anti-FLAG AP-MS with Agarose beads 2012</Link></li>
+                <li><Link to="/doc/293 Flp-In FLAG magnetic AP -  July 2013.pdf">293 Flp-In FLAG magnetic AP - July 2013</Link></li>
               </ul>
               <p>
                 Source:
                 {' '}
-                <a href="https://www.sciencedirect.com/science/article/pii/S1046202312001375?via%3Dihub">Kean et al., Methods, 2012</a>
+                <Link to="https://www.sciencedirect.com/science/article/pii/S1046202312001375?via%3Dihub">Kean et al., Methods, 2012</Link>
               </p>
             </li>
             <li>
               <h3>Affinity-purification coupled to mass spectrometry in S. cerevisiae</h3>
               <h4>Protocols</h4>
               <ul>
-                <li><a href="/doc/Yeast_TAP_acg.pdf">Yeast TAP AP-MS</a></li>
-                <li><a href="/doc/Yeast_HA_FLAG.pdf">Yeast HA or FLAG AP-MS</a></li>
+                <li><Link to="/doc/Yeast_TAP_acg.pdf">Yeast TAP AP-MS</Link></li>
+                <li><Link to="/doc/Yeast_HA_FLAG.pdf">Yeast HA or FLAG AP-MS</Link></li>
               </ul>
               <p>
                 Source:
                 {' '}
-                <a href="https://science.sciencemag.org/content/328/5981/1043.long">Breitkreutz et al., Science, 2010</a>
+                <Link to="https://science.sciencemag.org/content/328/5981/1043.long">Breitkreutz et al., Science, 2010</Link>
               </p>
             </li>
             <li>
               <h3>293 Flp-In FLAG magnetic chromatin optimized AP protocol</h3>
               <h4>Protocol</h4>
               <ul>
-                <li><a href="/doc/293 Flp-In FLAG magnetic chromatin optimized AP - July 2013.pdf">293 Flp-In FLAG magnetic chromatin optimized AP - July 2013</a></li>
+                <li><Link to="/doc/293 Flp-In FLAG magnetic chromatin optimized AP - July 2013.pdf">293 Flp-In FLAG magnetic chromatin optimized AP - July 2013</Link></li>
               </ul>
               <p>
                 Source:
                 {' '}
-                <a href="https://www.sciencedirect.com/science/article/pii/S1874391914004357?via%3Dihub">Lambert et al., J Proteomics, 2015</a>
+                <Link to="https://www.sciencedirect.com/science/article/pii/S1874391914004357?via%3Dihub">Lambert et al., J Proteomics, 2015</Link>
               </p>
             </li>
             <li>
               <h3>Flp-In BioID Streptavidin sepharose chromatin optizided</h3>
               <h4>Protocol</h4>
               <ul>
-                <li><a href="/doc/BirA Purification Chromatin Optimized protocol-JPL.pdf">Flp-In BioID Streptavidin sepharose chromatin optizided</a></li>
+                <li><Link to="/doc/BirA Purification Chromatin Optimized protocol-JPL.pdf">Flp-In BioID Streptavidin sepharose chromatin optizided</Link></li>
               </ul>
               <p>
                 Source:
                 {' '}
-                <a href="https://www.sciencedirect.com/science/article/pii/S1874391914004357?via%3Dihub">Lambert et al., J Proteomics, 2015</a>
+                <Link to="https://www.sciencedirect.com/science/article/pii/S1874391914004357?via%3Dihub">Lambert et al., J Proteomics, 2015</Link>
               </p>
             </li>
             <li>
               <h3>Flp-In BioID Streptavidin sepharose protocol</h3>
               <h4>Protocol</h4>
               <ul>
-                <li><a href="/doc/Flp-In BioID Streptavidin sepharose - Jul 2013.pdf">Flp-In BioID Streptavidin sepharose - Jul 2013</a></li>
+                <li><Link to="/doc/Flp-In BioID Streptavidin sepharose - Jul 2013.pdf">Flp-In BioID Streptavidin sepharose - Jul 2013</Link></li>
               </ul>
               <p>
                 Source:
                 {' '}
-                <a href="https://www.ncbi.nlm.nih.gov/pubmed/24255178">Couzens et al., Sci Signal, 2013</a>
+                <Link to="https://www.ncbi.nlm.nih.gov/pubmed/24255178">Couzens et al., Sci Signal, 2013</Link>
               </p>
             </li>
           </ul>
@@ -472,18 +473,18 @@ const Resources = ({ data }) => (
               </p>
               <h4>Sequence</h4>
               <ul>
-                <li><a href="/doc/V4131_DNA.doc">pcDNA5-FRT-eGFP</a></li>
-                <li><a href="/doc/V4071_DNA.doc">pcDNA5-FRT-FLAG</a></li>
+                <li><Link to="/doc/V4131_DNA.doc">pcDNA5-FRT-eGFP</Link></li>
+                <li><Link to="/doc/V4071_DNA.doc">pcDNA5-FRT-FLAG</Link></li>
               </ul>
               <h4>Map</h4>
               <ul>
-                <li><a href="/doc/V4071_map.pdf">pcDNA5-FRT-FLAG</a></li>
-                <li><a href="/doc/V4131_map.pdf">map of pcDNA5-FRT-eGFP</a></li>
+                <li><Link to="/doc/V4071_map.pdf">pcDNA5-FRT-FLAG</Link></li>
+                <li><Link to="/doc/V4131_map.pdf">map of pcDNA5-FRT-eGFP</Link></li>
               </ul>
               <p>
                 Source:
                 {' '}
-                <a href="http://www.jbc.org/content/286/28/25065.long">Kean et al., J Biol Chem, 2011</a>
+                <Link to="http://www.jbc.org/content/286/28/25065.long">Kean et al., J Biol Chem, 2011</Link>
               </p>
             </li>
             <li>
@@ -494,18 +495,18 @@ const Resources = ({ data }) => (
               </p>
               <h4>Sequence</h4>
               <ul>
-                <li><a href="/doc/V4978_pDEST_pcDNA5_Flag_Nterm_DNA.docx">pDEST_pcDNA5_Flag_N-term</a></li>
-                <li><a href="/doc/V4869_pDEST_pcDNA5_Flag_Cterm_DNA.docx">pDEST_pcDNA5_Flag_C-term</a></li>
+                <li><Link to="/doc/V4978_pDEST_pcDNA5_Flag_Nterm_DNA.docx">pDEST_pcDNA5_Flag_N-term</Link></li>
+                <li><Link to="/doc/V4869_pDEST_pcDNA5_Flag_Cterm_DNA.docx">pDEST_pcDNA5_Flag_C-term</Link></li>
               </ul>
               <h4>Map</h4>
               <ul>
-                <li><a href="/doc/V4978_pDEST_pcDNA5_Flag-_NtermMap.pdf">pDEST_pcDNA5_Flag_N-term</a></li>
-                <li><a href="/doc/V4869_pDEST_pcDNA5_Flag-Cterm_map.pdf">pDEST_pcDNA5_Flag_C-term</a></li>
+                <li><Link to="/doc/V4978_pDEST_pcDNA5_Flag-_NtermMap.pdf">pDEST_pcDNA5_Flag_N-term</Link></li>
+                <li><Link to="/doc/V4869_pDEST_pcDNA5_Flag-Cterm_map.pdf">pDEST_pcDNA5_Flag_C-term</Link></li>
               </ul>
               <p>
                 Source:
                 {' '}
-                <a href="https://stke.sciencemag.org/content/6/302/rs15.long">Couzens et al., Sci Signal, 2013</a>
+                <Link to="https://stke.sciencemag.org/content/6/302/rs15.long">Couzens et al., Sci Signal, 2013</Link>
               </p>
             </li>
             <li>
@@ -518,18 +519,18 @@ const Resources = ({ data }) => (
               </p>
               <h4>Sequence</h4>
               <ul>
-                <li><a href="/doc/V8164_pDEST_pcDNA5_BirA-FLAG_Nterm_DNA.docx">pDEST_pcDNA5_BirA-FLAG_Nterm</a></li>
-                <li><a href="/doc/V8449_pDEST_pcDNA5_BirA-FLAG_Cterm_DNA.docx">pDEST_pcDNA5_BirA-FLAG_Cterm</a></li>
+                <li><Link to="/doc/V8164_pDEST_pcDNA5_BirA-FLAG_Nterm_DNA.docx">pDEST_pcDNA5_BirA-FLAG_Nterm</Link></li>
+                <li><Link to="/doc/V8449_pDEST_pcDNA5_BirA-FLAG_Cterm_DNA.docx">pDEST_pcDNA5_BirA-FLAG_Cterm</Link></li>
               </ul>
               <h4>Map</h4>
               <ul>
-                <li><a href="/doc/V8164_pDEST_pcDNA5_BirA-FLAG_Nterm_Map.pdf">pDEST_pcDNA5_BirA-FLAG_Nterm</a></li>
-                <li><a href="/doc/V8449_pDEST_pcDNA5_BirA-FLAG_Cterm_Map.pdf">pDEST_pcDNA5_BirA-FLAG_Cterm</a></li>
+                <li><Link to="/doc/V8164_pDEST_pcDNA5_BirA-FLAG_Nterm_Map.pdf">pDEST_pcDNA5_BirA-FLAG_Nterm</Link></li>
+                <li><Link to="/doc/V8449_pDEST_pcDNA5_BirA-FLAG_Cterm_Map.pdf">pDEST_pcDNA5_BirA-FLAG_Cterm</Link></li>
               </ul>
               <p>
                 Source:
                 {' '}
-                <a href="https://stke.sciencemag.org/content/6/302/rs15.long">Couzens et al., Sci Signal, 2013</a>
+                <Link to="https://stke.sciencemag.org/content/6/302/rs15.long">Couzens et al., Sci Signal, 2013</Link>
               </p>
             </li>
             <li>
@@ -543,16 +544,16 @@ const Resources = ({ data }) => (
               </p>
               <h4>Sequence</h4>
               <ul>
-                <li><a href="/doc/pDEST-pcDNA5-BirA-FLAG-GFP_V8383_DNA.docx">pDEST-pcDNA5-BirA-FLAG-GFP</a></li>
-                <li><a href="/doc/pDEST-pcDNA5-FLAG-NLS-BirA_V9733_DNA.docx">pDEST-pcDNA5-FLAG-NLS-BirA</a></li>
+                <li><Link to="/doc/pDEST-pcDNA5-BirA-FLAG-GFP_V8383_DNA.docx">pDEST-pcDNA5-BirA-FLAG-GFP</Link></li>
+                <li><Link to="/doc/pDEST-pcDNA5-FLAG-NLS-BirA_V9733_DNA.docx">pDEST-pcDNA5-FLAG-NLS-BirA</Link></li>
               </ul>
               <p>
                 Sources:
                 {' '}
-                <a href="https://stke.sciencemag.org/content/6/302/rs15.long">Couzens et al., Sci Signal, 2013</a>
+                <Link to="https://stke.sciencemag.org/content/6/302/rs15.long">Couzens et al., Sci Signal, 2013</Link>
                 ;
                 {' '}
-                <a href="https://www.sciencedirect.com/science/article/pii/S1874391914004357?via%3Dihub">Lambert et al., J Proteomics, 2015</a>
+                <Link to="https://www.sciencedirect.com/science/article/pii/S1874391914004357?via%3Dihub">Lambert et al., J Proteomics, 2015</Link>
               </p>
             </li>
           </ul>
@@ -573,15 +574,15 @@ const Resources = ({ data }) => (
                 Since 2013, our datasets are released through ProHits-web. We also deposit curated
                 interaction lists at
                 {' '}
-                <a href="https://www.ebi.ac.uk/intact/">IntAct</a>
+                <Link to="https://www.ebi.ac.uk/intact/">IntAct</Link>
                 {' '}
                 and
                 {' '}
-                <a href="https://thebiogrid.org/">BioGRID</a>
+                <Link to="https://thebiogrid.org/">BioGRID</Link>
                 {' '}
                 and our mass spectrometry data at
                 {' '}
-                <a href="https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp">MassIVE</a>
+                <Link to="https://massive.ucsd.edu/ProteoSAFe/static/massive.jsp">MassIVE</Link>
                 .
               </p>
             </li>
@@ -591,17 +592,17 @@ const Resources = ({ data }) => (
                 &ldqio;A global protein kinase and phosphatase interaction network in yeast&rdqio;.
                 High-confidence interactions were deposited in the
                 {' '}
-                <a href="https://thebiogrid.org/">BioGrid</a>
+                <Link to="https://thebiogrid.org/">BioGrid</Link>
                 {' '}
                 and
                 {' '}
-                <a href="https://www.ebi.ac.uk/intact">IntAct</a>
+                <Link to="https://www.ebi.ac.uk/intact">IntAct</Link>
                 {' '}
                 databases.
               </p>
               <ul>
                 <li>
-                  <a href="https://www.yeastkinome.com/">YeastKinome.org</a>
+                  <Link to="https://www.yeastkinome.com/">YeastKinome.org</Link>
                   ,
                   developed by C Stark and BJ Breitkreutz.
                 </li>
@@ -612,17 +613,17 @@ const Resources = ({ data }) => (
               <p>
                 All reported interactions were deposited in the
                 {' '}
-                <a href="https://thebiogrid.org/">BioGrid</a>
+                <Link to="https://thebiogrid.org/">BioGrid</Link>
                 {' '}
                 and
                 {' '}
-                <a href="http://www.ebi.ac.uk/intact">IntAct</a>
+                <Link to="http://www.ebi.ac.uk/intact">IntAct</Link>
                 {' '}
                 interaction databases.
               </p>
               <ul>
-                <li><a href="/doc/Sup_Table_S4_v30.xls">TAP AP-MS data (Sup Table 4)</a></li>
-                <li><a href="/doc/Sup_Table_S5_V30.xls">FLAG AP-MS data (Sup Table 5)</a></li>
+                <li><Link to="/doc/Sup_Table_S4_v30.xls">TAP AP-MS data (Sup Table 4)</Link></li>
+                <li><Link to="/doc/Sup_Table_S5_V30.xls">FLAG AP-MS data (Sup Table 5)</Link></li>
               </ul>
             </li>
             <li>
@@ -630,11 +631,11 @@ const Resources = ({ data }) => (
               <p>
                 All reported interactions were deposited in the
                 {' '}
-                <a href="https://thebiogrid.org/">BioGrid</a>
+                <Link to="https://thebiogrid.org/">BioGrid</Link>
                 {' '}
                 and
                 {' '}
-                <a href="http://www.ebi.ac.uk/intact">IntAct</a>
+                <Link to="http://www.ebi.ac.uk/intact">IntAct</Link>
                 {' '}
                 interaction databases.
               </p>

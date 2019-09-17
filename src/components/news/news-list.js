@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
+
+import Link from '../link/link';
 
 const newsItems = [
   {
@@ -9,15 +10,15 @@ const newsItems = [
       <>
         Postdoctoral positions in
         {' '}
-        <a href="https://apply.interfolio.com/58107">computational proteomics</a>
+        <Link to="https://apply.interfolio.com/58107">computational proteomics</Link>
         {' '}
         (joint with Hannes Roest at UofT) and
         {' '}
-        <a href="https://apply.interfolio.com/66200">chemical proteomics</a>
+        <Link to="https://apply.interfolio.com/66200">chemical proteomics</Link>
         {' '}
         are available in the Gingras lab. A Research Associate position is also available in
         {' '}
-        <a href="https://contact2.mshri.on.ca/hr/DEFAULT.ASP?page=jobDetail&amp;job=1225">chemical proteomics</a>
+        <Link to="https://contact2.mshri.on.ca/hr/DEFAULT.ASP?page=jobDetail&amp;job=1225">chemical proteomics</Link>
         .
       </>
     ),
@@ -30,11 +31,11 @@ const newsItems = [
         James&apos; new Chrome and Firefox extension to quickly annotate a gene product directly in
         a web browser is now published a
         {' '}
-        <a href="https://www.nature.com/articles/s41592-019-0477-9">Nature Methods</a>
+        <Link to="https://www.nature.com/articles/s41592-019-0477-9">Nature Methods</Link>
         .
         You can download it from the
         {' '}
-        <a href="https://gene-info.org">GIX</a>
+        <Link to="https://gene-info.org">GIX</Link>
         {' '}
         homepage.
       </>
@@ -47,7 +48,7 @@ const newsItems = [
       <>
         See our manuscript by
         {' '}
-        <a href="https://www.sciencedirect.com/science/article/pii/S1097276518309481?via%3Dihub">Lambert, Picaud et al.</a>
+        <Link to="https://www.sciencedirect.com/science/article/pii/S1097276518309481?via%3Dihub">Lambert, Picaud et al.</Link>
         {' '}
         that reports the effects of the drug JQ1 on the interactome of the BET family of
         bromodomains online at Molecular Cell. A great collaboration between the Gingras and
@@ -62,11 +63,11 @@ const newsItems = [
       <>
         The Gingras and
         {' '}
-        <a href="http://www.roestlab.org">Rost</a>
+        <Link to="http://www.roestlab.org">Rost</Link>
         {' '}
         labs are looking for postdoctoral fellows in Computational Proteomics to lead the
         development of the next generation of tools for Data Independent Analysis (
-        <a href="https://apply.interfolio.com/30295/positions">application</a>
+        <Link to="https://apply.interfolio.com/30295/positions">application</Link>
         ).
       </>
     ),
@@ -78,14 +79,14 @@ const newsItems = [
       <>
         The
         {' '}
-        <a href="http://lunenfeld.ca">Lunenfeld</a>
+        <Link to="http://lunenfeld.ca">Lunenfeld</Link>
         {' '}
         is recruiting 3 new PIs in the Fall. The Molecular, Cell and Systems Biology position
         is now open - cross-appointment at the University of Toronto (
-        <a href="https://apply.interfolio.com/53041">application</a>
+        <Link to="https://apply.interfolio.com/53041">application</Link>
         ). See all
         {' '}
-        <a href="https://apply.interfolio.com/30295/positions">open positions</a>
+        <Link to="https://apply.interfolio.com/30295/positions">open positions</Link>
         .
       </>
     ),
@@ -97,7 +98,7 @@ const newsItems = [
       <>
         Payman Samavarchi-Tehrani and colleagues report in
         {' '}
-        <a href="http://www.mcponline.org/content/early/2018/07/10/mcp.TIR118.000902.abstract">Molecular and Cellular Proteomics</a>
+        <Link to="http://www.mcponline.org/content/early/2018/07/10/mcp.TIR118.000902.abstract">Molecular and Cellular Proteomics</Link>
         {' '}
         a collection of lentiviral vectors to enable proximity-dependent biotinylation
         across cell types.
@@ -111,7 +112,7 @@ const newsItems = [
       <>
         PhD student Boris Dyakov recently received an award from the
         {' '}
-        <a href="http://www.nserc-crsng.gc.ca/index_eng.asp">Natural Sciences and Engineering Research Council of Canada</a>
+        <Link to="http://www.nserc-crsng.gc.ca/index_eng.asp">Natural Sciences and Engineering Research Council of Canada</Link>
         {' '}
         for his work aiming at characterizing nuclear bodies using proteomic tools.
       </>
@@ -124,15 +125,15 @@ const newsItems = [
       <>
         Congratulations to all co-authors and to PDF Jiyoung Youn, profiled at
         {' '}
-        <a href="http://www.cell.com/molecular-cell/fulltext/S1097-2765(17)30977-2">Molecular Cell</a>
+        <Link to="http://www.cell.com/molecular-cell/fulltext/S1097-2765(17)30977-2">Molecular Cell</Link>
         {' '}
         for her paper selected as a
         {' '}
-        <a href="http://www.cell.com/molecular-cell/meet-the-author/ji-young-youn">Featured Article</a>
+        <Link to="http://www.cell.com/molecular-cell/meet-the-author/ji-young-youn">Featured Article</Link>
         {' '}
         (free). Also see the nice
         {' '}
-        <a href="http://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30049-2">Preview</a>
+        <Link to="http://www.cell.com/molecular-cell/fulltext/S1097-2765(18)30049-2">Preview</Link>
         {' '}
         by Simon Alberti.
       </>
@@ -155,7 +156,7 @@ const newsItems = [
     text: (
       <>
         Knight et al. publishes web-tool to improve visualization of protein interaction data (
-        <a href="https://www.nature.com/articles/nmeth.4330.epdf?author_access_token=Mxscfd4TsFnZDOMRVLu6q9RgN0jAjWel9jnR3ZoTv0N_r0kXKLsUVDr0iDmCOCg724OKwf_HwmR4LS6tUTcLnv0lZ95VTwz0lijrGL0nG0hlWQsNj9aa71B1ICe2lxjt">read-only version</a>
+        <Link to="https://www.nature.com/articles/nmeth.4330.epdf?author_access_token=Mxscfd4TsFnZDOMRVLu6q9RgN0jAjWel9jnR3ZoTv0N_r0kXKLsUVDr0iDmCOCg724OKwf_HwmR4LS6tUTcLnv0lZ95VTwz0lijrGL0nG0hlWQsNj9aa71B1ICe2lxjt">read-only version</Link>
         ).
       </>
     ),
@@ -188,7 +189,7 @@ const newsItems = [
       <>
         St-Denis et al. report in this issue of
         {' '}
-        <a href="http://www.cell.com/cell-reports/abstract/S2211-1247(16)31513-3">Cell Reports</a>
+        <Link to="http://www.cell.com/cell-reports/abstract/S2211-1247(16)31513-3">Cell Reports</Link>
         {' '}
         the identification of phosphatases implicated in mitosis, and the elucidation of their
         interactomes.
@@ -235,18 +236,18 @@ const newsItems = [
       <>
         The ProHits 4.0 publication in press at J Proteomics (Liu et al) describes the use of our
         {' '}
-        <a href="http://prohitsms.com/">ProHits LIMS</a>
+        <Link to="http://prohitsms.com/">ProHits LIMS</Link>
         {' '}
         for Data Independent Acquisition through the incorporation of
         {' '}
-        <a href="http://diaumpire.sourceforge.net/">DIA-Umpire</a>
+        <Link to="http://diaumpire.sourceforge.net/">DIA-Umpire</Link>
         ,
         {' '}
-        <a href="http://proteomics.ucsd.edu/software-tools/msplit-dia/">MSPLIT-DIA</a>
+        <Link to="http://proteomics.ucsd.edu/software-tools/msplit-dia/">MSPLIT-DIA</Link>
         {' '}
         and
         {' '}
-        <a href="http://mapdia.sourceforge.net/Main.html">mapDIA</a>
+        <Link to="http://mapdia.sourceforge.net/Main.html">mapDIA</Link>
         .
       </>
     ),
@@ -300,15 +301,15 @@ const newsItems = [
       <>
         In a collaboration with
         {' '}
-        <a href="http://proteomics.ucsd.edu/">Nuno Bandeira, UCSD</a>
+        <Link to="http://proteomics.ucsd.edu/">Nuno Bandeira, UCSD</Link>
         , we are reporting in
         {' '}
-        <a href="https://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3655.html">Nature Methods</a>
+        <Link to="https://www.nature.com/nmeth/journal/vaop/ncurrent/full/nmeth.3655.html">Nature Methods</Link>
         {' '}
         a new spectral matching approach for peptide identification from DIA. This will be
         incorporated in the next
         {' '}
-        <a href="http://prohitsms.com/">ProHits</a>
+        <Link to="http://prohitsms.com/">ProHits</Link>
         {' '}
         release.
       </>
@@ -362,7 +363,7 @@ const newsItems = [
       <>
         New Funding from Genome Canada for the SMART and proteomics facilities at LTRI. The
         {' '}
-        <a href="http://nbcc.lunenfeld.ca/">NBCC</a>
+        <Link to="http://nbcc.lunenfeld.ca/">NBCC</Link>
         {' '}
         team led by Jeff Wrana and Anne-Claude Gingras becomes a Genomics Innovation network node.
       </>
@@ -375,7 +376,7 @@ const newsItems = [
       <>
         Ben Lant publishes new research in
         {' '}
-        <a href="http://www.ncbi.nlm.nih.gov/pubmed/25743393">Nature Communications</a>
+        <Link to="http://www.ncbi.nlm.nih.gov/pubmed/25743393">Nature Communications</Link>
         ; work funded by joint CIHR to Drs. Derry and Gingras.
       </>
     ),
@@ -408,7 +409,7 @@ const newsItems = [
       <>
         Read again the winning publication on the
         {' '}
-        <a href="http://stke.sciencemag.org/content/6/302/rs15.long">Hippo interactome</a>
+        <Link to="http://stke.sciencemag.org/content/6/302/rs15.long">Hippo interactome</Link>
         .
       </>
     ),
@@ -420,7 +421,7 @@ const newsItems = [
       <>
         James Knight and colleagues publish a
         {' '}
-        <a href="http://prohitstools.mshri.on.ca/">web tool</a>
+        <Link to="http://prohitstools.mshri.on.ca/">web tool</Link>
         {' '}
         for visualization of interaction proteomics data.
       </>
@@ -431,7 +432,7 @@ const newsItems = [
     title: 'How to score true interactions in BioID experiment',
     text: (
       <>
-        <a href="https://www.sciencedirect.com/science/article/pii/S1874391914004357?via%3Dihub">JP Lambert et al.</a>
+        <Link to="https://www.sciencedirect.com/science/article/pii/S1874391914004357?via%3Dihub">JP Lambert et al.</Link>
         {' '}
         thoroughly analyze background subtraction in BioID and compare BioID to standard AP-MS for
         chromatin proteins.
@@ -443,7 +444,7 @@ const newsItems = [
     title: 'Cell paper by the Gingras and Lindquist labs',
     text: (
       <>
-        <a href="https://linkinghub.elsevier.com/retrieve/pii/S0092-8674(14)00740-5">Taipale et al.</a>
+        <Link to="https://linkinghub.elsevier.com/retrieve/pii/S0092-8674(14)00740-5">Taipale et al.</Link>
         {' '}
         report a quantitative chaperone interaction network that reveals the architecture of
         cellular protein homeostasis pathways.
@@ -468,11 +469,11 @@ const newsItems = [
         Hundreds of new connections and mechanisms of phospho-recognition in the Hippo
         pathway published by
         {' '}
-        <a href="https://stke.sciencemag.org/content/6/302/rs15.long">Amber Couzens et al.</a>
+        <Link to="https://stke.sciencemag.org/content/6/302/rs15.long">Amber Couzens et al.</Link>
         {' '}
         in Science Signaling - also see accompanying
         {' '}
-        <a href="https://stke.sciencemag.org/content/6/302/pe36">perspective</a>
+        <Link to="https://stke.sciencemag.org/content/6/302/pe36">perspective</Link>
         {' '}
         by Eric Weiss.
       </>
@@ -485,14 +486,14 @@ const newsItems = [
       <>
         In a collaboration with
         {' '}
-        <a href="https://sciex.com/">AB SCIEX</a>
+        <Link to="https://sciex.com/">AB SCIEX</Link>
         {' '}
         and the support of
         {' '}
-        <a href="http://support.supportsinai.com/site/PageServer?pagename=mainsite_getinvolved_venturesinai">Venture Sinai</a>
+        <Link to="http://support.supportsinai.com/site/PageServer?pagename=mainsite_getinvolved_venturesinai">Venture Sinai</Link>
         ,
         {' '}
-        <a href="https://www.nature.com/articles/nmeth.2702">Lambert et al.</a>
+        <Link to="https://www.nature.com/articles/nmeth.2702">Lambert et al.</Link>
         {' '}
         present AP-SWATH which rapidly maps differential interactomes.
       </>
@@ -516,7 +517,7 @@ const newsItems = [
         The Nesvizhskii and Gingras teams led an international effort to create a repository to help
         filter the cra... hmm... contaminants out of AP-MS data. See the paper by
         {' '}
-        <a href="https://www.nature.com/articles/nmeth.2557">Datta Mellacheruvu et al.</a>
+        <Link to="https://www.nature.com/articles/nmeth.2557">Datta Mellacheruvu et al.</Link>
         , in Nature Methods.
       </>
     ),
@@ -550,7 +551,7 @@ const newsItems = [
       <>
         Have a look at the special issue of Proteomics on
         {' '}
-        <a href="https://onlinelibrary.wiley.com/toc/16159861/2012/12/10">Protein Complexes and Interaction Networks</a>
+        <Link to="https://onlinelibrary.wiley.com/toc/16159861/2012/12/10">Protein Complexes and Interaction Networks</Link>
         {' '}
         co-Edited by Alexey Nesvizhskii and Anne-Claude Gingras.
       </>
@@ -592,7 +593,7 @@ const newsItems = [
       <>
         Zick Zagorski pens the
         {' '}
-        <a href="http://www.asbmb.org/asbmbtoday/201108/sciencefocus/Gingras/">profile of Anne-Claude Gingras</a>
+        <Link to="http://www.asbmb.org/asbmbtoday/201108/sciencefocus/Gingras/">profile of Anne-Claude Gingras</Link>
         {' '}
         in this month&apos;s issue of ASBMB Today.
       </>
@@ -605,7 +606,7 @@ const newsItems = [
       <>
         We keep updating our software. Check our
         {' '}
-        <Link className="nav-link" to="/resources/">Resources</Link>
+        <Link nav to="/resources/">Resources</Link>
         {' '}
         section for the latest downloads of our interaction proteomics tools.
       </>
@@ -619,11 +620,11 @@ const newsItems = [
         Graduate students Michelle Kean and Wade Dunham each got their first publication from the
         Gingras lab. Congrats to both! Access the publications at
         {' '}
-        <a href="http://www.jbc.org/content/early/2011/05/11/jbc.M110.214486.abstract">J Biol Chem</a>
+        <Link to="http://www.jbc.org/content/early/2011/05/11/jbc.M110.214486.abstract">J Biol Chem</Link>
         {' '}
         and
         {' '}
-        <a href="https://onlinelibrary.wiley.com/doi/10.1002/pmic.201000571/abstract">Proteomics</a>
+        <Link to="https://onlinelibrary.wiley.com/doi/10.1002/pmic.201000571/abstract">Proteomics</Link>
         .
       </>
     ),
@@ -637,7 +638,7 @@ const newsItems = [
         statistical tool SAINT for scoring interaction proteomics data. Download the free
         software at
         {' '}
-        <a href="http://saint-apms.sourceforge.net/Main.html">sourceforge</a>
+        <Link to="http://saint-apms.sourceforge.net/Main.html">sourceforge</Link>
         .
       </>
     ),
@@ -647,12 +648,12 @@ const newsItems = [
     title: 'Just published!',
     text: (
       <>
-        <a href="https://www.nature.com/nbt/journal/v28/n10/full/nbt1010-1015.html">ProHits: integrated software for mass spectrometry-based interaction proteomics</a>
+        <Link to="https://www.nature.com/nbt/journal/v28/n10/full/nbt1010-1015.html">ProHits: integrated software for mass spectrometry-based interaction proteomics</Link>
         .
         The Gingras and Tyers labs publish in Nature Biotechnology
         their interaction proteomics data management system ProHits. Download the free software at
         {' '}
-        <a href="http://prohitsms.com">prohitsms.com</a>
+        <Link to="http://prohitsms.com">prohitsms.com</Link>
         .
       </>
     ),
@@ -662,7 +663,7 @@ const newsItems = [
     title: 'Fresh off the press',
     text: (
       <>
-        <a href="https://www.sciencemag.org/cgi/content/abstract/328/5981/1043">A global protein kinase and phosphatase interaction network in yeast</a>
+        <Link to="https://www.sciencemag.org/cgi/content/abstract/328/5981/1043">A global protein kinase and phosphatase interaction network in yeast</Link>
         .
         The Tyers, Nesvizhskii and Gingras labs team up to provide a comprehensive interaction
         map for yeast kinases and phosphatases (Breitkreutz et al., Science, 2010).

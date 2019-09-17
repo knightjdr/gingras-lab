@@ -32,15 +32,15 @@ export const query = graphql`
     }
     appreciationDay2018: file(relativePath: { eq: "group/2018-appreciation-day.jpg" }) {
       childImageSharp {
-        fixed(width: 1123, height: 575) {
-          ...GatsbyImageSharpFixed_withWebp
+        fluid(maxWidth: 1123) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     christmas2018: file(relativePath: { eq: "group/2018-christmas.jpg" }) {
       childImageSharp {
-        fixed(width: 1180, height: 539) {
-          ...GatsbyImageSharpFixed_withWebp
+        fluid(maxWidth: 1180) {
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -84,17 +84,17 @@ const People = ({ data }) => {
             />
           </header>
           <div className="people__photos">
-            <figure>
+            <figure className="christmas-2018">
               <Img
                 alt="Christmas party, 2018"
-                fixed={data.christmas2018.childImageSharp.fixed}
+                fluid={data.christmas2018.childImageSharp.fluid}
               />
               <figcaption>Christmas party, 2018.</figcaption>
             </figure>
-            <figure>
+            <figure className="appreciation-day-2018">
               <Img
                 alt="Staff appreciation day, 2018"
-                fixed={data.appreciationDay2018.childImageSharp.fixed}
+                fluid={data.appreciationDay2018.childImageSharp.fluid}
               />
               <figcaption>Staff appreciation day, 2018.</figcaption>
             </figure>
@@ -121,12 +121,12 @@ People.propTypes = {
     }).isRequired,
     appreciationDay2018: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fixed: PropTypes.shape({}).isRequired,
+        fluid: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     christmas2018: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fixed: PropTypes.shape({}).isRequired,
+        fluid: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
   }).isRequired,

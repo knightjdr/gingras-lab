@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import { Link } from 'gatsby';
+
+import Link from '../link/link';
 
 import articles from '../../../scripts/publications/output/publications';
 
@@ -62,11 +63,11 @@ const formatItem = (article) => (
     {formatPages(article)}
     .
     {' '}
-    <a href={`https://www.ncbi.nlm.nih.gov/pubmed/${article.pmid}`}>
+    <Link to={`https://www.ncbi.nlm.nih.gov/pubmed/${article.pmid}`}>
       PMID:
       {' '}
       {article.pmid}
-    </a>
+    </Link>
     .
   </li>
 );

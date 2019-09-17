@@ -2,6 +2,7 @@ import React from 'react';
 
 import Head from '../../components/head';
 import Layout from '../../components/layout';
+import Link from '../../components/link/link';
 
 import Mailbox from '../../images/icon/mailbox.svg';
 
@@ -27,12 +28,12 @@ const Contact = () => (
           <div>tel: (416) 586-5027</div>
           <div>fax: (416) 586-8869</div>
           <div>
-            <a
-              className="nav-link"
-              href="mailto:gingras@lunenfeld.ca"
+            <Link
+              nav
+              to="mailto:gingras@lunenfeld.ca"
             >
               gingras@lunenfeld.ca
-            </a>
+            </Link>
           </div>
         </address>
         <address>
@@ -40,12 +41,12 @@ const Contact = () => (
           <div>tel: (416) 586-4800 x8272</div>
           <div>fax: (416) 586-8869</div>
           <div>
-            <a
-              className="nav-link"
-              href="mailto:rajendran@lunenfeld.ca"
+            <Link
+              nav
+              to="mailto:rajendran@lunenfeld.ca"
             >
               rajendran@lunenfeld.ca
-            </a>
+            </Link>
           </div>
         </address>
         <address>
@@ -53,12 +54,12 @@ const Contact = () => (
           <div>tel: (416) 586-4800 x2218</div>
           <div>fax: (416) 586-8869</div>
           <div>
-            <a
-              className="nav-link"
-              href="mailto:sequeira@lunenfeld.ca"
+            <Link
+              nav
+              to="mailto:sequeira@lunenfeld.ca"
             >
               sequeira@lunenfeld.ca
-            </a>
+            </Link>
           </div>
         </address>
         <address>
@@ -66,12 +67,12 @@ const Contact = () => (
           <div>tel: (416) 586-4800 x3018</div>
           <div>fax: (416) 586-8869</div>
           <div>
-            <a
-              className="nav-link"
-              href="mailto:colwill@lunenfeld.ca"
+            <Link
+              nav
+              to="mailto:colwill@lunenfeld.ca"
             >
               colwill@lunenfeld.ca
-            </a>
+            </Link>
           </div>
         </address>
         <address>

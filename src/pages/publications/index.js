@@ -2,6 +2,7 @@ import React from 'react';
 
 import Head from '../../components/head';
 import Layout from '../../components/layout';
+import Link from '../../components/link/link';
 
 import formatArticles from '../../components/publications/format-articles';
 
@@ -25,15 +26,15 @@ const Publications = () => (
           />
         </header>
         <div className="publications__links">
-          <a href="https://www.ncbi.nlm.nih.gov/pubmed?term=Gingras%20AC%5BAuthor%5D">
+          <Link to="https://www.ncbi.nlm.nih.gov/pubmed?term=Gingras%20AC%5BAuthor%5D">
             PubMed
-          </a>
-          <a href="https://scholar.google.ca/citations?user=kPxn4QQAAAAJ&hl=en">
+          </Link>
+          <Link to="https://scholar.google.ca/citations?user=kPxn4QQAAAAJ&hl=en">
             Google Scholar
-          </a>
-          <a href="https://www.researchgate.net/profile/Anne-Claude_Gingras">
+          </Link>
+          <Link to="https://www.researchgate.net/profile/Anne-Claude_Gingras">
             ResearchGate
-          </a>
+          </Link>
         </div>
         {formatArticles()}
       </section>

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { forwardRef } from 'react';
-import { Link } from 'gatsby';
+
+import Link from '../link/link';
 
 const Menu = forwardRef((
   {
@@ -33,7 +34,7 @@ const Menu = forwardRef((
     >
       <li>
         <Link
-          className="nav-link"
+          nav
           onClick={closeMenu}
           to="/research/"
         >
@@ -42,7 +43,7 @@ const Menu = forwardRef((
       </li>
       <li>
         <Link
-          className="nav-link"
+          nav
           onClick={closeMenu}
           to="/resources/"
         >
@@ -51,7 +52,7 @@ const Menu = forwardRef((
       </li>
       <li>
         <Link
-          className="nav-link"
+          nav
           onClick={closeMenu}
           to="/publications/"
         >
@@ -60,7 +61,7 @@ const Menu = forwardRef((
       </li>
       <li>
         <Link
-          className="nav-link"
+          nav
           onClick={closeMenu}
           to="/people/"
         >
@@ -69,7 +70,7 @@ const Menu = forwardRef((
       </li>
       <li>
         <Link
-          className="nav-link"
+          nav
           onClick={closeMenu}
           to="/news/"
         >
@@ -78,7 +79,7 @@ const Menu = forwardRef((
       </li>
       <li>
         <Link
-          className="nav-link"
+          nav
           onClick={closeMenu}
           to="/contact/"
         >

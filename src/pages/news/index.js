@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
-import formatNews from '../../components/news/format-news';
 import Head from '../../components/head';
 import Layout from '../../components/layout';
+import Link from '../../components/link/link';
+
+import formatNews from '../../components/news/format-news';
 import news from '../../components/news/news-list';
 
 import NewsPaper from '../../images/icon/newspaper.svg';
@@ -29,17 +30,17 @@ const News = () => (
         <ul>
           <li>
             Postdoctoral position in chemical proteomics (
-            <a href="https://apply.interfolio.com/66200">application</a>
+            <Link to="https://apply.interfolio.com/66200">application</Link>
             ).
           </li>
           <li>
             Postdoctoral position in computational proteomics (
-            <a href="https://apply.interfolio.com/58107">application</a>
+            <Link to="https://apply.interfolio.com/58107">application</Link>
             ).
           </li>
           <li>
             Research Associate position in chemical proteomics (
-            <a href="https://contact2.mshri.on.ca/hr/DEFAULT.ASP?page=jobDetail&amp;job=1225">application</a>
+            <Link to="https://contact2.mshri.on.ca/hr/DEFAULT.ASP?page=jobDetail&amp;job=1225">application</Link>
             ).
           </li>
         </ul>
@@ -50,18 +51,18 @@ const News = () => (
           bioinformatics and/or proteomics. Please forward your CV, references and research
           interests to
           {' '}
-          <a className="nav-link" href="mailto:gingras@lunenfeld.ca">Dr. Anne-Claude Gingras</a>
+          <Link nav to="mailto:gingras@lunenfeld.ca">Dr. Anne-Claude Gingras</Link>
           .
         </p>
         <h2>Graduate students</h2>
         <p>
           The Gingras lab is part of the
           {' '}
-          <a href="http://www.moleculargenetics.utoronto.ca/">Department of Molecular Genetics</a>
+          <Link to="http://www.moleculargenetics.utoronto.ca/">Department of Molecular Genetics</Link>
           {' '}
           at the
           {' '}
-          <a href="https://www.utoronto.ca/">University of Toronto</a>
+          <Link to="https://www.utoronto.ca/">University of Toronto</Link>
           , which has a central admission committee and a rotation system. Graduate students
           interested in doing a PhD in the laboratory must first be accepted in the Department
           of Molecular Genetics.
@@ -70,11 +71,11 @@ const News = () => (
         <p>
           Summer students are exclusively selected from successful applicants to the
           {' '}
-          <a href="http://research.lunenfeld.ca/rtc/">Research Training Center (RTC)</a>
+          <Link to="http://research.lunenfeld.ca/rtc/">Research Training Center (RTC)</Link>
           {' '}
           at the Lunenfeld-Tanenbaum Research Institute.
           {' '}
-          <a href="http://research.lunenfeld.ca/rtc/?page=Summer%20Research%20Program">Applications</a>
+          <Link to="http://research.lunenfeld.ca/rtc/?page=Summer%20Research%20Program">Applications</Link>
           {' '}
           are available online and need to be filled by February 15th yearly.
         </p>

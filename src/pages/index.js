@@ -1,10 +1,12 @@
 import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import Head from '../components/head';
+import Link from '../components/link/link';
+
 import news from '../components/news/news-list';
 
 import Analytics from '../images/icon/analytics.svg';
@@ -83,15 +85,15 @@ const IndexPage = ({ data }) => (
               with one another to perform their functions.
           </p>
           <div className="home__anne-claude-links">
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed?term=Gingras%20AC%5BAuthor%5D">
+            <Link to="https://www.ncbi.nlm.nih.gov/pubmed?term=Gingras%20AC%5BAuthor%5D">
               PubMed
-            </a>
-            <a href="https://scholar.google.ca/citations?user=kPxn4QQAAAAJ&hl=en">
+            </Link>
+            <Link to="https://scholar.google.ca/citations?user=kPxn4QQAAAAJ&hl=en">
               Google Scholar
-            </a>
-            <a href="https://www.researchgate.net/profile/Anne-Claude_Gingras">
+            </Link>
+            <Link to="https://www.researchgate.net/profile/Anne-Claude_Gingras">
               ResearchGate
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -123,7 +125,7 @@ const IndexPage = ({ data }) => (
               data management and visualization.
             </p>
             <Link
-              className="nav-link"
+              nav
               to="/research/#proteomics"
             >
               Read more
@@ -151,7 +153,7 @@ const IndexPage = ({ data }) => (
               but in large part through interaction proteomics.
             </p>
             <Link
-              className="nav-link"
+              nav
               to="/research/#systemsbiology"
             >
               Read more
@@ -170,7 +172,7 @@ const IndexPage = ({ data }) => (
               interference and microscopy).
             </p>
             <Link
-              className="nav-link"
+              nav
               to="/research/#signalling"
             >
               Read more
@@ -198,7 +200,7 @@ const IndexPage = ({ data }) => (
                 elaborate the mechanisms underpinning CCM disease.
             </p>
             <Link
-              className="nav-link"
+              nav
               to="/research/#ccm"
             >
               Read more
