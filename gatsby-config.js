@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/gingras-lab',
+  pathPrefix: '/gingras-lab-gatsby',
   siteMetadata: {
     title: 'Gingras lab',
     description: 'The laboratory of Dr Anne-Claude Gingras at the Lunenfeld in Toronto.',
@@ -14,7 +14,13 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        useMozJpeg: true,
+        defaultQuality: 70,
+      },
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

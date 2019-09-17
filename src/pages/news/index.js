@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import formatNews from '../../components/news/format-news';
 import Head from '../../components/head';
 import Layout from '../../components/layout';
-import news from '../../components/news/news-items';
+import news from '../../components/news/news-list';
 
 import NewsPaper from '../../images/icon/newspaper.svg';
 import UserSearch from '../../images/icon/user-search.svg';

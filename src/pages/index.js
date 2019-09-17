@@ -1,11 +1,11 @@
+import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
-import Img from 'gatsby-image';
 import { graphql, Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import Head from '../components/head';
-import news from '../components/news/news-items';
+import news from '../components/news/news-list';
 
 import Analytics from '../images/icon/analytics.svg';
 import ChartNetwork from '../images/icon/chart-network.svg';
@@ -16,24 +16,24 @@ import './home.css';
 
 export const query = graphql`
   query {
-    anneClaudeGingras: file(relativePath: { eq: "people/anneclaude-gingras-home.jpg" }) {
+    anneClaudeGingras: file(relativePath: { eq: "picture/anneclaude-gingras-home.png" }) {
       childImageSharp {
-        fixed(width: 200, height: 268) {
-          ...GatsbyImageSharpFixed
+        fixed(width: 200, height: 268, toFormat: JPG) {
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     torontoIsland: file(relativePath: { eq: "picture/toronto.jpg" }) {
       childImageSharp {
         fixed(width: 800, height: 400) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
     torontoSkyline: file(relativePath: { eq: "picture/toronto-skyline.jpg" }) {
       childImageSharp {
         fixed(width: 1000, height: 250) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp
         }
       }
     }
@@ -99,13 +99,15 @@ const IndexPage = ({ data }) => (
         <h2>Latest news</h2>
         <div className="home__news-inner">
           <ul>
-            { news.slice(0, 3).map(item => (
-              <li key={item.title}>
-                <time>{item.date}</time>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </li>
-            ))}
+            {
+              news.slice(0, 3).map((item) => (
+                <li key={item.title}>
+                  <time>{item.date}</time>
+                  <h3>{item.title}</h3>
+                  <p>{item.text}</p>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </section>
@@ -115,9 +117,10 @@ const IndexPage = ({ data }) => (
           <div className="home__project-description">
             <h3>Enabling tools for proteomics</h3>
             <p>
-              Our laboratory improves interaction proteomics through the development of experimental
-              and computational approaches. These include optimized protocols for affinity purifcation
-              and BioID, and tools for mass spectrometry analysis, data management and visualization.
+              Our laboratory improves interaction proteomics through the development of
+              experimental and computational approaches. These include optimized protocols
+              for affinity purifcation and BioID, and tools for mass spectrometry analysis,
+              data management and visualization.
             </p>
             <Link
               className="nav-link"
@@ -143,9 +146,9 @@ const IndexPage = ({ data }) => (
             <p>
               While we are probably best known for our work on serine/threonine phosphatases,
               our research group has grown a lot recently, and our members are interested in several
-              cell regulatory mechanisms, including Hippo signalling, trafficking, RNA-related structures,
-              and splicing. These are being investigated using a variety of techniques, but in large part
-              through interaction proteomics.
+              cell regulatory mechanisms, including Hippo signalling, trafficking, RNA-related
+              structures, and splicing. These are being investigated using a variety of techniques,
+              but in large part through interaction proteomics.
             </p>
             <Link
               className="nav-link"
@@ -159,11 +162,12 @@ const IndexPage = ({ data }) => (
           <div className="home__project-description">
             <h3>Signalling</h3>
             <p>
-              While the activities of kinases and phosphatases are both required for controlling cell growth
-              and proliferation, the study of phosphatases has generally lagged behind that of kinases, resulting
-              in a lopsided view of signal transduction. Our lab has undertaken systematic approaches to study
-              the roughly 150 human phosphatases through systematic mapping of their interactions and through
-              functional screenings (RNA interference and microscopy).
+              While the activities of kinases and phosphatases are both required for controlling
+              cell growth and proliferation, the study of phosphatases has generally lagged behind
+              that of kinases, resulting in a lopsided view of signal transduction. Our lab has
+              undertaken systematic approaches to study the roughly 150 human phosphatases through
+              systematic mapping of their interactions and through functional screenings (RNA
+              interference and microscopy).
             </p>
             <Link
               className="nav-link"
@@ -187,11 +191,11 @@ const IndexPage = ({ data }) => (
           <div className="home__project-description">
             <h3>Cerebral cavernous malformations</h3>
             <p>
-                In 2009 we reported on the discovery of a novel large protein complex, which we termed
-                STRIPAK, for STRiatin Interacting Phosphatase And Kinase, which contains both the PP2A
-                phosphatase and a Ste20 kinase. Importantly, we also found that the protein CCM3 is a
-                component of STRIPAK, leading us into further studies to elaborate the mechanisms
-                underpinning CCM disease.
+                In 2009 we reported on the discovery of a novel large protein complex, which
+                we termed STRIPAK, for STRiatin Interacting Phosphatase And Kinase, which contains
+                both the PP2A phosphatase and a Ste20 kinase. Importantly, we also found that the
+                protein CCM3 is a component of STRIPAK, leading us into further studies to
+                elaborate the mechanisms underpinning CCM disease.
             </p>
             <Link
               className="nav-link"

@@ -27,6 +27,7 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "gh-pages": "^2.1.1",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -34,9 +35,11 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean && gatsby build --prefix-paths",
-    "clean": "rm -rf .cache public",
-    "develop": "gatsby develop",
+    "build": "npm run clean && npm run publications && gatsby build --prefix-paths",
+    "clean": "rm -rf .cache public/*",
+    "deploy": "npm run build && gh-pages -d public",
+    "dev": "gatsby develop",
+    "publications": "node scripts/publications/index.js",
     "start": "npm run develop",
     "serve": "gatsby serve"
   },
