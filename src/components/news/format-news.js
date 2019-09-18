@@ -7,12 +7,17 @@ const listYear = (year, data) => (
   </div>
 );
 
+const parseYear = (date) => {
+  const reYear = new RegExp(/(\d{4})/);
+  return Number(date.match(reYear)[0]);
+};
+
 const formatNews = (articles) => {
   const articleData = [];
-  let currentYear = 2019;
+  let currentYear = parseYear(articles[0].date);
   let yearData = [];
   articles.forEach((article) => {
-    const year = Number(article.date.split(', ')[1]);
+    const year = parseYear(article.date);
     if (year !== currentYear) {
       articleData.push(listYear(currentYear, yearData));
       yearData = [];
