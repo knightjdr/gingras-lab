@@ -44,7 +44,10 @@ const Research = () => (
               className="research__image-svg"
               src={SystemsBiology}
             />
-            <figcaption>Targeted compartments for mapping the cell.</figcaption>
+            <figcaption>
+              Targeted compartments for mapping the cell. Image courtesy of
+              Kento Abe.
+            </figcaption>
           </figure>
         </section>
         <section id="signalling">
@@ -55,7 +58,10 @@ const Research = () => (
               className="research__image-svg"
               src={Signalling}
             />
-            <figcaption>MTOR signalling at the lysosome membrane.</figcaption>
+            <figcaption>
+              MTOR signalling at the lysosome membrane. Image courtesy of
+              Geoff Hesketh.
+            </figcaption>
           </figure>
         </section>
         <section id="ccm">
