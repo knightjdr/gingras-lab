@@ -3,10 +3,19 @@
 ## Development
 
 ```
-npm run develop
+npm run dev
 ```
 
 Site will be hosted at `http://localhost:8000/`.
+
+## Update publication list
+
+This will generate a json file with the list of publications in `scripts/publications/output`,
+and Gatsby will read publications from there.
+
+```
+npm run publications
+```
 
 ## Build
 
@@ -16,11 +25,10 @@ This will clean Gatsby cache and the `public` folder. The path prefix is current
 npm run build
 ```
 
-## Update publication list
+## Build + deploy
 
-This will generate a json file with the list of publications in `scripts/publications/output`,
-and Gatsby will read publications from there.
+Deploy to `gh-pages`
 
 ```
-npm run publications
+npm run deploy
 ```
