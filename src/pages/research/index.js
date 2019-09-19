@@ -6,6 +6,7 @@ import Link from '../../components/link/link';
 
 import CCM from '../../images/research/ccm-stripak.svg';
 import Microscope from '../../images/icon/microscope.svg';
+import Proteomics from '../../images/research/proteomics.svg';
 import Signalling from '../../images/research/signalling-mtor.svg';
 import SystemsBiology from '../../images/research/systemsbiology-cellmap.svg';
 
@@ -38,6 +39,17 @@ const Research = () => (
         </div>
         <section id="proteomics">
           <h2>Enabling tools for proteomics</h2>
+          <figure>
+            <img
+              alt="AP-MS and BioID workflows"
+              className="research__image-svg"
+              src={Proteomics}
+            />
+            <figcaption>
+              AP-MS and BioID workflows. Image courtesy of
+              Kento Abe.
+            </figcaption>
+          </figure>
         </section>
         <section id="systemsbiology">
           <h2>Systems biology</h2>
