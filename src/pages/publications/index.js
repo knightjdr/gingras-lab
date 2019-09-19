@@ -12,7 +12,10 @@ import './publications.css';
 
 const Publications = () => (
   <Layout>
-    <Head title="Publications" />
+    <Head
+      description="Publications from the laboratory of Dr. Anne-Claude Gingras."
+      title="Publications"
+    />
     <div className="publications">
       <section>
         <header>

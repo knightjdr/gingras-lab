@@ -15,7 +15,10 @@ import './news.css';
 
 const News = () => (
   <Layout>
-    <Head title="News" />
+    <Head
+      description="Read the latest news from the laboratory of Dr. Anne-Claude Gingras."
+      title="News"
+    />
     <div className="news">
       <section>
         <header>

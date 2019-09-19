@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '/gingras-lab-gatsby',
   siteMetadata: {
     title: 'Gingras lab',
-    description: 'The laboratory of Dr Anne-Claude Gingras at the Lunenfeld in Toronto.',
+    description: 'The laboratory of Dr. Anne-Claude Gingras at the Lunenfeld in Toronto.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

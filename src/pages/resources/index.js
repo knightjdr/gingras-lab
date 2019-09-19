@@ -43,7 +43,10 @@ export const query = graphql`
 
 const Resources = ({ data }) => (
   <Layout>
-    <Head title="Resources" />
+    <Head
+      description="Download resources from the laboratory of Dr. Anne-Claude Gingras."
+      title="Resources"
+    />
     <div className="resources">
       <section>
         <header>

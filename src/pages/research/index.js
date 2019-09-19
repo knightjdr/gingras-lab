@@ -13,7 +13,10 @@ import './research.css';
 
 const Research = () => (
   <Layout>
-    <Head title="Research" />
+    <Head
+      description="The research interests of Dr. Anne-Claude Gingras and active projects in the lab."
+      title="Research"
+    />
     <div className="research">
       <section>
         <header>

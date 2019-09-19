@@ -55,7 +55,10 @@ const People = ({ data }) => {
 
   return (
     <Layout>
-      <Head title="People" />
+      <Head
+        description="Meet the members of the laboratory of Dr. Anne-Claude Gingras."
+        title="People"
+      />
       <div className="people">
         <section>
           <header>

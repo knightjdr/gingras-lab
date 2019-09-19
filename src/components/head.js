@@ -1,7 +1,7 @@
 import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql, useStaticQuery, withPrefix } from 'gatsby';
 
 function Head({
   description,
@@ -48,6 +48,7 @@ function Head({
         },
       ].concat(meta)}
     >
+      <link type="text/plain" rel="author" href={withPrefix('/humans.txt')} />
       <script type="text/javascript">
         {`
           WebFontConfig = {

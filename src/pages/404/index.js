@@ -7,7 +7,10 @@ import './404.css';
 
 const NotFoundPage = () => (
   <>
-    <Head title="404: Not found" />
+    <Head
+      description="Page not found."
+      title="404: Not found"
+    />
     <div className="missing">
       <h1>404</h1>
       <p>

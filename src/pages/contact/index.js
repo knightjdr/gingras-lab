@@ -10,7 +10,10 @@ import './contact.css';
 
 const Contact = () => (
   <Layout>
-    <Head title="Contact" />
+    <Head
+      description="Contact information for the laboratory of Dr. Anne-Claude Gingras."
+      title="Contact"
+    />
     <div className="contact">
       <section>
         <header>
