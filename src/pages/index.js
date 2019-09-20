@@ -12,7 +12,7 @@ import news from '../components/news/news-list';
 import Analytics from '../images/icon/analytics.svg';
 import ChartNetwork from '../images/icon/chart-network.svg';
 import HeadSideBrain from '../images/icon/head-side-brain.svg';
-import Wifi from '../images/icon/wifi.svg';
+import Wifi from '../images/icon/waveform.svg';
 
 import './home.css';
 
