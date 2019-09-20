@@ -39,6 +39,7 @@
   transform-origin: top right;
   transition: 0.2s all ease;
   white-space: nowrap;
+  z-index: 5;
 }
 .navbar__menu-button {
   background-color: transparent;
