@@ -4,33 +4,29 @@ import Link from '../link/link';
 
 import articles from '../../../scripts/publications/output/publications';
 
+const createAuthorElement = (author) => (
+  author === 'Gingras AC'
+    ? <span className="underline" key="Gingras AC">Gingras AC</span>
+    : author
+);
+
+const createAuthorSeparator = (index, numberOfAuthors) => {
+  if (numberOfAuthors === 1 || index === numberOfAuthors - 1) {
+    return '';
+  } if (index < numberOfAuthors - 2) {
+    return ', ';
+  }
+  return ' and ';
+};
+
 const formatAuthors = (authors, title) => {
-  const noAuthors = authors.length;
+  const numberOfAuthors = authors.length;
   return authors.map((author, index) => {
-    const authorElement = author === 'Gingras AC'
-      ? <span className="underline" key="Gingras AC">Gingras AC</span>
-      : author;
-    if (index < noAuthors - 2) {
-      return (
-        <Fragment key={`${author}-${title}`}>
-          {authorElement}
-          ,
-          {' '}
-        </Fragment>
-      );
-    } if (index < noAuthors - 1) {
-      return (
-        <Fragment key={`${author}-${title}`}>
-          {authorElement}
-          {' '}
-        </Fragment>
-      );
-    }
+    const authorElement = createAuthorElement(author);
     return (
       <Fragment key={`${author}-${title}`}>
-        and
-        {' '}
         {authorElement}
+        {createAuthorSeparator(index, numberOfAuthors)}
       </Fragment>
     );
   });
