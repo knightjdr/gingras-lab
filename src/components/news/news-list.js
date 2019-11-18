@@ -15,6 +15,7 @@ const newsItems = [
         <Link to="https://www.biorxiv.org/content/10.1101/796391v1">bioR&chi;iv</Link>
         .
         All data is publicly available at
+        {' '}
         <Link to="https://humancellmap.org/">humancellmap.org</Link>
         .
       </>
