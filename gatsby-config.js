@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/gingras-lab-gatsby',
+  pathPrefix: '/gingras-lab',
   siteMetadata: {
     title: 'Gingras lab',
     description: 'The laboratory of Dr. Anne-Claude Gingras at the Lunenfeld in Toronto.',

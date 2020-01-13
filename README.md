@@ -19,7 +19,7 @@ npm run publications
 
 ## Build
 
-This will clean Gatsby cache and the `public` folder. The path prefix is currently `gingras-lab-gatsby` for github hosting.
+This will clean Gatsby cache and the `public` folder. The path prefix is currently `gingras-lab` for github hosting.
 
 ```
 npm run build
