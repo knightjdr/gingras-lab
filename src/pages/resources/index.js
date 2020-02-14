@@ -17,6 +17,13 @@ import './resources.css';
 
 export const query = graphql`
   query {
+    cellmap: file(relativePath: { eq: "resource/cellmap.jpg" }) {
+      childImageSharp {
+        fixed(width: 400, height: 251) {
+          ...GatsbyImageSharpFixed_withWebp
+        }
+      }
+    }
     geneInfo: file(relativePath: { eq: "resource/gene-info.jpg" }) {
       childImageSharp {
         fixed(width: 400, height: 250) {
@@ -50,9 +57,7 @@ const Resources = ({ data }) => (
     <div className="resources">
       <section>
         <header>
-          <h1>
-          Resources
-          </h1>
+          <h1>Resources</h1>
           <img
             alt="Computer server"
             height="25"
@@ -75,6 +80,28 @@ const Resources = ({ data }) => (
             />
           </header>
           <ul>
+            <li>
+              <h3>Human Cell Map</h3>
+              <div className="resources__resource-description resource__gene-info">
+                <div>
+                  <p>
+                    The Human Cell Map is a project to map the cell using the biotin-based
+                    proximity-labelling technique BioID. It currently contains localization
+                    information on over 4000 proteins in HEK 293 cells.
+                  </p>
+                  <ul>
+                    <li><Link to="https://humancellmap.org">Humancellmap</Link></li>
+                    <li><Link to="https://www.biorxiv.org/content/10.1101/796391v1">Publication</Link></li>
+                  </ul>
+                </div>
+                <div className="resource__image">
+                  <Img
+                    alt="Screenshot of GIX report on PubMed"
+                    fixed={data.cellmap.childImageSharp.fixed}
+                  />
+                </div>
+              </div>
+            </li>
             <li>
               <h3>Gene Information eXtension (GIX)</h3>
               <div className="resources__resource-description resource__gene-info">
@@ -652,6 +679,11 @@ const Resources = ({ data }) => (
 
 Resources.propTypes = {
   data: PropTypes.shape({
+    cellmap: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fixed: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
     geneInfo: PropTypes.shape({
       childImageSharp: PropTypes.shape({
         fixed: PropTypes.shape({}).isRequired,
