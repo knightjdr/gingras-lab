@@ -60,12 +60,6 @@ const peopleList = [
     title: 'Postdoctoral fellow',
   },
   {
-    email: 'itrinh@lunenfeld.ca',
-    file: 'irene-trinh',
-    name: 'Irene Trinh',
-    title: 'Postdoctoral fellow',
-  },
-  {
     email: 'clmartin@lunenfeld.ca',
     file: 'claire-martin',
     name: 'Claire Martin',
