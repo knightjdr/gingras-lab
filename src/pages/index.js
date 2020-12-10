@@ -12,6 +12,7 @@ import news from '../components/news/news-list';
 import Analytics from '../images/icon/analytics.svg';
 import ChartNetwork from '../images/icon/chart-network.svg';
 import HeadSideBrain from '../images/icon/head-side-brain.svg';
+import Virus from '../images/icon/virus.svg';
 import Wifi from '../images/icon/waveform.svg';
 
 import './home.css';
@@ -76,13 +77,13 @@ const IndexPage = ({ data }) => (
         <div className="home__anne-claude-about">
           <h2>Dr. Anne-Claude Gingras</h2>
           <p>
-              Dr. Anne-Claude Gingras is a Senior Investigator at the
-              LTRI and Professor in the Department of Molecular
-              Genetics, University of Toronto. Dr. Gingras is an expert
-              in mass spectrometry-based proteomics, a technology that enables
-              the identification and quantification of proteins from biological
-              samples. She develops tools to better understand how proteins associate
-              with one another to perform their functions.
+            Dr. Anne-Claude Gingras is a Senior Investigator at the
+            LTRI and Professor in the Department of Molecular
+            Genetics, University of Toronto. Dr. Gingras is an expert
+            in mass spectrometry-based proteomics, a technology that enables
+            the identification and quantification of proteins from biological
+            samples. She develops tools to better understand how proteins associate
+            with one another to perform their functions.
           </p>
           <div className="home__anne-claude-links">
             <Link to="https://www.ncbi.nlm.nih.gov/pubmed?term=Gingras%20AC%5BAuthor%5D">
@@ -117,6 +118,28 @@ const IndexPage = ({ data }) => (
         <h2>Research</h2>
         <div className="home__project">
           <div className="home__project-description">
+            <h3>COVID-19</h3>
+            <p>
+              We have projects in the lab studying the interactome and life cycle of the SARS-CoV-2
+              virus in infected cells, while also developing assays for the
+              detection of serum and plasma antibodies that block the interaction of the virus
+              with host cell receptors.
+            </p>
+            <Link
+              nav
+              to="/research/#covid19"
+            >
+              Read more
+            </Link>
+          </div>
+          <img
+            alt="Virus"
+            height="150"
+            src={Virus}
+          />
+        </div>
+        <div className="home__project">
+          <div className="home__project-description">
             <h3>Enabling tools for proteomics</h3>
             <p>
               Our laboratory improves interaction proteomics through the development of
@@ -138,11 +161,6 @@ const IndexPage = ({ data }) => (
           />
         </div>
         <div className="home__project">
-          <img
-            alt="Node and edge network"
-            height="150"
-            src={ChartNetwork}
-          />
           <div className="home__project-description">
             <h3>Systems biology</h3>
             <p>
@@ -159,6 +177,11 @@ const IndexPage = ({ data }) => (
               Read more
             </Link>
           </div>
+          <img
+            alt="Node and edge network"
+            height="150"
+            src={ChartNetwork}
+          />
         </div>
         <div className="home__project">
           <div className="home__project-description">
@@ -185,19 +208,14 @@ const IndexPage = ({ data }) => (
           />
         </div>
         <div className="home__project">
-          <img
-            alt="Cartoon of human head and brain"
-            height="150"
-            src={HeadSideBrain}
-          />
           <div className="home__project-description">
             <h3>Cerebral cavernous malformations</h3>
             <p>
-                In 2009 we reported on the discovery of a novel large protein complex, which
-                we termed STRIPAK, for STRiatin Interacting Phosphatase And Kinase, which contains
-                both the PP2A phosphatase and a Ste20 kinase. Importantly, we also found that the
-                protein CCM3 is a component of STRIPAK, leading us into further studies to
-                elaborate the mechanisms underpinning CCM disease.
+              In 2009 we reported on the discovery of a novel large protein complex, which
+              we termed STRIPAK, for STRiatin Interacting Phosphatase And Kinase, which contains
+              both the PP2A phosphatase and a Ste20 kinase. Importantly, we also found that the
+              protein CCM3 is a component of STRIPAK, leading us into further studies to
+              elaborate the mechanisms underpinning CCM disease.
             </p>
             <Link
               nav
@@ -206,6 +224,11 @@ const IndexPage = ({ data }) => (
               Read more
             </Link>
           </div>
+          <img
+            alt="Cartoon of human head and brain"
+            height="150"
+            src={HeadSideBrain}
+          />
         </div>
       </section>
     </div>

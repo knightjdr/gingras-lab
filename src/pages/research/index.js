@@ -37,6 +37,9 @@ const Research = () => (
           <Link nav to="/research/#ccm">CCM</Link>
           <Link nav to="/research/#funding">Funding</Link>
         </div>
+        <section id="covid19">
+          <h2>SARS-CoV-2 and COVID-19</h2>
+        </section>
         <section id="proteomics">
           <h2>Enabling tools for proteomics</h2>
           <figure>

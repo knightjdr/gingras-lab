@@ -128,6 +128,9 @@
 .home__projects .fa-primary {
   fill: #12c2e9;
 }
+.home__projects .home__project:nth-child(odd) {
+  flex-direction: row-reverse;
+}
 
 .home__waves {
   background-image: url(../images/graphic/waves.svg);
