@@ -107,9 +107,9 @@ const Resources = ({ data }) => (
               <div className="resources__resource-description resource__gene-info">
                 <div>
                   <p>
-                    Gene Information eXtension (GIX) is a browser extension for Chrome and
-                    Firefox that allows users to retrieve gene information directly on any
-                    website simply by double clicking a gene name. It supports several
+                    Gene Information eXtension (GIX) is a browser extension for Chrome, Edge,
+                    Firefox and Safari that allows users to retrieve gene information directly
+                    on any website simply by double clicking a gene name. It supports several
                     organisms and gene reports are customizable.
                   </p>
                   <ul>
