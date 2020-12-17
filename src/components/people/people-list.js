@@ -30,18 +30,6 @@ const peopleList = [
     title: 'Research technician',
   },
   {
-    email: 'couzens@lunenfeld.ca',
-    file: 'amber-couzens',
-    name: 'Amber Couzens',
-    title: 'Research associate',
-  },
-  {
-    email: 'jyoun@lunenfeld.ca',
-    file: 'jiyoung-youn',
-    name: 'Ji Young Youn',
-    title: 'Postdoctoral fellow',
-  },
-  {
     email: 'payman@lunenfeld.ca',
     file: 'payman-samavarchi-tehrani',
     name: 'Payman Samavarchi Tehrani',
