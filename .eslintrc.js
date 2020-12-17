@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
   },
   extends: [
     'airbnb',
@@ -22,10 +23,10 @@ module.exports = {
     'react',
   ],
   rules: {
-    'react/jsx-filename-extension': [1, { "extensions": [".js", ".jsx"] }],
-    "react/jsx-props-no-spreading": [0, {
-        "html": "ignore",
-        "custom": "ignore"
-    }]
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/jsx-props-no-spreading': [0, {
+      html: 'ignore',
+      custom: 'ignore',
+    }],
   },
 };

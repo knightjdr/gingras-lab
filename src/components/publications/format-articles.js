@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import Link from '../link/link';
 
-import articles from '../../../scripts/publications/output/publications';
+import articles from '../../../scripts/publications/output/publications.json';
 
 const createAuthorElement = (author) => (
   author === 'Gingras AC'

@@ -12,7 +12,6 @@ import UserSearch from '../../images/icon/user-search.svg';
 
 import './news.css';
 
-
 const News = () => (
   <Layout>
     <Head
