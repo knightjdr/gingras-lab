@@ -31,6 +31,7 @@ const Research = () => (
           />
         </header>
         <div className="research__links">
+          <Link nav to="/research/#covid19">COVID-19</Link>
           <Link nav to="/research/#proteomics">Proteomics</Link>
           <Link nav to="/research/#systemsbiology">Systems biology</Link>
           <Link nav to="/research/#signalling">Signalling</Link>
