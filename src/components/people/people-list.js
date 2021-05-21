@@ -6,9 +6,9 @@ const peopleList = [
     title: 'Principal investigator',
   },
   {
-    email: 'rajendran@lunenfeld.ca',
-    file: 'dushyandi-rajendran',
-    name: 'Dushyandi Rajendran',
+    email: 'bkhatri@lunenfeld.ca',
+    file: 'bhavisha-khatri',
+    name: 'Bhavisha Khatri',
     title: 'Lab manager',
   },
   {
@@ -18,33 +18,9 @@ const peopleList = [
     title: 'Research technician',
   },
   {
-    email: 'bkhatri@lunenfeld.ca',
-    file: 'bhavisha-khatri',
-    name: 'Bhavisha Khatri',
-    title: 'Research technician',
-  },
-  {
-    email: 'habdouni@lunenfeld.ca',
-    file: 'hala-abdouni',
-    name: 'Hala Abdouni',
-    title: 'Research technician',
-  },
-  {
-    email: 'payman@lunenfeld.ca',
-    file: 'payman-samavarchi-tehrani',
-    name: 'Payman Samavarchi Tehrani',
-    title: 'Postdoctoral fellow',
-  },
-  {
     email: 'hesketh@lunenfeld.ca',
     file: 'geoff-hesketh',
     name: 'Geoffrey Hesketh',
-    title: 'Postdoctoral fellow',
-  },
-  {
-    email: 'shenz@lunenfeld.ca',
-    file: 'shen-zhang',
-    name: 'Shen Zhang',
     title: 'Postdoctoral fellow',
   },
   {
@@ -69,12 +45,6 @@ const peopleList = [
     email: 'bdyakov@lunenfeld.ca',
     file: 'boris-dyakov',
     name: 'Boris Dyakov',
-    title: 'Graduate student',
-  },
-  {
-    email: 'bpiette@lunenfeld.ca',
-    file: 'ben-piette',
-    name: 'Benjamin Piette',
     title: 'Graduate student',
   },
   {
@@ -106,6 +76,30 @@ const peopleList = [
     file: 'julia-kitaygorodsky',
     name: 'Julia Kitaygorodsky',
     title: 'Graduate student',
+  },
+  {
+    email: 'ralmismar@lunenfeld.ca',
+    file: '',
+    name: 'Rasha Al Mismar',
+    title: 'Graduate student',
+  },
+  {
+    email: 'asrinivasan@lunenfeld.ca',
+    file: '',
+    name: 'Aparna Srinivasan',
+    title: 'Graduate student',
+  },
+  {
+    email: 'ngrinberg@lunenfeld.ca',
+    file: '',
+    name: 'Nicolas Grinberg',
+    title: 'Graduate student',
+  },
+  {
+    email: 'mfazel@lunenfeld.ca',
+    file: '',
+    name: 'Mahya Fazel',
+    title: '',
   },
   {
     email: 'jknight@lunenfeld.ca',
@@ -142,6 +136,30 @@ const peopleList = [
     file: 'karen-colwill',
     name: 'Karen Colwill',
     title: 'Manager, NBCC',
+  },
+  {
+    email: 'bseale@lunenfeld.ca',
+    file: '',
+    name: 'Brendon  Seale',
+    title: 'Research associate',
+  },
+  {
+    email: 'qhu@lunenfeld.ca',
+    file: '',
+    name: 'Queenie Hu',
+    title: '',
+  },
+  {
+    email: '',
+    file: '',
+    name: 'Monica Dayam',
+    title: '',
+  },
+  {
+    email: '',
+    file: '',
+    name: 'Rod Hardy',
+    title: '',
   },
 ];
 

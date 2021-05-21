@@ -10,17 +10,22 @@ const formatPeople = (images) => (
     <div key={person.name}>
       <Img
         alt={person.name}
-        fixed={images[person.file]}
+        fixed={person.file ? images[person.file] : images.user}
       />
       <div>
         <h2>{person.name}</h2>
         <h3>{person.title}</h3>
-        <Link
-          nav
-          to={`mailto:${person.email}`}
-        >
-          {person.email}
-        </Link>
+        {
+          person.email
+          && (
+            <Link
+              nav
+              to={`mailto:${person.email}`}
+            >
+              {person.email}
+            </Link>
+          )
+        }
       </div>
     </div>
   ))

@@ -17,6 +17,10 @@ and Gatsby will read publications from there.
 npm run publications
 ```
 
+## Personal images
+
+Images are 450px wide by 600px tall.
+
 ## Build
 
 This will clean Gatsby cache and the `public` folder. The path prefix is currently `gingras-lab` for github hosting.
