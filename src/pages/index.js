@@ -82,8 +82,8 @@ const IndexPage = ({ data }) => (
             Genetics, University of Toronto. Dr. Gingras is an expert
             in mass spectrometry-based proteomics, a technology that enables
             the identification and quantification of proteins from biological
-            samples. She develops tools to better understand how proteins associate
-            with one another to perform their functions.
+            samples. Her lab specializes in developing tools to better understand
+            how proteins associate with one another to perform their functions.
           </p>
           <div className="home__anne-claude-links">
             <Link to="https://www.ncbi.nlm.nih.gov/pubmed?term=Gingras%20AC%5BAuthor%5D">
@@ -120,7 +120,9 @@ const IndexPage = ({ data }) => (
           <div className="home__project-description">
             <h3>COVID-19</h3>
             <p>
-              We have projects in the lab studying the interactome and life cycle of the SARS-CoV-2
+              When the COVID-19 pandemic began in 2020, the lab quickly shifted some attention
+              and resources to aid in the global research effort.
+              We began studying the interactome and life cycle of the SARS-CoV-2
               virus in infected cells, while also developing assays for the
               detection of serum and plasma antibodies that block the interaction of the virus
               with host cell receptors.
@@ -142,7 +144,7 @@ const IndexPage = ({ data }) => (
           <div className="home__project-description">
             <h3>Enabling tools for proteomics</h3>
             <p>
-              Our laboratory improves interaction proteomics through the development of
+              Our laboratory aims to continuously improve interaction proteomics through the development of
               experimental and computational approaches. These include optimized protocols
               for affinity purifcation and BioID, and tools for mass spectrometry analysis,
               data management and visualization.
@@ -166,8 +168,8 @@ const IndexPage = ({ data }) => (
             <p>
               While we are probably best known for our work on serine/threonine phosphatases,
               our research group has grown a lot recently, and our members are interested in several
-              cell regulatory mechanisms, including Hippo signalling, trafficking, RNA-related
-              structures, and splicing. These are being investigated using a variety of techniques,
+              cell regulatory mechanisms, including Hippo signalling, endosomal trafficking, RNA-related
+              structures and splicing. These are being investigated using a variety of techniques,
               but in large part through interaction proteomics.
             </p>
             <Link
@@ -187,7 +189,7 @@ const IndexPage = ({ data }) => (
           <div className="home__project-description">
             <h3>Signalling</h3>
             <p>
-              While the activities of kinases and phosphatases are both required for controlling
+              Although the activities of kinases and phosphatases are both required for controlling
               cell growth and proliferation, the study of phosphatases has generally lagged behind
               that of kinases, resulting in a lopsided view of signal transduction. Our lab has
               undertaken systematic approaches to study the roughly 150 human phosphatases through
@@ -212,7 +214,7 @@ const IndexPage = ({ data }) => (
             <h3>Cerebral cavernous malformations</h3>
             <p>
               In 2009 we reported on the discovery of a novel large protein complex, which
-              we termed STRIPAK, for STRiatin Interacting Phosphatase And Kinase, which contains
+              we termed STRIPAK, for STRiatin Interacting Phosphatase And Kinase complex, which contains
               both the PP2A phosphatase and a Ste20 kinase. Importantly, we also found that the
               protein CCM3 is a component of STRIPAK, leading us into further studies to
               elaborate the mechanisms underpinning CCM disease.

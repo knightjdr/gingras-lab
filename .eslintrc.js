@@ -23,6 +23,12 @@ module.exports = {
     'react',
   ],
   rules: {
+    'max-len': [
+      'error',
+      {
+        code: 120,
+      },
+    ],
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/jsx-props-no-spreading': [0, {
       html: 'ignore',

@@ -4,17 +4,17 @@ import Link from '../link/link';
 
 const newsItems = [
   {
-    date: 'October 7, 2019',
-    title: 'Human cell map on bioRxiv',
+    date: 'April 29, 2021',
+    title: 'Human cell map in press at Nature',
     text: (
       <>
-        The manuscript describing a proximity map of human cell by MoGen PhD student Chris Go,
-        bioinformatician James Knight and many colleagues has been submitted for publication
-        and made available as a preprint at
+        Our manuscript describing a proximity map of a human cell by MoGen PhD student Chris Go,
+        bioinformatician James Knight and many colleagues has been accepted for publication
+        in Nature. The current preprint is available at
         {' '}
-        <Link to="https://www.biorxiv.org/content/10.1101/796391v1">bioR&chi;iv</Link>
+        <Link to="https://www.biorxiv.org/content/10.1101/796391v2">bioR&chi;iv</Link>
         .
-        All data is publicly available at
+        All data associated with this study is publicly available at
         {' '}
         <Link to="https://humancellmap.org/">humancellmap.org</Link>
         .
