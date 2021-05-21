@@ -10,6 +10,7 @@ import Link from '../../components/link/link';
 import Database from '../../images/icon/database.svg';
 import File from '../../images/icon/file-alt.svg';
 import Flask from '../../images/icon/flask.svg';
+import Handshake from '../../images/icon/handshake.svg';
 import Save from '../../images/icon/save.svg';
 import Server from '../../images/icon/server.svg';
 
@@ -65,11 +66,34 @@ const Resources = ({ data }) => (
           />
         </header>
         <div className="resources__links">
+          <Link nav to="/resources/#partners">Partners</Link>
           <Link nav to="/resources/#software">Software</Link>
           <Link nav to="/resources/#protocols">Protocols</Link>
           <Link nav to="/resources/#reagents">Reagents</Link>
           <Link nav to="/resources/#data">Data</Link>
         </div>
+        <section className="resources__resource resources__resource_no-border">
+          <header>
+            <h2 id="partners">Partner websites</h2>
+            <img
+              alt="Two hands shaking"
+              height="20"
+              src={Handshake}
+            />
+          </header>
+          <ul>
+            <li>
+              <Link to="https://nbcc.lunenfeld.ca">
+                Network Biology Collaborative Centre (NBCC)
+              </Link>
+            </li>
+            {/* <li>
+              <Link to="">
+                Coronavirus Variants Rapid Response Network (CoVaRR-Net )
+              </Link>
+            </li> */}
+          </ul>
+        </section>
         <section className="resources__resource">
           <header>
             <h2 id="software">Software</h2>

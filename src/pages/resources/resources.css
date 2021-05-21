@@ -32,7 +32,7 @@
 .resources__resource > ul > li {
   padding-bottom: 15px;
 }
-.resources__resource > ul > li:not(:last-of-type) {
+.resources__resource:not(.resources__resource_no-border) > ul > li:not(:last-of-type) {
   border-bottom: 1px solid rgba(51, 51, 51, 0.1);
   margin-bottom: 30px;
 }
