@@ -28,24 +28,14 @@ const News = () => (
             src={UserSearch}
           />
         </header>
-        <h2>Active listings</h2>
+        {/* <h2>Active listings</h2>
         <ul>
           <li>
             Postdoctoral position in chemical proteomics (
             <Link to="https://apply.interfolio.com/66200">application</Link>
             ).
           </li>
-          <li>
-            Postdoctoral position in computational proteomics (
-            <Link to="https://apply.interfolio.com/58107">application</Link>
-            ).
-          </li>
-          <li>
-            Research Associate position in chemical proteomics (
-            <Link to="https://contact2.mshri.on.ca/hr/DEFAULT.ASP?page=jobDetail&amp;job=1225">application</Link>
-            ).
-          </li>
-        </ul>
+        </ul> */}
         <h2>Postdocs</h2>
         <p>
           The laboratory is always interested in recruiting highly motivated postdoctoral fellows
@@ -71,6 +61,9 @@ const News = () => (
         </p>
         <h2>Summer students</h2>
         <p>
+          The summer student program is currently only hold due to COVID-19.
+        </p>
+        {/* <p>
           Summer students are exclusively selected from successful applicants to the
           {' '}
           <Link to="http://research.lunenfeld.ca/rtc/">Research Training Center (RTC)</Link>
@@ -80,7 +73,7 @@ const News = () => (
           <Link to="http://research.lunenfeld.ca/rtc/?page=Summer%20Research%20Program">Applications</Link>
           {' '}
           are available online and need to be filled by February 15th yearly.
-        </p>
+        </p> */}
       </section>
       <section className="news__articles">
         <header>
