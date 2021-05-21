@@ -63,12 +63,15 @@
   opacity: 1;
   transform: scale(1);
 }
+.navbar__menu li {
+  padding: 0.5rem 0;
+}
 .navbar__right {
   margin-left: auto;
   position: relative;
 }
-.navbar__right > a {
-  margin-right: 10px;
+.navbar__right > * {
+  margin-right: 1rem;
 }
 .navbar__left a:link,
 .navbar__right a:link {
@@ -89,6 +92,19 @@
 
 .navbar__shadow {
   box-shadow: var(--boxShadow);
+}
+
+.navbar__icon svg {
+  padding-bottom: 0.3rem;
+  vertical-align: middle;
+}
+.navbar__right .navbar__icon:focus,
+.navbar__right .navbar__icon:hover {
+  border-width: 0;
+}
+.navbar__right .navbar__icon:focus svg,
+.navbar__right .navbar__icon:hover svg {
+  fill: #5C6BC0;
 }
 
 @media (max-width: 800px) {

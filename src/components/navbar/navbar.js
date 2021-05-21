@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
+import Icons from './icons';
 import Link from '../link/link';
 import Menu from './menu-container';
 
@@ -19,6 +20,7 @@ const Navbar = ({ shadow }) => (
       </span>
     </span>
     <span className="navbar__right">
+      <Icons />
       <Link to="/contact/">
         Contact
       </Link>

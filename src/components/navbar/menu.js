@@ -86,6 +86,14 @@ const Menu = forwardRef((
           Contact
         </Link>
       </li>
+      <li>
+        <Link
+          nav
+          to="https://twitter.com/gingraslab1"
+        >
+          Twitter
+        </Link>
+      </li>
     </ul>
   </span>
 ));
