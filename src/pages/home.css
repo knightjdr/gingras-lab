@@ -128,7 +128,7 @@
 .home__projects .fa-primary {
   fill: #12c2e9;
 }
-.home__projects .home__project:nth-child(odd) {
+.home__projects .home__project:nth-of-type(odd) {
   flex-direction: row-reverse;
 }
 
@@ -237,7 +237,7 @@
   .home__project {
     flex-direction: column;
   }
-  .home__projects > .home__project:nth-of-type(odd) {
+  .home__projects .home__project:nth-of-type(n) {
     flex-direction: column-reverse;
   }
   .home__waves {
