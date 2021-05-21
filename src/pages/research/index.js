@@ -7,6 +7,7 @@ import Link from '../../components/link/link';
 import CCM from '../../images/research/ccm-stripak.svg';
 import Microscope from '../../images/icon/microscope.svg';
 import Proteomics from '../../images/research/proteomics.svg';
+import Serology from '../../images/research/serology.svg';
 import Signalling from '../../images/research/signalling-mtor.svg';
 import SystemsBiology from '../../images/research/systemsbiology-cellmap.svg';
 
@@ -40,6 +41,16 @@ const Research = () => (
         </div>
         <section id="covid19">
           <h2>SARS-CoV-2 and COVID-19</h2>
+          <figure>
+            <img
+              alt="COVID-19 serology workflow"
+              className="research__image-svg research__image_padding"
+              src={Serology}
+            />
+            <figcaption>
+              Serology workflows. Image courtesy of Kento Abe.
+            </figcaption>
+          </figure>
         </section>
         <section id="proteomics">
           <h2>Enabling tools for proteomics</h2>
@@ -50,8 +61,7 @@ const Research = () => (
               src={Proteomics}
             />
             <figcaption>
-              AP-MS and BioID workflows. Image courtesy of
-              Kento Abe.
+              AP-MS and BioID workflows. Image courtesy of Kento Abe.
             </figcaption>
           </figure>
         </section>
