@@ -139,7 +139,7 @@ const peopleList = [
   },
   {
     email: 'bseale@lunenfeld.ca',
-    file: '',
+    file: 'brendon-seale',
     name: 'Brendon  Seale',
     title: 'Research associate',
   },
