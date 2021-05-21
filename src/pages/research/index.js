@@ -120,6 +120,7 @@ const Research = () => (
             <li><Link to="https://www.innovation.ca/">Canada Foundation for Innovation</Link></li>
             <li><Link to="https://www.nih.gov/">National Institutes of Health</Link></li>
             <li><Link to="http://www.cihr-irsc.gc.ca/e/13147.html">CIHR Institute of Genetics</Link></li>
+            <li><Link to="https://www.computecanada.ca/">Compute Canada</Link></li>
             <li><Link to="http://www.chairs-chaires.gc.ca/home-accueil-eng.aspx">Canada Research Chair</Link></li>
           </ul>
         </section>
