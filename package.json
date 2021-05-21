@@ -39,7 +39,7 @@
   "scripts": {
     "build": "npm run publications && gatsby build --prefix-paths",
     "clean": "rm -rf .cache",
-    "deploy": "npm run build && gh-pages -d public",
+    "deploy": "gh-pages -d public",
     "dev": "gatsby develop",
     "publications": "node scripts/publications/index.js",
     "serve": "gatsby serve"
