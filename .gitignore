@@ -70,3 +70,5 @@ yarn-error.log
 
 scripts/publications/output
 .vscode/settings.json
+
+.env.*

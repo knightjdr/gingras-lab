@@ -2,12 +2,13 @@ module.exports = {
   pathPrefix: '/gingras-lab',
   siteMetadata: {
     title: 'Gingras lab',
-    description: 'The laboratory of Dr. Anne-Claude Gingras at the Lunenfeld in Toronto.',
+    description: 'The laboratory of Dr. Anne-Claude Gingras at the Lunenfeld in Toronto studies '
+    + ' mass spectrometry, interaction proteomics, cell signalling, CCM disease and COVID-19.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-robots-txt',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-source-filesystem',
@@ -37,6 +38,13 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-no-sourcemaps',
+    },
+    {
+      resolve: 'gatsby-plugin-plausible',
+      options: {
+        customDomain: process.env.PLAUSIBLE_DOMAIN,
+        domain: 'gingraslab.lunenfeld.ca',
+      },
     },
   ],
 };
