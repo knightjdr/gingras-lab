@@ -61,7 +61,7 @@ const News = () => (
         </p>
         <h2>Summer students</h2>
         <p>
-          The summer student program is currently only hold due to COVID-19.
+          The summer student program is currently on hold due to COVID-19.
         </p>
         {/* <p>
           Summer students are exclusively selected from successful applicants to the

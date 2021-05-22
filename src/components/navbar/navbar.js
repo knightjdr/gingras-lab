@@ -20,10 +20,12 @@ const Navbar = ({ shadow }) => (
       </span>
     </span>
     <span className="navbar__right">
-      <Icons />
-      <Link to="/contact/">
-        Contact
-      </Link>
+      <div className="navbar__right-links">
+        <Icons />
+        <Link to="/contact/">
+          Contact
+        </Link>
+      </div>
       <Menu />
     </span>
   </nav>

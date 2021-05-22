@@ -12,12 +12,6 @@ const peopleList = [
     title: 'Lab manager',
   },
   {
-    email: 'zlin@lunenfeld.ca',
-    file: 'zhenyuan-lin',
-    name: 'Zhen-Yuan Lin',
-    title: 'Research technician',
-  },
-  {
     email: 'hesketh@lunenfeld.ca',
     file: 'geoff-hesketh',
     name: 'Geoffrey Hesketh',
@@ -144,10 +138,16 @@ const peopleList = [
     title: 'Research associate',
   },
   {
+    email: 'zlin@lunenfeld.ca',
+    file: 'zhenyuan-lin',
+    name: 'Zhen-Yuan Lin',
+    title: 'Research technician',
+  },
+  {
     email: 'qhu@lunenfeld.ca',
-    file: '',
+    file: 'queenie-hu',
     name: 'Queenie Hu',
-    title: '',
+    title: 'Research technician',
   },
   {
     email: '',

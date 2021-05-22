@@ -70,8 +70,8 @@
   margin-left: auto;
   position: relative;
 }
-.navbar__right > * {
-  margin-right: 1rem;
+.navbar__right-links > * {
+  margin-right: 1.5rem;
 }
 .navbar__left a:link,
 .navbar__right a:link {
@@ -107,14 +107,14 @@
   fill: #5C6BC0;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .navbar__links {
     display: none;
   }
   .navbar__menu-container {
     display: inline;
   }
-  .navbar__right > a {
+  .navbar__right-links {
     display: none;
   }
 }
