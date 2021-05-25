@@ -70,7 +70,7 @@ const BlogTemplate = ({
           <header>
             <h1>{title}</h1>
             <div className="blog-post__byline">
-              <address className="author">
+              <address>
                 By
                 {' '}
                 {author}

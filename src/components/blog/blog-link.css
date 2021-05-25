@@ -10,9 +10,21 @@
   margin: 0;
 }
 
-.blog-link h3,
-.blog-link h4,
 .blog-link p {
   margin: 0;
-  margin-top: 0.3rem;
+  margin-top: 0.5rem;
+}
+
+.blog-link__author,
+.blog-link__date {
+  display: block;
+  font-weight: bold;
+}
+.blog-link__author {
+  font-size: 1.2rem;
+  font-style: normal;
+  margin-top: 0.4rem;
+}
+.blog-link__date {
+  font-size: 1.1rem;
 }

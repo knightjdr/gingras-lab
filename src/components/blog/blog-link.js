@@ -23,14 +23,17 @@ const PostLink = ({
     >
       <h2>{title}</h2>
     </Link>
-    <h3>
+    <address className="blog-link__author">
       By
       {' '}
       {author}
-    </h3>
-    <h4>
+    </address>
+    <time
+      className="blog-link__date"
+      dateTime={date}
+    >
       {date}
-    </h4>
+    </time>
     <p>{excerpt}</p>
   </div>
 );
