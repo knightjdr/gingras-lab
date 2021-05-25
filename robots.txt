@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://knightjdr.github.io/sitemap/sitemap-index.xml
-Host: https://knightjdr.github.io
+Sitemap: https://gingraslab.org/sitemap/sitemap-index.xml
+Host: https://gingraslab.org
