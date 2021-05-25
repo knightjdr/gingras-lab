@@ -164,7 +164,7 @@ const peopleList = [
   {
     email: 'mfazel@lunenfeld.ca',
     file: '',
-    name: 'Mahya Fazel',
+    name: 'Mahya Fazel-Zarandi',
     title: 'Student research assistant',
   },
 ];
