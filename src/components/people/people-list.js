@@ -73,7 +73,7 @@ const peopleList = [
   },
   {
     email: 'ralmismar@lunenfeld.ca',
-    file: '',
+    file: 'rasha-mismar',
     name: 'Rasha Al Mismar',
     title: 'Graduate student',
   },
