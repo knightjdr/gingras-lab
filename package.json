@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "James Knight <knightjdr@gmail.com>",
   "dependencies": {
+    "dotenv": "^8.6.0",
     "gatsby": "^3.5.1",
     "gatsby-image": "^3.5.0",
     "gatsby-plugin-manifest": "^3.5.0",
@@ -37,7 +38,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "npm run publications && gatsby build --prefix-paths",
+    "build": "npm run clean && npm run publications && gatsby build --prefix-paths",
     "clean": "rm -rf .cache",
     "deploy": "gh-pages -d public",
     "dev": "gatsby develop",
