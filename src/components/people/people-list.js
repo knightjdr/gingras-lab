@@ -90,12 +90,6 @@ const peopleList = [
     title: 'Graduate student',
   },
   {
-    email: 'mfazel@lunenfeld.ca',
-    file: '',
-    name: 'Mahya Fazel',
-    title: '',
-  },
-  {
     email: 'jknight@lunenfeld.ca',
     file: 'james-knight',
     name: 'James Knight',
@@ -132,16 +126,16 @@ const peopleList = [
     title: 'Manager, NBCC',
   },
   {
-    email: 'bseale@lunenfeld.ca',
-    file: 'brendon-seale',
-    name: 'Brendon  Seale',
-    title: 'Research associate',
-  },
-  {
     email: 'zlin@lunenfeld.ca',
     file: 'zhenyuan-lin',
     name: 'Zhen-Yuan Lin',
     title: 'Research technician',
+  },
+  {
+    email: 'bseale@lunenfeld.ca',
+    file: 'brendon-seale',
+    name: 'Brendon  Seale',
+    title: 'Research associate',
   },
   {
     email: 'qhu@lunenfeld.ca',
@@ -153,13 +147,25 @@ const peopleList = [
     email: '',
     file: '',
     name: 'Monica Dayam',
-    title: '',
+    title: 'Research associate',
+  },
+  {
+    email: '',
+    file: '',
+    name: 'Laurie Seifried',
+    title: 'CoVaRR-Net pillar coordinator',
   },
   {
     email: '',
     file: '',
     name: 'Rod Hardy',
-    title: '',
+    title: 'CoVaRR-Net research associate',
+  },
+  {
+    email: 'mfazel@lunenfeld.ca',
+    file: '',
+    name: 'Mahya Fazel',
+    title: 'Student research assistant',
   },
 ];
 
