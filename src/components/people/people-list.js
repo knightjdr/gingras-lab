@@ -7,8 +7,8 @@ const peopleList = [
   },
   {
     email: 'bkhatri@lunenfeld.ca',
-    file: 'bhavisha-khatri',
-    name: 'Bhavisha Khatri',
+    file: 'bhavisha-rathod',
+    name: 'Bhavisha Rathod',
     title: 'Lab manager',
   },
   {

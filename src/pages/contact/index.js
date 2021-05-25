@@ -40,7 +40,7 @@ const Contact = () => (
           </div>
         </address>
         <address>
-          <h2>Bhavisha Khatri, Lab manager</h2>
+          <h2>Bhavisha Rathod, Lab manager</h2>
           <div>tel: (416) 586-4800 x8272</div>
           <div>fax: (416) 586-8869</div>
           <div>
