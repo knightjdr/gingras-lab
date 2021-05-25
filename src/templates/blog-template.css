@@ -1,0 +1,33 @@
+.blog-post-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+.blog-post {
+  max-width: 50rem;
+  width: 100%;
+}
+
+.blog-post header h1 {
+  font-size: 2rem;
+}
+.blog-post__byline {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.blog-post__byline address {
+  font-size: 1.2rem;
+
+}
+.blog-post__byline img {
+  border-radius: 0.3rem;
+  margin-top: 0.3rem;
+}
+.blog-post__byline time {
+  font-size: 1rem;
+  margin-top: 1rem;
+}

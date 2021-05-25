@@ -17,7 +17,7 @@
   text-transform: uppercase;
 }
 .navbar__left a {
-  margin: 0 5px;
+  margin: 0 0.7rem;
 }
 .navbar__links {
   border-left: 1px solid #333;
@@ -107,7 +107,7 @@
   fill: #5C6BC0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .navbar__links {
     display: none;
   }

@@ -17,6 +17,7 @@ const Navbar = ({ shadow }) => (
         <Link to="/publications/">Publications</Link>
         <Link to="/people/">People</Link>
         <Link to="/news/">News & Openings</Link>
+        <Link to="/blog/">Blog</Link>
       </span>
     </span>
     <span className="navbar__right">

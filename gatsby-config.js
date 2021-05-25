@@ -22,6 +22,7 @@ module.exports = {
         icon: 'src/images/favicon.png',
       },
     },
+    'gatsby-plugin-feed',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
@@ -33,6 +34,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'markdown',
+        path: `${__dirname}/src/markdown`,
+      },
+    },
+    'gatsby-transformer-remark',
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
