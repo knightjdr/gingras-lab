@@ -10,9 +10,11 @@ const Layout = ({
   navbarShadow,
 }) => (
   <>
-    <Navbar shadow={navbarShadow} />
-    <main>{children}</main>
-    <Footer />
+    <div className="layout">
+      <Navbar shadow={navbarShadow} />
+      <main>{children}</main>
+      <Footer />
+    </div>
   </>
 );
 
