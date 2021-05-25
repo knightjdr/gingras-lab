@@ -81,6 +81,15 @@ const Menu = forwardRef((
         <Link
           nav
           onClick={closeMenu}
+          to="/blog/"
+        >
+          Blog
+        </Link>
+      </li>
+      <li>
+        <Link
+          nav
+          onClick={closeMenu}
           to="/contact/"
         >
           Contact

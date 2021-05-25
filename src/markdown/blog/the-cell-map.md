@@ -1,11 +1,10 @@
 ---
-slug: "/blog/the-cell-map"
+slug: "/blog/exciting-title-about-the-cell-map"
 author: "Francesco Zangari"
 authorPhoto: "francesco-zangari"
 date: "2021-05-25"
 description: "The cell map by Francesco Zangari"
-image: "blog/cell-map"
-title: "The cell map"
+title: "Exciting title about the cell map"
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mollis fringilla orci, eu varius lacus laoreet vitae. Praesent nibh nulla, elementum et ex eleifend, molestie imperdiet turpis. Morbi gravida sit amet est at aliquam. Maecenas a sem vitae ante fermentum pulvinar eu et velit. Cras consectetur laoreet arcu, ultrices scelerisque dolor pellentesque sit amet. Proin ipsum orci, malesuada ac neque et, interdum porttitor enim. Phasellus finibus enim in ligula consectetur aliquet. Nam ultricies elit ut sodales sollicitudin. Quisque ac tellus finibus, vestibulum enim ac, maximus purus. Sed molestie ligula dui, ac euismod eros finibus non.
 
