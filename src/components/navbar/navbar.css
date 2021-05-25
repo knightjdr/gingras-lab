@@ -107,7 +107,7 @@
   fill: #5C6BC0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .navbar__links {
     display: none;
   }
@@ -116,5 +116,19 @@
   }
   .navbar__right-links {
     display: none;
+  }
+
+  .navbar__menu a {
+    display: inline-block;
+    width: 100%;
+  }
+  .navbar__menu a:active,
+  .navbar__menu a:focus,
+  .navbar__menu a:hover {
+    text-decoration: none;
+  }
+  .navbar__right a:focus,
+  .navbar__right a:hover {
+    border-bottom-width: 0;
   }
 }
