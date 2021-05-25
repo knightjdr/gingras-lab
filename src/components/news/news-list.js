@@ -4,8 +4,184 @@ import Link from '../link/link';
 
 const newsItems = [
   {
+    date: 'May 17, 2021',
+    title: 'New preprint on TurboID-mediated BioID in zebrafish',
+    text: (
+      <>
+        Our new
+        {' '}
+        <Link to="https://www.biorxiv.org/content/10.1101/2021.05.16.444353v1">preprint</Link>
+        {' '}
+        by Shimon Rosenthal (with Ian Scott) describes protocols for TurboID-mediated
+        proximity-dependent biotinylation in zebrafish embryos using either mRNA injections or
+        inducible transgenics.
+      </>
+    ),
+  },
+  {
+    date: 'May 15, 2021',
+    title: 'Welcome new team members',
+    text: (
+      <>
+        We welcome our new team members: Laurie Seifried, pillar coordinator for CoVaRR-Net,
+        Rod Hardy, CoVaRR-Net research associate, and Monica Dayam, research associate, immunology.
+      </>
+    ),
+  },
+  {
+    date: 'May 5, 2021',
+    title: 'New manuscript at Molecular Cell characterizing J-domain proteins and Hsp70s',
+    text: (
+      <>
+        Our manuscript (with Mikko Taipale) on the characterization of all J-domain proteins and
+        Hsp70s in human cells by newly minted PhD, Dr. Benjamin Piette, is now out at
+        {' '}
+        <Link to="https://www.cell.com/molecular-cell/fulltext/S1097-2765(21)00317-8">
+          Molecular Cell
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    date: 'March 4, 2021',
+    title: 'New CFI funding',
+    text: (
+      <>
+        New funding from the
+        {' '}
+        <Link to="https://www.innovation.ca/about/press-release/major-investment-innovative-world-class-research-benefit-all-canadians">
+          Canadian Foundation for Innovation (CFI)
+        </Link>
+        {' '}
+        was awarded for our project (led by AC Gingras and J Wrana) titled &ldquo;Probing the
+        Molecular State of Rare Cell Phenotypes.&rdquo;
+      </>
+    ),
+  },
+  {
+    date: 'February 23, 2021',
+    title: 'TV interview with our student research assistant Mahya Fazel-Zarandi',
+    text: (
+      <>
+        The youngest member of our serology team, Mahya Fazel-Zarandi, has been featured in several
+        media outlets. See her Global News interview here:
+        {' '}
+        <Link to="https://globalnews.ca/video/7656070/student-research-assistant-opting-for-gap-experience-in-the-fight-against-covid-19">
+          Student research assistant opting for &ldquo;gap experience&rdquo; in the fight against COVID-19
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    date: 'January 31, 2021',
+    title: 'Welcome new team members',
+    text: (
+      <>
+        Welcome to new team members, Queenie Hu and Mariam Iskilova, who will join us to support
+        the COVID antibody monitoring efforts, mainly funded through the Canadian Immunity Task Force.
+      </>
+    ),
+  },
+  {
+    date: 'December 10, 2020',
+    title: 'New funding from The Terry Fox Research Institute',
+    text: (
+      <>
+        Thank you to
+        {' '}
+        <Link to="https://www.tfri.ca/our-research/research-project/targeting-the-hippo-signaling-network-in-cancer">
+          The Terry Fox Research Institute
+        </Link>
+        {' '}
+        for funding our program, led by Jeff Wrana, on Hippo signaling in cancer.
+      </>
+    ),
+  },
+  {
+    date: 'October 15, 2020',
+    title: 'New manuscript at Science on the GATOR–Rag GTPase pathway and mTOR',
+    text: (
+      <>
+        Our manuscript led by postdoctoral fellow Geoff Hesketh on the role of the GATOR–Rag GTPase
+        pathway in the inhibition of mTORC1 activation by lysosome-derived amino acids is out at
+        {' '}
+        <Link to="https://science.sciencemag.org/content/370/6514/351">
+          Science
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    date: 'October 8, 2020',
+    title: 'New manuscript at Science Immunology on the persistence of antibodies to SARS-CoV-2',
+    text: (
+      <>
+        Our paper on the persistence of antibodies to SARS-CoV-2 proteins in the blood and saliva
+        is now out at
+        {' '}
+        <Link to="https://immunology.sciencemag.org/content/5/52/eabe5511.full">
+          Science Immunology
+        </Link>
+        . This was an excellent collaboration with Jen Gommerman and Allison McGeer, led by four
+        co-first authors graduate students, including Kento Abe from our lab.
+      </>
+    ),
+  },
+  {
+    date: 'September 4, 2020',
+    title: 'New preprint on our proximity-dependent map of the SARS-CoV-2 proteins',
+    text: (
+      <>
+        Our proximity-dependent map of the SARS-CoV-2 proteins is now available as a preprint in
+        {' '}
+        <Link to="https://www.biorxiv.org/content/10.1101/2020.09.03.282103v1">
+          bioR&chi;iv
+        </Link>
+        . This work was led by postdoctoral fellow Payman Samavarchi-Tehrani, with Hala Abdouni,
+        Zhen Lin, Reuben Samson, Audrey Astori and many others. See the website developed by
+        James Knight here:
+        {' '}
+        <Link to="https://covid19interactome.org">
+          covid19interactome.org
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    date: 'September 1, 2020',
+    title: 'Manuscript on SARS-CoV-2 neutralization assay out at JCI Insight',
+    text: (
+      <>
+        Our SARS-CoV-2 neutralization assay surrogate, developed with Jim Rini’s team, is now out at
+        {' '}
+        <Link to="https://insight.jci.org/articles/view/142362">
+          JCI Insight
+        </Link>
+        . Project co-led by Kento Abe and Zhijie Li.
+      </>
+    ),
+  },
+  {
+    date: 'September 1, 2020',
+    title: 'BioID-based map of the mitochondria now out at Cell Metabolism',
+    text: (
+      <>
+        Our collaborative work with the Shoubridge lab at McGill, led by Hana Antonicka, is now out at
+        {' '}
+        <Link to="https://www.cell.com/cell-metabolism/fulltext/S1550-4131(20)30412-5">
+          Cell Metabolism
+        </Link>
+        . In this, we use proximity-dependent biotinylation to explore the spatial organization of the mitochondria.
+      </>
+    ),
+  },
+  {
     date: 'October 7, 2019',
-    title: 'Human cell map on bioRxiv',
+    title: 'Human cell map on bioRχiv',
     text: (
       <>
         Our manuscript describing a proximity map of a human cell by MoGen PhD student Chris Go,
@@ -66,7 +242,9 @@ const newsItems = [
       <>
         See our manuscript by
         {' '}
-        <Link to="https://www.sciencedirect.com/science/article/pii/S1097276518309481?via%3Dihub">Lambert, Picaud et al.</Link>
+        <Link to="https://www.sciencedirect.com/science/article/pii/S1097276518309481?via%3Dihub">
+          Lambert, Picaud et al.
+        </Link>
         {' '}
         that reports the effects of the drug JQ1 on the interactome of the BET family of
         bromodomains online at Molecular Cell. A great collaboration between the Gingras and
@@ -116,7 +294,9 @@ const newsItems = [
       <>
         Payman Samavarchi-Tehrani and colleagues report in
         {' '}
-        <Link to="http://www.mcponline.org/content/early/2018/07/10/mcp.TIR118.000902.abstract">Molecular and Cellular Proteomics</Link>
+        <Link to="http://www.mcponline.org/content/early/2018/07/10/mcp.TIR118.000902.abstract">
+          Molecular and Cellular Proteomics
+        </Link>
         {' '}
         a collection of lentiviral vectors to enable proximity-dependent biotinylation
         across cell types.
@@ -130,7 +310,9 @@ const newsItems = [
       <>
         PhD student Boris Dyakov recently received an award from the
         {' '}
-        <Link to="http://www.nserc-crsng.gc.ca/index_eng.asp">Natural Sciences and Engineering Research Council of Canada</Link>
+        <Link to="http://www.nserc-crsng.gc.ca/index_eng.asp">
+          Natural Sciences and Engineering Research Council of Canada
+        </Link>
         {' '}
         for his work aiming at characterizing nuclear bodies using proteomic tools.
       </>
@@ -174,7 +356,9 @@ const newsItems = [
     text: (
       <>
         Knight et al. publishes web-tool to improve visualization of protein interaction data (
-        <Link to="https://www.nature.com/articles/nmeth.4330.epdf?author_access_token=Mxscfd4TsFnZDOMRVLu6q9RgN0jAjWel9jnR3ZoTv0N_r0kXKLsUVDr0iDmCOCg724OKwf_HwmR4LS6tUTcLnv0lZ95VTwz0lijrGL0nG0hlWQsNj9aa71B1ICe2lxjt">read-only version</Link>
+        <Link to="https://www.nature.com/articles/nmeth.4330.epdf?author_access_token=Mxscfd4TsFnZDOMRVLu6q9RgN0jAjWel9jnR3ZoTv0N_r0kXKLsUVDr0iDmCOCg724OKwf_HwmR4LS6tUTcLnv0lZ95VTwz0lijrGL0nG0hlWQsNj9aa71B1ICe2lxjt">
+          read-only version
+        </Link>
         ).
       </>
     ),
@@ -450,7 +634,9 @@ const newsItems = [
     title: 'How to score true interactions in BioID experiment',
     text: (
       <>
-        <Link to="https://www.sciencedirect.com/science/article/pii/S1874391914004357?via%3Dihub">JP Lambert et al.</Link>
+        <Link to="https://www.sciencedirect.com/science/article/pii/S1874391914004357?via%3Dihub">
+          JP Lambert et al.
+        </Link>
         {' '}
         thoroughly analyze background subtraction in BioID and compare BioID to standard AP-MS for
         chromatin proteins.
@@ -508,7 +694,9 @@ const newsItems = [
         {' '}
         and the support of
         {' '}
-        <Link to="http://support.supportsinai.com/site/PageServer?pagename=mainsite_getinvolved_venturesinai">Venture Sinai</Link>
+        <Link to="http://support.supportsinai.com/site/PageServer?pagename=mainsite_getinvolved_venturesinai">
+          Venture Sinai
+        </Link>
         ,
         {' '}
         <Link to="https://www.nature.com/articles/nmeth.2702">Lambert et al.</Link>
@@ -569,7 +757,9 @@ const newsItems = [
       <>
         Have a look at the special issue of Proteomics on
         {' '}
-        <Link to="https://onlinelibrary.wiley.com/toc/16159861/2012/12/10">Protein Complexes and Interaction Networks</Link>
+        <Link to="https://onlinelibrary.wiley.com/toc/16159861/2012/12/10">
+          Protein Complexes and Interaction Networks
+        </Link>
         {' '}
         co-Edited by Alexey Nesvizhskii and Anne-Claude Gingras.
       </>
@@ -666,7 +856,9 @@ const newsItems = [
     title: 'Just published!',
     text: (
       <>
-        <Link to="https://www.nature.com/nbt/journal/v28/n10/full/nbt1010-1015.html">ProHits: integrated software for mass spectrometry-based interaction proteomics</Link>
+        <Link to="https://www.nature.com/nbt/journal/v28/n10/full/nbt1010-1015.html">
+          ProHits: integrated software for mass spectrometry-based interaction proteomics
+        </Link>
         .
         The Gingras and Tyers labs publish in Nature Biotechnology
         their interaction proteomics data management system ProHits. Download the free software at
@@ -681,7 +873,9 @@ const newsItems = [
     title: 'Fresh off the press',
     text: (
       <>
-        <Link to="https://www.sciencemag.org/cgi/content/abstract/328/5981/1043">A global protein kinase and phosphatase interaction network in yeast</Link>
+        <Link to="https://www.sciencemag.org/cgi/content/abstract/328/5981/1043">
+          A global protein kinase and phosphatase interaction network in yeast
+        </Link>
         .
         The Tyers, Nesvizhskii and Gingras labs team up to provide a comprehensive interaction
         map for yeast kinases and phosphatases (Breitkreutz et al., Science, 2010).
