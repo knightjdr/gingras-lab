@@ -163,7 +163,7 @@ const peopleList = [
   },
   {
     email: 'mfazel@lunenfeld.ca',
-    file: '',
+    file: 'mahya-fazel',
     name: 'Mahya Fazel-Zarandi',
     title: 'Student research assistant',
   },
