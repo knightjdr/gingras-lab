@@ -6,7 +6,7 @@
 
   Group leader: Anne-Claude Gingras
   Contact: gingras [at] lunenfeld.ca
-  Website: gingraslab.lunenfeld.ca
+  Website: gingraslab.org
 
 /* SITE */
   Language: English

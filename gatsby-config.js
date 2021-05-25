@@ -7,7 +7,7 @@ module.exports = {
     title: 'Gingras lab',
     description: 'The laboratory of Dr. Anne-Claude Gingras at the Lunenfeld in Toronto studies '
     + ' mass spectrometry, interaction proteomics, cell signalling, CCM disease and COVID-19.',
-    siteUrl: 'https://knightjdr.github.io/',
+    siteUrl: 'https://gingraslab.org',
   },
   plugins: [
     {
@@ -22,7 +22,6 @@ module.exports = {
         icon: 'src/images/favicon.png',
       },
     },
-    'gatsby-plugin-feed',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
@@ -57,6 +56,59 @@ module.exports = {
       options: {
         customDomain: process.env.PLAUSIBLE_DOMAIN,
         domain: 'gingraslab.org',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-feed',
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => allMarkdownRemark.edges.map((edge) => ({
+              ...edge.node.frontmatter,
+              author: edge.node.frontmatter.author,
+              description: edge.node.excerpt,
+              date: edge.node.frontmatter.date,
+              url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              custom_elements: [{ 'content:encoded': edge.node.html }],
+            })),
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        author
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'Gingras lab blog RSS Feed',
+            match: '^/blog/',
+          },
+        ],
       },
     },
   ],
