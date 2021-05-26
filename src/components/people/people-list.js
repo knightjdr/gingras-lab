@@ -145,12 +145,12 @@ const peopleList = [
   },
   {
     email: '',
-    file: '',
+    file: 'monica-dayam',
     name: 'Monica Dayam',
     title: 'Research associate',
   },
   {
-    email: '',
+    email: 'lseifried@lunenfeld.ca',
     file: '',
     name: 'Laurie Seifried',
     title: 'CoVaRR-Net pillar coordinator',
