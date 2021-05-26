@@ -14,8 +14,9 @@ function Head({
       query {
         site {
           siteMetadata {
-            title
             description
+            siteUrl
+            title
           }
         }
       }
@@ -23,12 +24,13 @@ function Head({
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const titleTemplate = title ? `${site.siteMetadata.title} | ${title}` : site.siteMetadata.title;
 
   return (
     <Helmet
       htmlAttributes={{ lang }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={titleTemplate}
       meta={[
         {
           name: 'description',
@@ -36,15 +38,55 @@ function Head({
         },
         {
           property: 'og:title',
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           property: 'og:description',
           content: metaDescription,
         },
         {
+          property: 'og:image',
+          content: '/open-graph.png',
+        },
+        {
+          property: 'og:height',
+          content: 630,
+        },
+        {
+          property: 'og:width',
+          content: 1200,
+        },
+        {
           property: 'og:type',
           content: 'website',
+        },
+        {
+          property: 'og:url',
+          content: site.siteMetadata.siteUrl,
+        },
+        {
+          property: 'twitter:title',
+          content: site.siteMetadata.title,
+        },
+        {
+          property: 'twitter:description',
+          content: metaDescription,
+        },
+        {
+          property: 'twitter:site',
+          content: site.siteMetadata.siteUrl,
+        },
+        {
+          property: 'twitter:creator',
+          content: '@gingraslab1',
+        },
+        {
+          property: 'twitter:image',
+          content: '/twitter-card.png',
+        },
+        {
+          property: 'twitter:card',
+          content: 'summary_large_image',
         },
       ].concat(meta)}
     >
