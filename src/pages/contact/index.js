@@ -29,7 +29,6 @@ const Contact = () => (
         <address>
           <h2>Anne-Claude Gingras, Principal investigator</h2>
           <div>tel: (416) 586-5027</div>
-          <div>fax: (416) 586-8869</div>
           <div>
             <Link
               nav
@@ -42,7 +41,6 @@ const Contact = () => (
         <address>
           <h2>Bhavisha Rathod, Lab manager</h2>
           <div>tel: (416) 586-4800 x8272</div>
-          <div>fax: (416) 586-8869</div>
           <div>
             <Link
               nav
@@ -55,7 +53,6 @@ const Contact = () => (
         <address>
           <h2>Pearl Sequeira, Research administration</h2>
           <div>tel: (416) 586-4800 x2218</div>
-          <div>fax: (416) 586-8869</div>
           <div>
             <Link
               nav
@@ -68,7 +65,6 @@ const Contact = () => (
         <address>
           <h2>Karen Colwill, Manager, NBCC</h2>
           <div>tel: (416) 586-4800 x3018</div>
-          <div>fax: (416) 586-8869</div>
           <div>
             <Link
               nav
