@@ -79,7 +79,7 @@ const peopleList = [
   },
   {
     email: 'asrinivasan@lunenfeld.ca',
-    file: '',
+    file: 'aparna-srinivasan',
     name: 'Aparna Srinivasan',
     title: 'Graduate student',
   },
@@ -144,7 +144,7 @@ const peopleList = [
     title: 'Research technician',
   },
   {
-    email: '',
+    email: 'rdayam@lunenfeld.ca',
     file: 'monica-dayam',
     name: 'Monica Dayam',
     title: 'Research associate',
@@ -156,7 +156,7 @@ const peopleList = [
     title: 'CoVaRR-Net pillar coordinator',
   },
   {
-    email: '',
+    email: 'whardy@lunenfeld.ca',
     file: '',
     name: 'Rod Hardy',
     title: 'CoVaRR-Net research associate',
