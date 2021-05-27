@@ -157,7 +157,7 @@ const peopleList = [
   },
   {
     email: 'whardy@lunenfeld.ca',
-    file: '',
+    file: 'rod-hardy',
     name: 'Rod Hardy',
     title: 'CoVaRR-Net research associate',
   },
