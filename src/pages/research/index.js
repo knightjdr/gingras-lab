@@ -7,8 +7,8 @@ import Link from '../../components/link/link';
 import Microscope from '../../images/icon/microscope.svg';
 import Proteomics from '../../images/research/proteomics.svg';
 import Serology from '../../images/research/serology.svg';
-import Signalling from '../../images/research/signalling-mtor.svg';
-import SystemsBiology from '../../images/research/systemsbiology-cellmap.svg';
+import Signalling from '../../images/research/signalling.svg';
+import SystemsBiology from '../../images/research/systemsbiology.svg';
 
 import './research.css';
 
@@ -281,7 +281,7 @@ const Research = () => (
           <figure>
             <img
               alt="MTOR signalling at the lysosome membrane"
-              className="research__image-svg research__image_padding"
+              className="research__image-svg"
               src={Signalling}
             />
             <figcaption>
@@ -367,7 +367,7 @@ const Research = () => (
           <figure>
             <img
               alt="COVID-19 serology workflow"
-              className="research__image-svg research__image_padding"
+              className="research__image-svg"
               src={Serology}
             />
             <figcaption>

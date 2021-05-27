@@ -47,10 +47,8 @@
 .research__image-svg {
   border: 1px solid rgba(51, 51, 51, 0.3);
   border-radius: 2px;
-  height: auto;
-  width: 100%;
-}
-.research__image_padding {
   box-sizing: border-box;
+  height: auto;
   padding: 1rem;
+  width: 100%;
 }
