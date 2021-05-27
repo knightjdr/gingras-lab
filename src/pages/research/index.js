@@ -281,7 +281,7 @@ const Research = () => (
           <figure>
             <img
               alt="MTOR signalling at the lysosome membrane"
-              className="research__image-svg"
+              className="research__image-svg research__image_padding"
               src={Signalling}
             />
             <figcaption>
