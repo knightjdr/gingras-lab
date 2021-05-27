@@ -11,7 +11,6 @@ import news from '../components/news/news-list';
 
 import Analytics from '../images/icon/analytics.svg';
 import ChartNetwork from '../images/icon/chart-network.svg';
-import HeadSideBrain from '../images/icon/head-side-brain.svg';
 import Virus from '../images/icon/virus.svg';
 import Wifi from '../images/icon/waveform.svg';
 
@@ -118,30 +117,6 @@ const IndexPage = ({ data }) => (
         <h2>Research</h2>
         <div className="home__project">
           <div className="home__project-description">
-            <h3>COVID-19</h3>
-            <p>
-              When the COVID-19 pandemic began in 2020, the lab quickly shifted some attention
-              and resources to aid in the global research effort.
-              We began studying the interactome and life cycle of the SARS-CoV-2
-              virus in infected cells, while also developing assays for the
-              detection of serum and plasma antibodies that block the interaction of the virus
-              with host cell receptors.
-            </p>
-            <Link
-              nav
-              to="/research/#covid19"
-            >
-              Read more
-            </Link>
-          </div>
-          <img
-            alt="Virus"
-            height="150"
-            src={Virus}
-          />
-        </div>
-        <div className="home__project">
-          <div className="home__project-description">
             <h3>Enabling tools for proteomics</h3>
             <p>
               Our laboratory aims to continuously improve interaction proteomics through the development of
@@ -166,11 +141,13 @@ const IndexPage = ({ data }) => (
           <div className="home__project-description">
             <h3>Systems biology</h3>
             <p>
-              While we are probably best known for our work on serine/threonine phosphatases,
-              our research group has grown a lot recently, and our members are interested in several
-              cell regulatory mechanisms, including Hippo signalling, endosomal trafficking, RNA-related
-              structures and splicing. These are being investigated using a variety of techniques,
-              but in large part through interaction proteomics.
+              At the systems level we have studied and continue to perform large-scale projects on protein
+              families, such as phosphatases, kinases, bromodomain-containing proteins and chaperones. We have
+              undertaken organelle-specific studies of RNA bodies, the mitochondria
+              and nuclear bodies, and even a broader project to map the localization of all proteins in the cell.
+              We also have members tackling broad studies on several cell regulatory mechanisms, including somatic cell
+              reprogramming and splicing. These projects utilize a variety of techniques, but in large part
+              are pursued through interaction proteomics.
             </p>
             <Link
               nav
@@ -189,12 +166,11 @@ const IndexPage = ({ data }) => (
           <div className="home__project-description">
             <h3>Signalling</h3>
             <p>
-              Although the activities of kinases and phosphatases are both required for controlling
-              cell growth and proliferation, the study of phosphatases has generally lagged behind
-              that of kinases, resulting in a lopsided view of signal transduction. Our lab has
-              undertaken systematic approaches to study the roughly 150 human phosphatases through
-              systematic mapping of their interactions and through functional screenings (RNA
-              interference and microscopy).
+              Some of our core research interests have been the study of signaling pathways that are deregulated in
+              cancers and rare diseases. These include mTORC1 activation, receptor tyrosine kinase signalling,
+              the STRIPAK phosphatase and kinase complex (implicated in CCM disease) and
+              the Hippo pathway, between the last two of which we interestingly discovered novel and important
+              connections.
             </p>
             <Link
               nav
@@ -211,25 +187,26 @@ const IndexPage = ({ data }) => (
         </div>
         <div className="home__project">
           <div className="home__project-description">
-            <h3>Cerebral cavernous malformations</h3>
+            <h3>COVID-19</h3>
             <p>
-              In 2009 we reported on the discovery of a novel large protein complex, which
-              we termed STRIPAK, for STRiatin Interacting Phosphatase And Kinase complex, which contains
-              both the PP2A phosphatase and a Ste20 kinase. Importantly, we also found that the
-              protein CCM3 is a component of STRIPAK, leading us into further studies to
-              elaborate the mechanisms underpinning CCM disease.
+              When the COVID-19 pandemic began in 2020, the lab quickly shifted some attention
+              and resources to aid in the global research effort.
+              We began studying the interactome and life cycle of the SARS-CoV-2
+              virus in infected cells, while also developing assays for the
+              detection of serum and plasma antibodies that block the interaction of the virus
+              with host cell receptors.
             </p>
             <Link
               nav
-              to="/research/#ccm"
+              to="/research/#covid19"
             >
               Read more
             </Link>
           </div>
           <img
-            alt="Cartoon of human head and brain"
+            alt="Virus"
             height="150"
-            src={HeadSideBrain}
+            src={Virus}
           />
         </div>
       </section>

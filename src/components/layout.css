@@ -114,3 +114,6 @@ svg:not(:root) {
 .fa-secondary {
   opacity: .4;
 }
+.italic {
+  font-style: italic;
+}
