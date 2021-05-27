@@ -4,6 +4,10 @@ const parseAuthors = (authors) => authors.map((author) => author.name);
 
 const parseYear = (date) => date.split(' ')[0];
 
+const parseTitle = (title) => (
+  title.replace(/<\/*i>/g, '')
+);
+
 const parseArticles = (dataWithUIDs) => {
   const data = dataWithUIDs;
   delete data.uids;
@@ -13,7 +17,7 @@ const parseArticles = (dataWithUIDs) => {
     issue: datum.issue,
     pages: datum.pages,
     pmid: Number(pmid),
-    title: datum.title,
+    title: parseTitle(datum.title),
     volume: datum.volume,
     year: parseYear(datum.pubdate),
   }));
