@@ -1,6 +1,11 @@
 .blog-link {
   margin-top: 0.5rem;
 }
+.blog-link:not(:last-of-type) {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
 
 .blog-link a {
   display: inline-block;
