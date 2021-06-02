@@ -38,10 +38,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 20px 0;
+  margin: 1.2rem -0.3rem;
 }
-.publications__links-year > a:not(:last-of-type) {
-  margin-right: 10px;
+.publications__links-year > a {
+  padding: 0.3rem;
 }
 
 .underline {

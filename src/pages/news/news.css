@@ -28,8 +28,13 @@
   color: var(--accentColor);
 }
 
-.news__years > a:not(:last-of-type) {
-  margin-right: 10px;
+.news__years {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.3rem;
+}
+.news__years > a {
+  padding: 0.3rem;
 }
 
 .news__list {
