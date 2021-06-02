@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "James Knight <knightjdr@gmail.com>",
   "dependencies": {
-    "dotenv": "^8.6.0",
+    "dotenv": "^10.0.0",
     "gatsby": "^3.5.1",
     "gatsby-image": "^3.5.0",
     "gatsby-plugin-feed": "^3.5.0",
