@@ -87,6 +87,8 @@ const News = () => (
           />
         </header>
         <div className="news__years">
+          <Link to="/news/#2021">2021</Link>
+          <Link to="/news/#2020">2020</Link>
           <Link to="/news/#2019">2019</Link>
           <Link to="/news/#2018">2018</Link>
           <Link to="/news/#2017">2017</Link>
