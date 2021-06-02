@@ -4,6 +4,22 @@ import Link from '../link/link';
 
 const newsItems = [
   {
+    date: 'June 2, 2021',
+    title: 'The human cell map is published at Nature',
+    text: (
+      <>
+        Our study illuminating the organization of a live human cell through proximity-dependent
+        biotinylation (BioID) profiling of 192 markers is now online at
+        {' '}
+        <Link to="https://www.nature.com/articles/s41586-021-03592-2">Nature</Link>
+        , and the website is live at
+        {' '}
+        <Link to="https://humancellmap.org">humancellmap.org</Link>
+        .
+      </>
+    ),
+  },
+  {
     date: 'May 17, 2021',
     title: 'New preprint on TurboID-mediated BioID in zebrafish',
     text: (
