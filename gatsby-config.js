@@ -8,6 +8,8 @@ module.exports = {
     description: 'The laboratory of Dr. Anne-Claude Gingras at the Lunenfeld in Toronto studies '
     + ' mass spectrometry, interaction proteomics, cell signalling, CCM disease and COVID-19.',
     siteUrl: 'https://gingraslab.org',
+    ogImage: '/open-graph.png',
+    twitterImage: '/twitter-card.png',
   },
   plugins: [
     {

@@ -32,8 +32,22 @@ export const pageQuery = graphql`
         authorPhoto
         date(formatString: "MMMM DD, YYYY")
         description
+        ogImage {
+          childImageSharp {
+            fixed(width: 1200, height: 630) {
+              src
+            }
+          }
+        }
         slug
         title
+        twitterImage {
+          childImageSharp {
+            fixed(width: 1200, height: 600) {
+              src
+            }
+          }
+        }
       }
     }
   }
@@ -48,7 +62,10 @@ const BlogTemplate = ({
         authorPhoto,
         date,
         description,
+        ogImage,
+        slug,
         title,
+        twitterImage,
       },
       html,
     },
@@ -63,7 +80,10 @@ const BlogTemplate = ({
     <Layout>
       <Head
         description={description}
+        ogImage={ogImage?.childImageSharp?.fixed?.src}
+        route={slug}
         title={`Blog: ${title}`}
+        twitterImage={twitterImage?.childImageSharp?.fixed?.src}
       />
       <div className="blog-post-container">
         <article className="blog-post">
@@ -118,7 +138,22 @@ BlogTemplate.propTypes = {
         authorPhoto: PropTypes.string,
         date: PropTypes.string,
         description: PropTypes.string,
+        ogImage: PropTypes.shape({
+          childImageSharp: PropTypes.shape({
+            fixed: PropTypes.shape({
+              src: PropTypes.string,
+            }),
+          }),
+        }),
+        slug: PropTypes.string,
         title: PropTypes.string,
+        twitterImage: PropTypes.shape({
+          childImageSharp: PropTypes.shape({
+            fixed: PropTypes.shape({
+              src: PropTypes.string,
+            }),
+          }),
+        }),
       }),
       html: PropTypes.string,
     }).isRequired,

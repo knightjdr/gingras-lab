@@ -3,8 +3,10 @@ slug: "/blog/illuminating-the-organization-of-the-human-cell"
 author: "Francesco Zangari"
 authorPhoto: "francesco-zangari"
 date: "2021-06-02"
-description: "Illuminating the organization of the human cell, a blog by by Francesco Zangari"
+description: "Illuminating the organization of the human cell, a blog by Francesco Zangari"
+ogImage: "../../images/opengraph/og-cellmap-2021-6-2.png"
 title: "Illuminating the organization of the human cell"
+twitterImage: "../../images/opengraph/twitter-cellmap-2021-6-2.png"
 ---
 Researchers from Sinai Health have published a study providing an ultra-detailed look at the organization of a living human cell, providing a new tool that can help scientists around the world better understand what happens during disease.
 

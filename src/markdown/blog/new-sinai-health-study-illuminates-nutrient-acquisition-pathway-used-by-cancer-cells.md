@@ -3,8 +3,10 @@ slug: "/blog/new-sinai-health-study-illuminates-nutrient-acquisition-pathway-use
 author: "Francesco Zangari"
 authorPhoto: "francesco-zangari"
 date: "2020-10-19"
-description: "New Sinai Health study illuminates nutrient acquisition pathway used by cancer cells, a blog by by Francesco Zangari"
+description: "New Sinai Health study illuminates nutrient acquisition pathway used by cancer cells, a blog by Francesco Zangari"
+ogImage: "../../images/opengraph/og-hesketh-2020-10-19.png"
 title: "New Sinai Health study illuminates nutrient acquisition pathway used by cancer cells"
+twitterImage: "../../images/opengraph/og-hesketh-2020-10-19.png"
 ---
 Scientists at Sinai Health’s Lunenfeld-Tanenbaum Research Institute (LTRI) and the University of Toronto have identified a new mechanism used by cells during the acquisition of key nutrients, revealing potential vulnerabilities in cancer cells that may lead to the development of targeted therapeutics. The findings were published in the journal [Science](https://science.sciencemag.org/content/370/6514/351) on October 15th.
 

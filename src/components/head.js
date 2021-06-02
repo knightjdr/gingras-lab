@@ -7,7 +7,10 @@ function Head({
   description,
   lang,
   meta,
+  ogImage,
+  route,
   title,
+  twitterImage,
 }) {
   const { site } = useStaticQuery(
     graphql`
@@ -15,22 +18,27 @@ function Head({
         site {
           siteMetadata {
             description
+            ogImage
             siteUrl
             title
+            twitterImage
           }
         }
       }
     `,
   );
 
+  const headTitle = title ? `${site.siteMetadata.title} | ${title}` : site.siteMetadata.title;
   const metaDescription = description || site.siteMetadata.description;
-  const titleTemplate = title ? `${site.siteMetadata.title} | ${title}` : site.siteMetadata.title;
+  const metaOgImage = ogImage || site.siteMetadata.ogImage;
+  const metaOgUrl = route ? `${site.siteMetadata.siteUrl}${route}` : site.siteMetadata.siteUrl;
+  const metaTwitterImage = twitterImage || site.siteMetadata.twitterImage;
 
   return (
     <Helmet
       htmlAttributes={{ lang }}
       title={title}
-      titleTemplate={titleTemplate}
+      titleTemplate={headTitle}
       meta={[
         {
           name: 'description',
@@ -38,7 +46,7 @@ function Head({
         },
         {
           property: 'og:title',
-          content: site.siteMetadata.title,
+          content: headTitle,
         },
         {
           property: 'og:description',
@@ -46,7 +54,7 @@ function Head({
         },
         {
           property: 'og:image',
-          content: '/open-graph.png',
+          content: metaOgImage,
         },
         {
           property: 'og:height',
@@ -62,11 +70,11 @@ function Head({
         },
         {
           property: 'og:url',
-          content: site.siteMetadata.siteUrl,
+          content: metaOgUrl,
         },
         {
           property: 'twitter:title',
-          content: site.siteMetadata.title,
+          content: headTitle,
         },
         {
           property: 'twitter:description',
@@ -74,7 +82,7 @@ function Head({
         },
         {
           property: 'twitter:site',
-          content: site.siteMetadata.siteUrl,
+          content: metaOgUrl,
         },
         {
           property: 'twitter:creator',
@@ -82,7 +90,7 @@ function Head({
         },
         {
           property: 'twitter:image',
-          content: '/twitter-card.png',
+          content: metaTwitterImage,
         },
         {
           property: 'twitter:card',
@@ -96,16 +104,23 @@ function Head({
 }
 
 Head.defaultProps = {
-  lang: 'en',
-  meta: [],
   description: '',
+  lang: 'en',
+  ogImage: '',
+  meta: [],
+  route: '',
+  title: '',
+  twitterImage: '',
 };
 
 Head.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  ogImage: PropTypes.string,
+  route: PropTypes.string,
+  title: PropTypes.string,
+  twitterImage: PropTypes.string,
 };
 
 export default Head;

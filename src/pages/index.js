@@ -44,7 +44,7 @@ export const query = graphql`
 
 const IndexPage = ({ data }) => (
   <Layout navbarShadow={false}>
-    <Head title="Home" />
+    <Head />
     <div className="home__waves" />
     <div className="home">
       <section className="home__landing">
