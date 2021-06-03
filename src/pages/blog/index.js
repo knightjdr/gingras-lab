@@ -27,18 +27,36 @@ export const pageQuery = graphql`
         }
       }
     }
+    ogImage: file(relativePath: { eq: "opengraph/og-blog.jpg" }) {
+      childImageSharp {
+        fixed(width: 1200, height: 630) {
+          src
+        }
+      }
+    }
+    twitterImage: file(relativePath: { eq: "opengraph/twitter-blog.jpg" }) {
+      childImageSharp {
+        fixed(width: 1200, height: 600) {
+          src
+        }
+      }
+    }
   }
 `;
 
 const IndexPage = ({
   data: {
     allMarkdownRemark: { edges },
+    ogImage,
+    twitterImage,
   },
 }) => (
   <Layout>
     <Head
       description="The Gingras Lab - Demystified, a blog about our research projects and activities"
+      ogImage={ogImage?.childImageSharp?.fixed?.src}
       title="Blog"
+      twitterImage={twitterImage?.childImageSharp?.fixed?.src}
     />
     <div className="blog-index-container">
       <div className="blog-index">
@@ -77,6 +95,20 @@ IndexPage.propTypes = {
         }),
       ).isRequired,
     }).isRequired,
+    ogImage: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fixed: PropTypes.shape({
+          src: PropTypes.string,
+        }),
+      }),
+    }),
+    twitterImage: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fixed: PropTypes.shape({
+          src: PropTypes.string,
+        }),
+      }),
+    }),
   }).isRequired,
 };
 
