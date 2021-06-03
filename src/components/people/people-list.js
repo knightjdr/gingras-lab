@@ -132,6 +132,12 @@ const peopleList = [
     title: 'Research technician',
   },
   {
+    email: 'habdouni@lunenfeld.ca',
+    file: 'hala-abdouni',
+    name: 'Hala Abdouni',
+    title: 'Research technician',
+  },
+  {
     email: 'bseale@lunenfeld.ca',
     file: 'brendon-seale',
     name: 'Brendon  Seale',
