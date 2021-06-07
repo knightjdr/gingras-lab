@@ -85,7 +85,7 @@ const peopleList = [
   },
   {
     email: 'ngrinberg@lunenfeld.ca',
-    file: '',
+    file: 'nicolas-grinberg',
     name: 'Nicolas Grinberg',
     title: 'Graduate student',
   },
