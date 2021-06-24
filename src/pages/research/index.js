@@ -1,18 +1,50 @@
+import Img from 'gatsby-image';
+import PropTypes from 'prop-types';
 import React from 'react';
+import { graphql } from 'gatsby';
 
 import Head from '../../components/head';
 import Layout from '../../components/layout';
 import Link from '../../components/link/link';
 
 import Microscope from '../../images/icon/microscope.svg';
-import Proteomics from '../../images/research/proteomics.svg';
-import Serology from '../../images/research/serology.svg';
-import Signalling from '../../images/research/signalling.svg';
-import SystemsBiology from '../../images/research/systemsbiology.svg';
 
 import './research.css';
 
-const Research = () => (
+export const query = graphql`
+  query {
+    proteomics: file(relativePath: { eq: "research/proteomics.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    serology: file(relativePath: { eq: "research/serology.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    signalling: file(relativePath: { eq: "research/signalling.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+    systemsBiology: file(relativePath: { eq: "research/systemsbiology.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 900) {
+          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        }
+      }
+    }
+  }
+`;
+
+const Research = ({ data }) => (
   <Layout>
     <Head
       description="The research interests of Dr. Anne-Claude Gingras and active projects in the lab."
@@ -40,11 +72,12 @@ const Research = () => (
         <section id="proteomics">
           <h2>Enabling tools for proteomics</h2>
           <figure>
-            <img
-              alt="AP-MS and BioID workflows"
-              className="research__image-svg"
-              src={Proteomics}
-            />
+            <div className="research__image">
+              <Img
+                alt="AP-MS and BioID workflows"
+                fluid={data.proteomics.childImageSharp.fluid}
+              />
+            </div>
             <figcaption>
               AP-MS and BioID workflows. Image courtesy of Kento Abe.
             </figcaption>
@@ -143,11 +176,12 @@ const Research = () => (
         <section id="systemsbiology">
           <h2>Systems biology</h2>
           <figure>
-            <img
-              alt="Cartoon of a human cell with labelled organelles used for mapping"
-              className="research__image-svg"
-              src={SystemsBiology}
-            />
+            <div className="research__image">
+              <Img
+                alt="Cartoon of a human cell with labelled organelles used for mapping"
+                fluid={data.systemsBiology.childImageSharp.fluid}
+              />
+            </div>
             <figcaption>
               Targeted compartments for mapping the cell. Image courtesy of
               Kento Abe.
@@ -241,11 +275,11 @@ const Research = () => (
             </Link>
             ). Lessons learned from these organelle-specific studies have enabled the establishment of a
             comprehensive proximity map of a human cell (
-            <Link to="https://www.biorxiv.org/content/10.1101/796391v2">
+            <Link to="https://www.nature.com/articles/s41586-021-03592-2">
               Go, Knight,
               {' '}
               <span className="italic">
-                bioRχiv
+                Nature
               </span>
               {' '}
               2021
@@ -279,11 +313,12 @@ const Research = () => (
         <section id="signalling">
           <h2>Signalling</h2>
           <figure>
-            <img
-              alt="MTOR signalling at the lysosome membrane"
-              className="research__image-svg"
-              src={Signalling}
-            />
+            <div className="research__image">
+              <Img
+                alt="MTOR signalling at the lysosome membrane"
+                fluid={data.signalling.childImageSharp.fluid}
+              />
+            </div>
             <figcaption>
               MTOR signalling at the lysosome membrane. Image courtesy of
               Geoff Hesketh.
@@ -365,11 +400,12 @@ const Research = () => (
         <section id="covid19">
           <h2>COVID-19 serology</h2>
           <figure>
-            <img
-              alt="COVID-19 serology workflow"
-              className="research__image-svg"
-              src={Serology}
-            />
+            <div className="research__image">
+              <Img
+                alt="COVID-19 serology workflow"
+                fluid={data.serology.childImageSharp.fluid}
+              />
+            </div>
             <figcaption>
               Serology workflows. Image courtesy of Kento Abe.
             </figcaption>
@@ -505,5 +541,30 @@ const Research = () => (
     </div>
   </Layout>
 );
+
+Research.propTypes = {
+  data: PropTypes.shape({
+    proteomics: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fluid: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
+    serology: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fluid: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
+    signalling: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fluid: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
+    systemsBiology: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        fluid: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
+  }).isRequired,
+};
 
 export default Research;
