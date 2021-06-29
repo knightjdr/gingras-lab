@@ -1,4 +1,168 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gingras lab blog RSS Feed]]></title><description><![CDATA[The laboratory of Dr. Anne-Claude Gingras at the Lunenfeld in Toronto studies  mass spectrometry, interaction proteomics, cell signalling, CCM disease and COVID-19.]]></description><link>https://gingraslab.org</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 24 Jun 2021 21:19:44 GMT</lastBuildDate><item><title><![CDATA[Illuminating the organization of the human cell]]></title><description><![CDATA[Researchers from Sinai Health have published a study providing an ultra-detailed look at the organization of a living human cell, providing…]]></description><link>https://gingraslab.org/blog/illuminating-the-organization-of-the-human-cell/</link><guid isPermaLink="false">https://gingraslab.org/blog/illuminating-the-organization-of-the-human-cell/</guid><dc:creator><![CDATA[Francesco Zangari]]></dc:creator><pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Researchers from Sinai Health have published a study providing an ultra-detailed look at the organization of a living human cell, providing a new tool that can help scientists around the world better understand what happens during disease.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gingras lab blog RSS Feed]]></title><description><![CDATA[The laboratory of Dr. Anne-Claude Gingras at the Lunenfeld in Toronto studies  mass spectrometry, interaction proteomics, cell signalling, CCM disease and COVID-19.]]></description><link>https://gingraslab.org</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Jun 2021 12:30:14 GMT</lastBuildDate><item><title><![CDATA[Setting up a high-throughput antibody assay: it takes a village]]></title><description><![CDATA[In March 2020, about one week had passed since the WHO declared that COVID-19 is a pandemic (WHO Director-General's opening remarks at the…]]></description><link>https://gingraslab.org/blog/setting-up-a-high-throughput-antibody-assay-it-takes-a-village/</link><guid isPermaLink="false">https://gingraslab.org/blog/setting-up-a-high-throughput-antibody-assay-it-takes-a-village/</guid><dc:creator><![CDATA[Anne-Claude Gingras]]></dc:creator><pubDate>Thu, 24 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In March 2020, about one week had passed since the WHO declared that COVID-19 is a pandemic (&lt;a href=&quot;https://www.who.int/director-general/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020&quot;&gt;WHO Director-General&apos;s opening remarks at the media briefing on COVID-19 - 11 March 2020&lt;/a&gt;). Fatima Amanat and Florian Krammer had just posted their first preprint on a serological assay for COVID-19: &lt;a href=&quot;https://www.medrxiv.org/content/10.1101/2020.03.17.20037713v1&quot;&gt;A serological assay to detect SARS-CoV-2 seroconversion in humans&lt;/a&gt;. In this manuscript, they described the production of proteins derived from SARS-CoV-2 and setting-up what is known in the field as an ELISA assay (acronym for Enzyme-Linked ImmunoSorbent Assay). In an ELISA, we attach a protein at the bottom of a well in a plastic plate and then add a sample, typically the serum component of blood, to the well to test for the presence of antibodies. These antibodies can recognize the protein, or “antigens,”  attached to the bottom of the well. We then remove the serum and add another antibody that can bind to any human antibody of a given type, such as the IgG antibody. This second antibody is also connected to an enzyme. Once you wash away the antibodies that have not been able to attach, you then provide the enzyme with a “substrate” upon which the enzyme will act to create a change in color or the emission of light, which you detect with a specific instrument. The Amanat and Krammer study succeeded in creating a manual colorimetric assay for the spike protein located on the surface of the SARS-CoV-2 virus and another one for the receptor binding domain of spike, that is responsible for binding to the protein ACE2 on the cells of the human host.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3914f0f1d985e5db03fdc7179175059b/db573/ELISA_LTRI_just_cartoon.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 40.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAACj0lEQVQozzXQW0jTcRwF8K+L5hapWEgD5xxUoMG8jSQyCtvF69JsOnWiom7qRN208jItsAVBmkQXHysiH3oQwV5KFAlsophzF3ez3P3i/nP+3UzXaL9Y0OOBz3k4B1gsFohbKuMQQmBXPUxQLY0WAgzGzQ9lZHziXT73sToP2upuEsqEHGA1FzP62Feo9ex8iHnn2ioJM+ivPmYyU2eKuOwNoZAIHA73RBGXTb2YVZj+eqSEsfahZuhOWUfyLL+S+bxskIJyEaBZBLUBgMThGnZqXxUdUAegnSAcGY2koGXnxmRBQfpccXHpsrA+HhSKMcLLyacnX2jWCFOi1oS3VbfpJQIhyMoFF0orBOfrBPwUAADuSCfhFo9HL+GVZ1bz+ZTp6fcEAAIBAE6xG5uSlLQ0KIjBXa8Djg8xQNEQ+G0GWH41/m8OABABgAwAZwAgVgRSPDktnnyaCgCpsZyZwyCl0KjU/2bmzTsAq8PD2D/Au4OHwdYAvi+1O9wZzl2c9us43BVFqGkPP+h3ejCGzROgeHxY757fJ8L8gXsm80+mWWM/67N5Ov1uXztmc/ca1MbrgGE+SSQcRNFICEXCIWSxWro0apXwOORFYdyHjnA3cjgs93RqXYXdZUQ47kWBgB3NryyOrc4tcczfv6GAy4m8Wyq0uPB5CjY0PxpM29bfNrvTa9q2Rje1ZsGycr3IZNQf7RhMLr1W+2dTa2z9sqC8ptfrDm0Ol0uv30Lrmi3Z7MzXbINKg1sMFo9Zo4usKNUKmBh/Qh4cktNGRh9Qh+Vy+rPJCWJtXUOSpFuWK5HJsts6e/Kbm5opjS0iolQ2wGgXi3N6pANZA/13k2M/SnvuXxK3iXIlHb15j+SKxL+U5EWCfMA5eAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/3914f0f1d985e5db03fdc7179175059b/6d911/ELISA_LTRI_just_cartoon.webp 200w,
+/static/3914f0f1d985e5db03fdc7179175059b/60961/ELISA_LTRI_just_cartoon.webp 400w,
+/static/3914f0f1d985e5db03fdc7179175059b/4b971/ELISA_LTRI_just_cartoon.webp 800w,
+/static/3914f0f1d985e5db03fdc7179175059b/1aa16/ELISA_LTRI_just_cartoon.webp 1200w,
+/static/3914f0f1d985e5db03fdc7179175059b/e3eeb/ELISA_LTRI_just_cartoon.webp 1600w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/3914f0f1d985e5db03fdc7179175059b/b4ec0/ELISA_LTRI_just_cartoon.png 200w,
+/static/3914f0f1d985e5db03fdc7179175059b/24144/ELISA_LTRI_just_cartoon.png 400w,
+/static/3914f0f1d985e5db03fdc7179175059b/29d74/ELISA_LTRI_just_cartoon.png 800w,
+/static/3914f0f1d985e5db03fdc7179175059b/5c837/ELISA_LTRI_just_cartoon.png 1200w,
+/static/3914f0f1d985e5db03fdc7179175059b/db573/ELISA_LTRI_just_cartoon.png 1600w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/3914f0f1d985e5db03fdc7179175059b/29d74/ELISA_LTRI_just_cartoon.png&quot;
+            alt=&quot;Description of the ELISA assay used at the LTRI for the detection of antibodies to SARS-CoV-2 proteins&quot;
+            title=&quot;Description of the ELISA assay used at the LTRI for the detection of antibodies to SARS-CoV-2 proteins&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+  Description of the ELISA assay used at the LTRI for the detection of antibodies to SARS-CoV-2 proteins. Created with BioRender.com.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;This immediately caught my attention and I forwarded the preprint to my colleague Jeff Wrana with whom I co-direct the &lt;a href=&quot;nbcc.lunenfeld.ca&quot;&gt;Network Biology Collaborative Centre, NBCC&lt;/a&gt; at the Lunenfeld-Tanenbaum Research Institute (LTRI). This centre was developed thanks to funding from the Canadian Foundation for Innovation, Genome Canada and the government of Ontario, and it contains a suite of advanced instrumentation for systematically probing biological systems. One of the arms of the NBCC, led by Jeff, specializes in the automation of assays, including for protein-protein interactions. The binding of an antibody to an antigen (here a viral protein) is a relatively easy type of protein interaction to measure, since the binding affinity (how strongly the antibody binds to the target) is quite high. We felt that we were in a unique position to turn the manual assay reported by the Krammer group into an automated high-throughput assay that would enable us to test thousands of samples simultaneously.&lt;/p&gt;
+&lt;p&gt;We also believed that the high quality of the results reported in the Amanat/Krammer preprint should enable a clear diagnosis of individuals who have been previously infected with SARS-CoV-2. At the time, in Canada, testing for the presence of SARS-CoV-2 viral RNA (using a technique known as RT-PCR) was limited to people with a travelling history or of contact with travellers or confirmed cases. Any cases caught via community transmission, a huge driver of the pandemic, would have been missed. Within two days of the first email to Jeff Wrana, others had come together to help. Miriam Barrios-Rodiles, manager of the NBCC high-throughput screening facility, proposed a 384-well luminescence format for the assay, and connected with protein purification expert Yves Durocher at the National Research Council of Canada, NRC, who was setting up spike and RBD purification. Three days later, we also recruited on the “antigen team” from the University of Toronto, including James Rini, an expert in the structural biology of spike proteins, who was also in the process of purifying spike and RBD. Jeff also contacted Ken Hughes at Microbix, who provided protein from spike but also from the nucleocapsid protein. The nucleocapsid was not included in the Amanat/Krammer preprint, but this is a highly immunogenic protein, and many of the commercial assays are based upon its detection. We thought that including a nucleocapsid antigen as part of our screening strategy would increase the confidence in the identification of people with evidence of prior infection (and, as it turns out, this is now critically important to distinguish immunity originating from natural infection, which should induce a nucleocapsid response, from those of the vaccines). Eventually, we ended up using a nucleocapsid protein produced by Derek Ceccarelli in the Sicheri lab at LTRI, the RBD from James Rini and the spike trimer protein from Yves Durocher at the NRC.  As time went by, we also realized that a high-quality, sustainable and shareable (at least within the country) source of antigens was necessary, and this was made possible by a complete switch to antigens produced by the Durocher team at the NRC who also generated reagents for the detection of the antibodies, and also for calibration between assays (and eventually across laboratories). This collaboration with the NRC became the cornerstone of “made-in-Canada” serology testing.&lt;/p&gt;
+&lt;p&gt;Having antigens (and the original protocols from Amanat/Krammer) was a necessary first step, but having access to samples to test them on was just as critical. Tara Moriarty and Karen Maxwell from the University of Toronto helped connect us to a team of immunologists at the University of Toronto, including Jen Gommerman and Mario Ostrowski. Mario in particular had taken large volume blood draws from some of the first patients with COVID-19 in Toronto, and Jen had banked pre-COVID era serum which she was able to share with us. In the days/weeks that followed, Allison McGeer and her colleagues at the Toronto Invasive Bacterial Disease Network (TIBDN) were able to provide additional samples from acute and convalescent patients, and she linked us with the Canadian Blood Services (CBS; Steve Drews) and the National Microbiology Laboratory of Canada (NML; Mike Drebot) who provided further samples for test development.&lt;/p&gt;
+&lt;p&gt;With samples and antigens in hand, all we needed was a “dream team” of experimentalists to set-up and perform the assays, first in manual and then in automated fashion. We were already thinking about developing assays that not only measure the quantity of the antibodies produced, but also whether these antibodies are capable of preventing one of the most important steps in infection, spike protein binding to the receptor protein ACE2, which is on the surface of the host cells. The task of setting up and optimizing these assays was accomplished in record-time by a PhD student in my lab, Kento Abe, and my lab manager, research technician Bhavisha Rathod. They optimized all assay conditions to detect antibodies to each of the three antigens, and they developed different assays to look at different types of antibodies (IgG, IgA and IgM).  They tested dozens of conditions and several hundreds of samples manually until they were satisfied that the assay was working properly, and then worked with the robotics team to transfer the assay to the automated platform. Jenny Wang, automation specialist within the NBCC, and Miriam Barrios-Rodiles worked on transferring the manual assay to an automated assay that uses four times less material per assay and provides a more sensitive signal (Jenny is currently trying to further increase the throughput of the assay). They were able to demonstrate that the automated assay performed well and that if the same sample was analyzed twice with the same test, it returned the same results both times. Together, the team was then able to take a large number of samples that had been collected prior to the COVID-19 pandemic (presumed negatives, about 300), and confirmed COVID-19 samples (provided by the CBS, Mario Ostrowski or Allison McGeer and the TIBDN team; also about 300), so that we could define what was the sensitivity and the specificity of each individual assay. In other words, how many of the pre-COVID serum samples would be (falsely) called positive by each individual assays (false positive rate, a measure of specificity) and how many samples from convalescent individuals with confirmed SARS-CoV-2 infection would be correctly identified as positive (sensitivity). We also realized early on that requiring a sample to score “positive” on two or more of the three assays really helped us reduce the false positive rate, while maintaining the sensitivity at an acceptable rate. This strategy is particularly important if the expected seroprevalence is low as it was in Canada in the first waves of infection, and prior to the introduction of vaccination.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4b5a316b00d883d8e577d3434456cae3/43ad0/Covid_researchers_MSH-6.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 71.50000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBAwT/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAFoUp0g3Af/xAAbEAEBAAIDAQAAAAAAAAAAAAABAgMEABITIv/aAAgBAQABBQLN9TUngDzbtw4+6ppVZ//EABcRAAMBAAAAAAAAAAAAAAAAAAABERL/2gAIAQMBAT8Bbho//8QAGBEAAgMAAAAAAAAAAAAAAAAAAAECERL/2gAIAQIBAT8BUbMn/8QAHRAAAgEEAwAAAAAAAAAAAAAAAREAAiEyQRNRgf/aAAgBAQAGPwKstXVpxZEDI7nUY2ZQiYxUvZ//xAAcEAACAgIDAAAAAAAAAAAAAAABEQBRITGBsdH/2gAIAQEAAT8hQABBGh5MakUpxSQN9oMtd8fg7DUwD6fyf//aAAwDAQACAAMAAAAQ8+//xAAWEQEBAQAAAAAAAAAAAAAAAAABEQD/2gAIAQMBAT8QirhpZv/EABcRAAMBAAAAAAAAAAAAAAAAAAABEUH/2gAIAQIBAT8QQIxn/8QAHBAAAwEAAgMAAAAAAAAAAAAAAREhADFBUYHB/9oACAEBAAE/EHUEqYhfZJhi4HKPSwu4r5x4xIFJ/GquTSslczhDOsF0isdJCwkecIDh/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/4b5a316b00d883d8e577d3434456cae3/6d911/Covid_researchers_MSH-6.webp 200w,
+/static/4b5a316b00d883d8e577d3434456cae3/60961/Covid_researchers_MSH-6.webp 400w,
+/static/4b5a316b00d883d8e577d3434456cae3/4b971/Covid_researchers_MSH-6.webp 800w,
+/static/4b5a316b00d883d8e577d3434456cae3/1aa16/Covid_researchers_MSH-6.webp 1200w,
+/static/4b5a316b00d883d8e577d3434456cae3/e3eeb/Covid_researchers_MSH-6.webp 1600w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/4b5a316b00d883d8e577d3434456cae3/7a70a/Covid_researchers_MSH-6.jpg 200w,
+/static/4b5a316b00d883d8e577d3434456cae3/b2cea/Covid_researchers_MSH-6.jpg 400w,
+/static/4b5a316b00d883d8e577d3434456cae3/93d59/Covid_researchers_MSH-6.jpg 800w,
+/static/4b5a316b00d883d8e577d3434456cae3/0516a/Covid_researchers_MSH-6.jpg 1200w,
+/static/4b5a316b00d883d8e577d3434456cae3/43ad0/Covid_researchers_MSH-6.jpg 1600w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/jpeg&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/4b5a316b00d883d8e577d3434456cae3/93d59/Covid_researchers_MSH-6.jpg&quot;
+            alt=&quot;PhD student Kento Abe and research technician Bhavisha Rathod, seen optimizing the manual ELISA assay&quot;
+            title=&quot;PhD student Kento Abe and research technician Bhavisha Rathod, seen optimizing the manual ELISA assay&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+  PhD student Kento Abe and research technician Bhavisha Rathod, seen optimizing the manual ELISA assay. Picture courtesy of Sinai Health.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Our first large-scale application of the automated assays included measurements of IgG, IgA and IgM to the three antigens spike, RBD and the nucleocapsid. We performed these measurements on nearly 500 serum samples from patients with an acute COVID-19 infection (all collected through the TIBDN in Toronto) to look at the dynamics of antibody production in the three to four months following an infection. The profiling by the Gommerman team of antibodies in the saliva enabled us to compare serum and saliva antibody levels for many of the same patients, and to conclude that saliva is an appropriate alternative body fluid for antibody measurements. We also were able to report, in agreement with several other reports published around the same time and since then, that IgG but not IgA or IgM are still detectable many months after the infection. The study was published online in October 2020 (with students Baweleta Isho, Kento Abe, Michelle Zuo and Alainna Jamal sharing co-first authorship; &lt;a href=&quot;https://immunology.sciencemag.org/content/5/52/eabe5511&quot;&gt;Persistence of serum and saliva antibody responses to SARS-CoV-2 spike antigens in COVID-19 patients&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Our success in setting up these assays on an automated platform rapidly drew the attention of other groups that were interested in looking at antibodies to SARS-CoV-2 proteins for either immune correlates or seroprevalence studies (most of the studies that are still ongoing have now pivoted to vaccine response studies). This would involve more than 25 projects, with 80,000 samples processed so far (the majority with three assays per sample). Each of the projects comes with unique challenges, including different labeling schemes, sample types (liquid blood, dried blood spots), requirement for measurements of different antibodies, timelines for reporting to participants, etc. The logistics associated with these projects therefore require a high level of organization and tracking, both on the administrative side and on the ground, and the development of quality control steps and automated data analysis and visualization tools.&lt;/p&gt;
+&lt;p&gt;Throughout this process, NBCC manager Karen Colwill played a critical support role. She made sure that we had material transfer agreements and research ethics board approvals in place, worked on our biosafety protocols, and coordinated with Bhavisha Rathod and Miriam Barrios-Rodiles to order materia, which, as it turns out, was not an easy task in pandemic times, with delays and shortages affecting the availability of plasticware that is necessary for the assays. As we moved into production mode with the high-throughput ELISA assays, Karen took on an increasingly important role, including tracking projects and scheduling samples to be run, and manually reviewing the data generated in each batch and reporting the results to the project leads. On the ground, Bhavisha Rathod held down the fort and worked with a team of recently-recruited individuals (Mahya Fazel-Zarandi, Mariam Iskilova, Queenie Hu, Monica Dayam) to receive all the samples, make sure that any potential virus was inactivated, prepare them for analysis in automated runs, and store the remaining samples properly.&lt;/p&gt;
+&lt;figure&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a6dea9c48c3a77d29cd11609688b856e/db573/Karen_Bhavisha_CanPath.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 37.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB40lEQVQY0wXBy2sTQRwA4P2jKuIhYtX2UqsGqUWCaA82l/pA0CKinnKQgvUgQYViVJCWqi0iGqvG2EOawCa2CXlUm8zOzsy+stk02Uc2m939+X2cZZqKLJv9PoQAAN7QUxW1o+v+yAeAkefpbZ1RZpkmAPz8mpmNTlyNRaNnTsVmz3OohQiRWkgwe30AYEwSMUMIq4oKIXQ6BsaEYIIFIQyg8Du3/vLB5yd3nz+8VctvcoyochMpxZKBsOv7KP2NpLfo/l9ZwEN3qMma+K9F9ypiueLabi6/fWd+ZjkeS8zPrSSXOJTbo+8/yL+yBqWWN9p5lZJSr5VMRi2WLNOUicb4XaVYotXawB409gsLN65dn7vy4vHNd8nbXHE9Tao1Kqsd3bBtO/cli0pVqYmYyBxnINYF4e2qtLomftwY9Cy+zE9NjccvL8QvXUwk7nPbmbquHypU6erdIPAz36uNmqIwXWZaCFAuNLPJlYPNTwepN+6h+We39PTZ0uK9xcjRI2PjJ7m2pgkYM00b+QEA2JZDKRUlyXFdAHBdT2SSQIhmdAGA5/mNH1try49mTkciJ6Y5zxk4THIqlaDXAwDfGzlt3ao3hoIAAGEQ2ka3T4gtYgDI53cunJuITx0/e2xscnL6P1x4fenGmyJEAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;picture&gt;
+          &lt;source
+              srcset=&quot;/static/a6dea9c48c3a77d29cd11609688b856e/6d911/Karen_Bhavisha_CanPath.webp 200w,
+/static/a6dea9c48c3a77d29cd11609688b856e/60961/Karen_Bhavisha_CanPath.webp 400w,
+/static/a6dea9c48c3a77d29cd11609688b856e/4b971/Karen_Bhavisha_CanPath.webp 800w,
+/static/a6dea9c48c3a77d29cd11609688b856e/1aa16/Karen_Bhavisha_CanPath.webp 1200w,
+/static/a6dea9c48c3a77d29cd11609688b856e/e3eeb/Karen_Bhavisha_CanPath.webp 1600w&quot;
+              sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+              type=&quot;image/webp&quot;
+            /&gt;
+          &lt;source
+            srcset=&quot;/static/a6dea9c48c3a77d29cd11609688b856e/b4ec0/Karen_Bhavisha_CanPath.png 200w,
+/static/a6dea9c48c3a77d29cd11609688b856e/24144/Karen_Bhavisha_CanPath.png 400w,
+/static/a6dea9c48c3a77d29cd11609688b856e/29d74/Karen_Bhavisha_CanPath.png 800w,
+/static/a6dea9c48c3a77d29cd11609688b856e/5c837/Karen_Bhavisha_CanPath.png 1200w,
+/static/a6dea9c48c3a77d29cd11609688b856e/db573/Karen_Bhavisha_CanPath.png 1600w&quot;
+            sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+            type=&quot;image/png&quot;
+          /&gt;
+          &lt;img
+            class=&quot;gatsby-resp-image-image&quot;
+            src=&quot;/static/a6dea9c48c3a77d29cd11609688b856e/29d74/Karen_Bhavisha_CanPath.png&quot;
+            alt=&quot;Karen Colwill (centre right) reviewing the results for a seroprevalence and vaccination study at a team meeting&quot;
+            title=&quot;Karen Colwill (centre right) reviewing the results for a seroprevalence and vaccination study at a team meeting&quot;
+            loading=&quot;lazy&quot;
+            decoding=&quot;async&quot;
+            style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+          /&gt;
+        &lt;/picture&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;figcaption&gt;
+  Karen Colwill (centre right) reviewing the results for a seroprevalence and vaccination study at a team meeting. Also pictured: Bhavisha Rathod (bottom) and Anne-Claude Gingras (top). The visualization show has been developed by Adrian Pasculescu.
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;While our assay relies on automation, the initial sample intake is very much manual and varies for each project. For example, in a recent serology surveillance study run by Statistics Canada using dried blood spot cards, samples came individually packed in a small envelope, with 10 envelopes placed into a small plastic bag and these bags packaged inside a large container. Each outside bag, then inside envelope, needed to be opened, the barcode on the dried blood spot card read, and a small portion of the dried blood spot cut out with a laser puncher into a plate containing 96 separate wells. Then the card needed to be put back into its place and stored safely. The antibodies contained on the dried blood spot needed to be extracted by the addition of a liquid containing detergent before they could be brought to the robot for the assays. In some other projects, liquid blood product (most often serum) is provided, most of the time frozen, and hand-written or typed labels instead of barcodes are often affixed to the samples. These sample identifiers must be manually transferred to our database and verified so errors are not made. The serum is transferred to a well of a 96-well plate that contains detergent to inactivate any potential virus in a specific order before being brought to the robot. The automated runs are set-up by Jenny Wang (and more recently Mariam Iskilova and Mahya Fazel-Zarandi), and the results are transferred by the operator to our server.  Biostatistician Adrian Pasculescu created automated scripts to perform quality control checks and extract the data for all the test samples in a given batch. We always express the values detected in an assay against those detected with a calibration standard since this makes it easier to compare the studies from day to day. Both Adrian and Kento Abe developed other visualization and analysis tools that make it easier to see what are the levels of antibodies in a specific sample or across multiple samples within a project.  This also facilitates communication with our external partners, and the preparation of data for publication.&lt;/p&gt;
+&lt;p&gt;Each person has a critically important role to play in the development of these assays or their implementation across projects. Teamwork and communication are critically important, as is the leadership of team leads. We also have developed complementary assays that are not currently amenable to automation, but provide critical information on the ability of antibodies to block the entry of a virus into cells (these assays were developed by PhD student Reuben Samson with former postdoctoral fellow Payman Samavarchi-Tehrani and are now performed by Queenie Hu and Reuben). Importantly, we have worked closely with different investigators across the country to profile antibody levels across multiple cohorts. These interactions have been rewarding to the team, especially as our work may have helped inform some public health decisions.&lt;/p&gt;
+&lt;p&gt;Throughout this endeavour, we have been fortunate to secure funding that has allowed us to set-up the assays, notably through the Sinai Health Foundation that secured donations from the RBC Foundation, the Krembil Foundation and QuestCap early in the pandemic. Our collaborations/services to different research projects have led to additional funding primarily through the CIHR, the Ontario government and more recently the COVID-19 Immunity Task Force.&lt;/p&gt;
+&lt;p&gt;In this piece, I only focused on the contributions of our team at the LTRI and NBCC and our close collaborators in setting-up the automated ELISA assays. Future blog spots will highlight some of the important projects we are assisting using these assays.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Illuminating the organization of the human cell]]></title><description><![CDATA[Researchers from Sinai Health have published a study providing an ultra-detailed look at the organization of a living human cell, providing…]]></description><link>https://gingraslab.org/blog/illuminating-the-organization-of-the-human-cell/</link><guid isPermaLink="false">https://gingraslab.org/blog/illuminating-the-organization-of-the-human-cell/</guid><dc:creator><![CDATA[Francesco Zangari]]></dc:creator><pubDate>Wed, 02 Jun 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Researchers from Sinai Health have published a study providing an ultra-detailed look at the organization of a living human cell, providing a new tool that can help scientists around the world better understand what happens during disease.&lt;/p&gt;
 &lt;p&gt;The &lt;a href=&quot;https://www.nature.com/articles/s41586-021-03592-2&quot;&gt;new study&lt;/a&gt;, out today in the journal Nature, was conducted in the laboratory of Dr. Anne-Claude Gingras, a senior investigator at the LTRI and professor in the Department of Molecular Genetics at the University of Toronto.&lt;/p&gt;
 &lt;p&gt;The human body is composed of trillions of cells that are each further separated into different compartments with dedicated functions, much like a house has different rooms for sleeping or preparing food. These compartments, which are called organelles, each contain different proteins that perform specific activities associated with the compartment. Prominent examples of organelles include the mitochondria, responsible for generating the cell&apos;s primary energy supply, and the endoplasmic reticulum, a key structure for protein production.&lt;/p&gt;
 &lt;p&gt;Knowing which proteins are residing in which organelles is an important first step towards understanding the role of each cellular protein. However, approaches taken previously have most often relied on methods that first kill the cells before trying to separate the organelles from one another (akin to taking the house apart and trying to isolate each of the individual rooms). These approaches tend to provide only crude views of the organization of a cell.&lt;/p&gt;
