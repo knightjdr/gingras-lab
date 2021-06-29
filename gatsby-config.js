@@ -29,6 +29,29 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     'gatsby-transformer-sharp',
     {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        useMozJpeg: true,
+        defaultQuality: 70,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              backgroundColor: 'none',
+              maxWidth: 800,
+              quality: 70,
+              withWebp: true,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
@@ -40,14 +63,6 @@ module.exports = {
       options: {
         name: 'markdown',
         path: `${__dirname}/src/markdown`,
-      },
-    },
-    'gatsby-transformer-remark',
-    {
-      resolve: 'gatsby-plugin-sharp',
-      options: {
-        useMozJpeg: true,
-        defaultQuality: 70,
       },
     },
     {
@@ -82,8 +97,8 @@ module.exports = {
               author: edge.node.frontmatter.author,
               description: edge.node.excerpt,
               date: edge.node.frontmatter.date,
-              url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-              guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              url: `${site.siteMetadata.siteUrl}/blog${edge.node.fields.slug}`,
+              guid: `${site.siteMetadata.siteUrl}/blog${edge.node.fields.slug}`,
               custom_elements: [{ 'content:encoded': edge.node.html }],
             })),
             query: `

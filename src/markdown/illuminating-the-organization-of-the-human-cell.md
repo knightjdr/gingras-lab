@@ -4,10 +4,11 @@ author: "Francesco Zangari"
 authorPhoto: "francesco-zangari"
 date: "2021-06-02"
 description: "Illuminating the organization of the human cell, a blog by Francesco Zangari"
-ogImage: "../../images/opengraph/og-cellmap-2021-6-2.png"
+ogImage: "../images/blog/2021-06-02/og-cellmap-2021-6-2.png"
 title: "Illuminating the organization of the human cell"
-twitterImage: "../../images/opengraph/twitter-cellmap-2021-6-2.png"
+twitterImage: "../images/blog/2021-06-02/twitter-cellmap-2021-6-2.png"
 ---
+
 Researchers from Sinai Health have published a study providing an ultra-detailed look at the organization of a living human cell, providing a new tool that can help scientists around the world better understand what happens during disease.
 
 The [new study](https://www.nature.com/articles/s41586-021-03592-2), out today in the journal Nature, was conducted in the laboratory of Dr. Anne-Claude Gingras, a senior investigator at the LTRI and professor in the Department of Molecular Genetics at the University of Toronto.

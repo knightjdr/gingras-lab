@@ -27,14 +27,14 @@ export const pageQuery = graphql`
         }
       }
     }
-    ogImage: file(relativePath: { eq: "opengraph/og-blog.jpg" }) {
+    ogImage: file(relativePath: { eq: "blog/opengraph/og-blog.jpg" }) {
       childImageSharp {
         fixed(width: 1200, height: 630) {
           src
         }
       }
     }
-    twitterImage: file(relativePath: { eq: "opengraph/twitter-blog.jpg" }) {
+    twitterImage: file(relativePath: { eq: "blog/opengraph/twitter-blog.jpg" }) {
       childImageSharp {
         fixed(width: 1200, height: 600) {
           src
