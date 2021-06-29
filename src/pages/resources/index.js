@@ -87,11 +87,11 @@ const Resources = ({ data }) => (
                 Network Biology Collaborative Centre (NBCC)
               </Link>
             </li>
-            {/* <li>
-              <Link to="">
-                Coronavirus Variants Rapid Response Network (CoVaRR-Net )
+            <li>
+              <Link to="https://covarrnet.ca">
+                Coronavirus Variants Rapid Response Network (CoVaRR-Net)
               </Link>
-            </li> */}
+            </li>
           </ul>
         </section>
         <section className="resources__resource">
