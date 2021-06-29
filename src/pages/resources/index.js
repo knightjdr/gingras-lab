@@ -115,7 +115,7 @@ const Resources = ({ data }) => (
                   </p>
                   <ul>
                     <li><Link to="https://humancellmap.org">Humancellmap</Link></li>
-                    <li><Link to="https://www.biorxiv.org/content/10.1101/796391v1">Publication</Link></li>
+                    <li><Link to="https://www.nature.com/articles/s41586-021-03592-2">Publication</Link></li>
                   </ul>
                 </div>
                 <div className="resource__image">
