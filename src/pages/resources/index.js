@@ -163,7 +163,7 @@ const Resources = ({ data }) => (
                     resource should facilitate interaction proteomics analysis and visualization.
                   </p>
                   <ul>
-                    <li><Link to="https://prohits-viz.lunenfeld.ca">ProHits-viz</Link></li>
+                    <li><Link to="https://prohits-viz.org">ProHits-viz</Link></li>
                     <li><Link to="https://www.nature.com/articles/nmeth.4330">Publication</Link></li>
                   </ul>
                 </div>
@@ -315,7 +315,7 @@ const Resources = ({ data }) => (
                   )
                   and for use with our visualization tools
                   (
-                  <Link to="https://prohits-viz.lunenfeld.ca/">ProHits-viz</Link>
+                  <Link to="https://prohits-viz.org/">ProHits-viz</Link>
                   ).
                 </li>
               </ul>
