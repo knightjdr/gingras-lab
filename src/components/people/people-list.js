@@ -24,6 +24,12 @@ const peopleList = [
     title: 'Postdoctoral fellow',
   },
   {
+    email: 'udionne@lunenfeld.ca',
+    file: 'ugo-dionne',
+    name: 'Ugo Dionne',
+    title: 'Postdoctoral fellow',
+  },
+  {
     email: 'go@lunenfeld.ca',
     file: 'chris-go',
     name: 'Chris Go',
