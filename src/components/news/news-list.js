@@ -1,8 +1,24 @@
+/* eslint-disable max-len */
 import React from 'react';
 
 import Link from '../link/link';
 
 const newsItems = [
+  {
+    date: 'July 28, 2021',
+    title: 'New paper on TurboID-mediated BioID in zebrafish',
+    text: (
+      <>
+        Our new
+        {' '}
+        <Link to="https://www.mcponline.org/article/S1535-9476(21)00100-6/fulltext">paper</Link>
+        {' '}
+        by Shimon Rosenthal (with Ian Scott) describes protocols for TurboID-mediated
+        proximity-dependent biotinylation in zebrafish embryos using either mRNA injections or
+        inducible transgenics.
+      </>
+    ),
+  },
   {
     date: 'June 2, 2021',
     title: 'The human cell map is published at Nature',
@@ -16,21 +32,6 @@ const newsItems = [
         {' '}
         <Link to="https://humancellmap.org">humancellmap.org</Link>
         .
-      </>
-    ),
-  },
-  {
-    date: 'May 17, 2021',
-    title: 'New preprint on TurboID-mediated BioID in zebrafish',
-    text: (
-      <>
-        Our new
-        {' '}
-        <Link to="https://www.biorxiv.org/content/10.1101/2021.05.16.444353v1">preprint</Link>
-        {' '}
-        by Shimon Rosenthal (with Ian Scott) describes protocols for TurboID-mediated
-        proximity-dependent biotinylation in zebrafish embryos using either mRNA injections or
-        inducible transgenics.
       </>
     ),
   },
