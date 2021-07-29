@@ -30,12 +30,6 @@ const peopleList = [
     title: 'Postdoctoral fellow',
   },
   {
-    email: 'go@lunenfeld.ca',
-    file: 'chris-go',
-    name: 'Chris Go',
-    title: 'Graduate student',
-  },
-  {
     email: 'jon.roth@mail.utoronto.ca',
     file: 'jonathan-roth',
     name: 'Jonathan Roth',
@@ -138,12 +132,6 @@ const peopleList = [
     title: 'Research technician',
   },
   {
-    email: 'habdouni@lunenfeld.ca',
-    file: 'hala-abdouni',
-    name: 'Hala Abdouni',
-    title: 'Research technician',
-  },
-  {
     email: 'bseale@lunenfeld.ca',
     file: 'brendon-seale',
     name: 'Brendon  Seale',
@@ -153,13 +141,27 @@ const peopleList = [
     email: 'qhu@lunenfeld.ca',
     file: 'queenie-hu',
     name: 'Queenie Hu',
-    title: 'Research technician',
+    title: 'Research associate',
   },
   {
     email: 'rdayam@lunenfeld.ca',
     file: 'monica-dayam',
     name: 'Monica Dayam',
     title: 'Research associate',
+  },
+  {
+    email: 'gmailhot@lunenfeld.ca',
+    file: '',
+    // file: 'genevieve-mailhot',
+    name: 'Geneviève Mailhot',
+    title: 'Research technician',
+  },
+  {
+    email: 'delgadobrand@lunenfeld.ca',
+    file: '',
+    // file: 'melanie-delgado-brand',
+    name: 'Melanie Delgado-Brand',
+    title: 'Research technician',
   },
   {
     email: 'lseifried@lunenfeld.ca',
@@ -172,12 +174,6 @@ const peopleList = [
     file: 'rod-hardy',
     name: 'Rod Hardy',
     title: 'CoVaRR-Net research associate',
-  },
-  {
-    email: 'mfazel@lunenfeld.ca',
-    file: 'mahya-fazel',
-    name: 'Mahya Fazel-Zarandi',
-    title: 'Student research assistant',
   },
 ];
 
