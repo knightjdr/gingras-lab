@@ -111,7 +111,7 @@ const alumni = [
     name: 'Nicole St-Denis',
     position: 'High-Fidelity Science Communications',
     role: 'Postdoctoral Fellow',
-    website: 'https://www.hifiscicomm.ca,',
+    website: 'https://www.hifiscicomm.ca',
   },
   {
     name: 'Payman Samavarchi Tehrani',
