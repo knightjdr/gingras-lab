@@ -21,6 +21,22 @@
   width: calc(100vw - 40px);
 }
 
+.people__alumni {
+  font-size: 1.1rem;
+}
+.people__alumni li {
+  margin: 0.8rem 0;
+}
+.people__alumnus-name {
+  font-weight: bold;
+}
+.people__alumnus-position {
+  font-size: 1rem;
+}
+.people__alumnus-role {
+  font-style: italic;
+}
+
 .people__grid {
   align-items: center;
   display: flex;

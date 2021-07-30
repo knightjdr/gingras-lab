@@ -6,10 +6,12 @@ import { graphql } from 'gatsby';
 import Head from '../../components/head';
 import Layout from '../../components/layout';
 
+import formatAlumni from '../../components/people/format-alumni';
 import formatPeople from '../../components/people/format-people';
 
 import Camera from '../../images/icon/camera-retro.svg';
 import Users from '../../images/icon/users.svg';
+import UserFriends from '../../images/icon/user-friends.svg';
 
 import './people.css';
 
@@ -101,6 +103,21 @@ const People = ({ data }) => {
               />
               <figcaption>Staff appreciation day, 2018.</figcaption>
             </figure>
+          </div>
+        </section>
+        <section>
+          <header>
+            <h1>
+              Alumni
+            </h1>
+            <img
+              alt="Two people, one standing in front of the other"
+              height="25"
+              src={UserFriends}
+            />
+          </header>
+          <div className="people__alumni">
+            {formatAlumni()}
           </div>
         </section>
       </div>
