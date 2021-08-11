@@ -150,6 +150,12 @@ const peopleList = [
     title: 'Research associate',
   },
   {
+    email: 'whardy@lunenfeld.ca',
+    file: 'rod-hardy',
+    name: 'Rod Hardy',
+    title: 'CoVaRR-Net research associate',
+  },
+  {
     email: 'gmailhot@lunenfeld.ca',
     file: '',
     // file: 'genevieve-mailhot',
@@ -166,14 +172,9 @@ const peopleList = [
   {
     email: 'lseifried@lunenfeld.ca',
     file: '',
+    // file: 'laurie-seifried',
     name: 'Laurie Seifried',
     title: 'CoVaRR-Net pillar coordinator',
-  },
-  {
-    email: 'whardy@lunenfeld.ca',
-    file: 'rod-hardy',
-    name: 'Rod Hardy',
-    title: 'CoVaRR-Net research associate',
   },
 ];
 
