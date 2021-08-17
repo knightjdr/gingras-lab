@@ -5,6 +5,23 @@ import Link from '../link/link';
 
 const newsItems = [
   {
+    date: 'Aug 12, 2021',
+    title: 'A new version of ProHits-viz is released',
+    text: (
+      <>
+        We have just released a new version of our data visualization suite
+        {' '}
+        <Link to="https://prohits-viz.org">ProHits-viz</Link>
+        , including a new interface, more interactive features, a new analysis tool,
+        detailed online help and a number of tutorial videos. Check out our
+        {' '}
+        <Link to="https://twitter.com/gingraslab1/status/1425859568815558660">Twitter thread</Link>
+        {' '}
+        for more details on the changes.
+      </>
+    ),
+  },
+  {
     date: 'July 28, 2021',
     title: 'New paper on TurboID-mediated BioID in zebrafish',
     text: (
