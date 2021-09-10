@@ -20,6 +20,7 @@ const alumni = [
   },
   {
     name: 'Chris Go',
+    position: 'Medical Writer, INVIVO',
     role: 'PhD Student',
   },
   {
