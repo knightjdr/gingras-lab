@@ -1,4 +1,4 @@
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from 'prop-types';
 import React from 'react';
 import { graphql } from 'gatsby';
@@ -16,37 +16,28 @@ import Server from '../../images/icon/server.svg';
 
 import './resources.css';
 
-export const query = graphql`
-  query {
-    cellmap: file(relativePath: { eq: "resource/cellmap.jpg" }) {
-      childImageSharp {
-        fixed(width: 400, height: 251) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
-    }
-    geneInfo: file(relativePath: { eq: "resource/gene-info.jpg" }) {
-      childImageSharp {
-        fixed(width: 400, height: 250) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
-    }
-    prohitsViz: file(relativePath: { eq: "resource/prohits-viz.jpg" }) {
-      childImageSharp {
-        fixed(width: 300, height: 189) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
-    }
-    diaUmpire: file(relativePath: { eq: "resource/dia-umpire.jpg" }) {
-      childImageSharp {
-        fixed(width: 125, height: 47) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
+export const query = graphql`{
+  cellmap: file(relativePath: {eq: "resource/cellmap.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 400, height: 251, layout: FIXED)
     }
   }
+  geneInfo: file(relativePath: {eq: "resource/gene-info.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 400, height: 250, layout: FIXED)
+    }
+  }
+  prohitsViz: file(relativePath: {eq: "resource/prohits-viz.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 300, height: 189, layout: FIXED)
+    }
+  }
+  diaUmpire: file(relativePath: {eq: "resource/dia-umpire.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 125, height: 47, layout: FIXED)
+    }
+  }
+}
 `;
 
 const Resources = ({ data }) => (
@@ -119,10 +110,9 @@ const Resources = ({ data }) => (
                   </ul>
                 </div>
                 <div className="resource__image">
-                  <Img
-                    alt="Screenshot of GIX report on PubMed"
-                    fixed={data.cellmap.childImageSharp.fixed}
-                  />
+                  <GatsbyImage
+                    image={data.cellmap.childImageSharp.gatsbyImageData}
+                    alt="Screenshot of GIX report on PubMed" />
                 </div>
               </div>
             </li>
@@ -142,10 +132,9 @@ const Resources = ({ data }) => (
                   </ul>
                 </div>
                 <div className="resource__image">
-                  <Img
-                    alt="Screenshot of GIX report on PubMed"
-                    fixed={data.geneInfo.childImageSharp.fixed}
-                  />
+                  <GatsbyImage
+                    image={data.geneInfo.childImageSharp.gatsbyImageData}
+                    alt="Screenshot of GIX report on PubMed" />
                 </div>
               </div>
             </li>
@@ -168,10 +157,9 @@ const Resources = ({ data }) => (
                   </ul>
                 </div>
                 <div className="resource__image">
-                  <Img
-                    alt="Screenshot of ProHits-viz home page"
-                    fixed={data.prohitsViz.childImageSharp.fixed}
-                  />
+                  <GatsbyImage
+                    image={data.prohitsViz.childImageSharp.gatsbyImageData}
+                    alt="Screenshot of ProHits-viz home page" />
                 </div>
               </div>
             </li>
@@ -221,10 +209,9 @@ const Resources = ({ data }) => (
             <li>
               <h3>DIA-Umpire: Integrated solution for Data Independent Acquisition</h3>
               <div className="resource__image">
-                <Img
-                  alt="DIA-Umpire logo"
-                  fixed={data.diaUmpire.childImageSharp.fixed}
-                />
+                <GatsbyImage
+                  image={data.diaUmpire.childImageSharp.gatsbyImageData}
+                  alt="DIA-Umpire logo" />
               </div>
               <p>
                 Chih-Chiang Tsou from the
@@ -705,22 +692,22 @@ Resources.propTypes = {
   data: PropTypes.shape({
     cellmap: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fixed: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     geneInfo: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fixed: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     prohitsViz: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fixed: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     diaUmpire: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fixed: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
   }).isRequired,

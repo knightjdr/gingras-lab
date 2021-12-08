@@ -13,8 +13,7 @@ const peopleList = [
   },
   {
     email: 'lseifried@lunenfeld.ca',
-    file: '',
-    // file: 'laurie-seifried',
+    file: 'laurie-seifried',
     name: 'Laurie Seifried',
     title: 'CoVaRR-Net pillar coordinator',
   },

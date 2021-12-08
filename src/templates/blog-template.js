@@ -1,6 +1,6 @@
-import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { GatsbyImage, getSrc } from 'gatsby-plugin-image';
 import { graphql } from 'gatsby';
 
 import Head from '../components/head';
@@ -8,49 +8,41 @@ import Layout from '../components/layout';
 
 import './blog-template.css';
 
-export const pageQuery = graphql`
-  query($slug: String!) {
-    allFile(filter:{
-      extension: { regex: "/(jpeg|jpg|png)/" },
-      relativeDirectory: { eq: "people" }
-    }) {
-      edges {
-        node {
-          childImageSharp {
-            fixed(width: 113, height: 150, toFormat: JPG) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-          name
+export const pageQuery = graphql`query ($slug: String!) {
+  allFile(
+    filter: {extension: {regex: "/(jpeg|jpg|png)/"}, relativeDirectory: {eq: "people"}}
+  ) {
+    edges {
+      node {
+        childImageSharp {
+          gatsbyImageData(width: 113, height: 150, formats: [JPG, WEBP], layout: FIXED)
         }
+        name
       }
     }
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        author
-        authorPhoto
-        date(formatString: "MMMM DD, YYYY")
-        description
-        ogImage {
-          childImageSharp {
-            fixed(width: 1200, height: 630) {
-              src
-            }
-          }
+  }
+  markdownRemark(frontmatter: {slug: {eq: $slug}}) {
+    html
+    frontmatter {
+      author
+      authorPhoto
+      date(formatString: "MMMM DD, YYYY")
+      description
+      ogImage {
+        childImageSharp {
+          gatsbyImageData(width: 1200, height: 630, placeholder: BLURRED, layout: FIXED)
         }
-        slug
-        title
-        twitterImage {
-          childImageSharp {
-            fixed(width: 1200, height: 600) {
-              src
-            }
-          }
+      }
+      slug
+      title
+      twitterImage {
+        childImageSharp {
+          gatsbyImageData(width: 1200, height: 600, placeholder: BLURRED, layout: FIXED)
         }
       }
     }
   }
+}
 `;
 
 const BlogTemplate = ({
@@ -73,17 +65,20 @@ const BlogTemplate = ({
 }) => {
   const images = allFile.edges.reduce((accum, edge) => ({
     ...accum,
-    [edge.node.name]: edge.node.childImageSharp.fixed,
+    [edge.node.name]: edge.node.childImageSharp.gatsbyImageData,
   }), {});
+
+  const ogImagePath = getSrc(ogImage);
+  const ogTwitterPath = getSrc(twitterImage);
 
   return (
     <Layout>
       <Head
         description={description}
-        ogImage={ogImage?.childImageSharp?.fixed?.src}
+        ogImage={ogImagePath}
         route={slug}
         title={`Blog: ${title}`}
-        twitterImage={twitterImage?.childImageSharp?.fixed?.src}
+        twitterImage={ogTwitterPath}
       />
       <div className="blog-post-container">
         <article className="blog-post">
@@ -98,10 +93,7 @@ const BlogTemplate = ({
               {
                 images[authorPhoto]
                 && (
-                  <Img
-                    alt={author}
-                    fixed={images[authorPhoto]}
-                  />
+                  <GatsbyImage image={images[authorPhoto]} alt={author} />
                 )
               }
               <time dateTime={date}>{date}</time>
@@ -125,7 +117,7 @@ BlogTemplate.propTypes = {
         PropTypes.shape({
           node: PropTypes.shape({
             childImageSharp: PropTypes.shape({
-              fixed: PropTypes.shape({}).isRequired,
+              gatsbyImageData: PropTypes.shape({}).isRequired,
             }).isRequired,
             name: PropTypes.string.isRequired,
           }).isRequired,
@@ -138,22 +130,10 @@ BlogTemplate.propTypes = {
         authorPhoto: PropTypes.string,
         date: PropTypes.string,
         description: PropTypes.string,
-        ogImage: PropTypes.shape({
-          childImageSharp: PropTypes.shape({
-            fixed: PropTypes.shape({
-              src: PropTypes.string,
-            }),
-          }),
-        }),
+        ogImage: PropTypes.shape({}),
         slug: PropTypes.string,
         title: PropTypes.string,
-        twitterImage: PropTypes.shape({
-          childImageSharp: PropTypes.shape({
-            fixed: PropTypes.shape({
-              src: PropTypes.string,
-            }),
-          }),
-        }),
+        twitterImage: PropTypes.shape({}),
       }),
       html: PropTypes.string,
     }).isRequired,

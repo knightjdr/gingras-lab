@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import Link from '../link/link';
 
@@ -8,10 +8,7 @@ import peopleList from './people-list';
 const formatPeople = (images) => (
   peopleList.map((person) => (
     <div key={person.name}>
-      <Img
-        alt={person.name}
-        fixed={person.file ? images[person.file] : images.user}
-      />
+      <GatsbyImage image={person.file ? images[person.file] : images.user} alt={person.name} />
       <div>
         <h2>{person.name}</h2>
         <h3>{person.title}</h3>

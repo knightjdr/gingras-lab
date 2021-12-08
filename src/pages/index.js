@@ -1,6 +1,6 @@
-import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
@@ -16,30 +16,25 @@ import Wifi from '../images/icon/waveform.svg';
 
 import './home.css';
 
-export const query = graphql`
-  query {
-    anneClaudeGingras: file(relativePath: { eq: "picture/anneclaude-gingras-home.jpg" }) {
-      childImageSharp {
-        fixed(width: 200, height: 268) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
-    }
-    torontoIsland: file(relativePath: { eq: "picture/toronto.jpg" }) {
-      childImageSharp {
-        fixed(width: 800, height: 400) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
-    }
-    torontoSkyline: file(relativePath: { eq: "picture/toronto-skyline.jpg" }) {
-      childImageSharp {
-        fixed(width: 1000, height: 250) {
-          ...GatsbyImageSharpFixed_withWebp
-        }
-      }
+export const query = graphql`{
+  anneClaudeGingras: file(
+    relativePath: {eq: "picture/anneclaude-gingras-home.jpg"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(width: 200, height: 268, layout: FIXED)
     }
   }
+  torontoIsland: file(relativePath: {eq: "picture/toronto.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 800, height: 400, layout: FIXED)
+    }
+  }
+  torontoSkyline: file(relativePath: {eq: "picture/toronto-skyline.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 1000, height: 250, layout: FIXED)
+    }
+  }
+}
 `;
 
 const IndexPage = ({ data }) => (
@@ -49,10 +44,9 @@ const IndexPage = ({ data }) => (
     <div className="home">
       <section className="home__landing">
         <div className="home__landing-skyline">
-          <Img
-            alt="View of Toronto skyline"
-            fixed={data.torontoSkyline.childImageSharp.fixed}
-          />
+          <GatsbyImage
+            image={data.torontoSkyline.childImageSharp.gatsbyImageData}
+            alt="View of Toronto skyline" />
         </div>
         <div className="home__landing-description">
           <h1>Gingras laboratory</h1>
@@ -62,17 +56,15 @@ const IndexPage = ({ data }) => (
           </p>
         </div>
         <div className="home__landing-island">
-          <Img
-            alt="View of Toronto skyline from Toronto island"
-            fixed={data.torontoIsland.childImageSharp.fixed}
-          />
+          <GatsbyImage
+            image={data.torontoIsland.childImageSharp.gatsbyImageData}
+            alt="View of Toronto skyline from Toronto island" />
         </div>
       </section>
       <section className="home__anne-claude">
-        <Img
-          alt="Anne-Claude Gingras"
-          fixed={data.anneClaudeGingras.childImageSharp.fixed}
-        />
+        <GatsbyImage
+          image={data.anneClaudeGingras.childImageSharp.gatsbyImageData}
+          alt="Anne-Claude Gingras" />
         <div className="home__anne-claude-about">
           <h2>Dr. Anne-Claude Gingras</h2>
           <p>
@@ -218,17 +210,17 @@ IndexPage.propTypes = {
   data: PropTypes.shape({
     anneClaudeGingras: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fixed: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     torontoIsland: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fixed: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     torontoSkyline: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fixed: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
   }).isRequired,

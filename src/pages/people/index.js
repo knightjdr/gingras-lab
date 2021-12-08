@@ -1,6 +1,6 @@
-import Img from 'gatsby-image';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import { graphql } from 'gatsby';
 
 import Head from '../../components/head';
@@ -15,44 +15,36 @@ import UserFriends from '../../images/icon/user-friends.svg';
 
 import './people.css';
 
-export const query = graphql`
-  query {
-    allFile(filter:{
-      extension: { regex: "/(jpeg|jpg|png)/" },
-      relativeDirectory: { eq: "people" }
-    }) {
-      edges {
-        node {
-          childImageSharp {
-            fixed(width: 150, height: 200, toFormat: JPG) {
-              ...GatsbyImageSharpFixed_withWebp
-            }
-          }
-          name
+export const query = graphql`{
+  allFile(
+    filter: {extension: {regex: "/(jpeg|jpg|png)/"}, relativeDirectory: {eq: "people"}}
+  ) {
+    edges {
+      node {
+        childImageSharp {
+          gatsbyImageData(width: 150, height: 200, formats: [JPG, WEBP], layout: FIXED)
         }
-      }
-    }
-    appreciationDay2018: file(relativePath: { eq: "group/2018-appreciation-day.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1123) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
-      }
-    }
-    christmas2018: file(relativePath: { eq: "group/2018-christmas.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1180) {
-          ...GatsbyImageSharpFluid_withWebp
-        }
+        name
       }
     }
   }
+  appreciationDay2018: file(relativePath: {eq: "group/2018-appreciation-day.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH)
+    }
+  }
+  christmas2018: file(relativePath: {eq: "group/2018-christmas.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH)
+    }
+  }
+}
 `;
 
 const People = ({ data }) => {
   const images = data.allFile.edges.reduce((accum, edge) => ({
     ...accum,
-    [edge.node.name]: edge.node.childImageSharp.fixed,
+    [edge.node.name]: edge.node.childImageSharp.gatsbyImageData,
   }), {});
 
   return (
@@ -90,17 +82,15 @@ const People = ({ data }) => {
           </header>
           <div className="people__photos">
             <figure className="christmas-2018">
-              <Img
-                alt="Christmas party, 2018"
-                fluid={data.christmas2018.childImageSharp.fluid}
-              />
+              <GatsbyImage
+                image={data.christmas2018.childImageSharp.gatsbyImageData}
+                alt="Christmas party, 2018" />
               <figcaption>Christmas party, 2018.</figcaption>
             </figure>
             <figure className="appreciation-day-2018">
-              <Img
-                alt="Staff appreciation day, 2018"
-                fluid={data.appreciationDay2018.childImageSharp.fluid}
-              />
+              <GatsbyImage
+                image={data.appreciationDay2018.childImageSharp.gatsbyImageData}
+                alt="Staff appreciation day, 2018" />
               <figcaption>Staff appreciation day, 2018.</figcaption>
             </figure>
           </div>
@@ -132,7 +122,7 @@ People.propTypes = {
         PropTypes.shape({
           node: PropTypes.shape({
             childImageSharp: PropTypes.shape({
-              fixed: PropTypes.shape({}).isRequired,
+              gatsbyImageData: PropTypes.shape({}).isRequired,
             }).isRequired,
             name: PropTypes.string.isRequired,
           }).isRequired,
@@ -141,12 +131,12 @@ People.propTypes = {
     }).isRequired,
     appreciationDay2018: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fluid: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     christmas2018: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fluid: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
   }).isRequired,

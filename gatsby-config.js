@@ -27,7 +27,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
-    'gatsby-transformer-sharp',
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
@@ -35,6 +35,7 @@ module.exports = {
         defaultQuality: 70,
       },
     },
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

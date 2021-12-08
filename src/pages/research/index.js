@@ -1,4 +1,4 @@
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import PropTypes from 'prop-types';
 import React from 'react';
 import { graphql } from 'gatsby';
@@ -11,37 +11,28 @@ import Microscope from '../../images/icon/microscope.svg';
 
 import './research.css';
 
-export const query = graphql`
-  query {
-    proteomics: file(relativePath: { eq: "research/proteomics.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 900) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    serology: file(relativePath: { eq: "research/serology.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 900) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    signalling: file(relativePath: { eq: "research/signalling.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 900) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    systemsBiology: file(relativePath: { eq: "research/systemsbiology.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 900) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
+export const query = graphql`{
+  proteomics: file(relativePath: {eq: "research/proteomics.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 900, placeholder: TRACED_SVG, layout: CONSTRAINED)
     }
   }
+  serology: file(relativePath: {eq: "research/serology.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 900, placeholder: TRACED_SVG, layout: CONSTRAINED)
+    }
+  }
+  signalling: file(relativePath: {eq: "research/signalling.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 900, placeholder: TRACED_SVG, layout: CONSTRAINED)
+    }
+  }
+  systemsBiology: file(relativePath: {eq: "research/systemsbiology.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 900, placeholder: TRACED_SVG, layout: CONSTRAINED)
+    }
+  }
+}
 `;
 
 const Research = ({ data }) => (
@@ -73,10 +64,9 @@ const Research = ({ data }) => (
           <h2>Enabling tools for proteomics</h2>
           <figure>
             <div className="research__image">
-              <Img
-                alt="AP-MS and BioID workflows"
-                fluid={data.proteomics.childImageSharp.fluid}
-              />
+              <GatsbyImage
+                image={data.proteomics.childImageSharp.gatsbyImageData}
+                alt="AP-MS and BioID workflows" />
             </div>
             <figcaption>
               AP-MS and BioID workflows. Image courtesy of Kento Abe.
@@ -177,10 +167,9 @@ const Research = ({ data }) => (
           <h2>Systems biology</h2>
           <figure>
             <div className="research__image">
-              <Img
-                alt="Cartoon of a human cell with labelled organelles used for mapping"
-                fluid={data.systemsBiology.childImageSharp.fluid}
-              />
+              <GatsbyImage
+                image={data.systemsBiology.childImageSharp.gatsbyImageData}
+                alt="Cartoon of a human cell with labelled organelles used for mapping" />
             </div>
             <figcaption>
               Targeted compartments for mapping the cell. Image courtesy of
@@ -314,10 +303,9 @@ const Research = ({ data }) => (
           <h2>Signalling</h2>
           <figure>
             <div className="research__image">
-              <Img
-                alt="MTOR signalling at the lysosome membrane"
-                fluid={data.signalling.childImageSharp.fluid}
-              />
+              <GatsbyImage
+                image={data.signalling.childImageSharp.gatsbyImageData}
+                alt="MTOR signalling at the lysosome membrane" />
             </div>
             <figcaption>
               MTOR signalling at the lysosome membrane. Image courtesy of
@@ -401,10 +389,9 @@ const Research = ({ data }) => (
           <h2>COVID-19 serology</h2>
           <figure>
             <div className="research__image">
-              <Img
-                alt="COVID-19 serology workflow"
-                fluid={data.serology.childImageSharp.fluid}
-              />
+              <GatsbyImage
+                image={data.serology.childImageSharp.gatsbyImageData}
+                alt="COVID-19 serology workflow" />
             </div>
             <figcaption>
               Serology workflows. Image courtesy of Kento Abe.
@@ -546,22 +533,22 @@ Research.propTypes = {
   data: PropTypes.shape({
     proteomics: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fluid: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     serology: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fluid: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     signalling: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fluid: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     systemsBiology: PropTypes.shape({
       childImageSharp: PropTypes.shape({
-        fluid: PropTypes.shape({}).isRequired,
+        gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
   }).isRequired,
