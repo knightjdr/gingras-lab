@@ -21,17 +21,17 @@ export const query = graphql`{
     relativePath: {eq: "picture/anneclaude-gingras-home.jpg"}
   ) {
     childImageSharp {
-      gatsbyImageData(width: 200, height: 268, layout: FIXED)
+      gatsbyImageData(width: 200, height: 268, formats: [JPG, WEBP], layout: FIXED, placeholder: BLURRED)
     }
   }
   torontoIsland: file(relativePath: {eq: "picture/toronto.jpg"}) {
     childImageSharp {
-      gatsbyImageData(width: 800, height: 400, layout: FIXED)
+      gatsbyImageData(width: 800, height: 400, formats: [JPG, WEBP], layout: FIXED, placeholder: BLURRED)
     }
   }
   torontoSkyline: file(relativePath: {eq: "picture/toronto-skyline.jpg"}) {
     childImageSharp {
-      gatsbyImageData(width: 1000, height: 250, layout: FIXED)
+      gatsbyImageData(width: 1000, height: 250, formats: [JPG, WEBP], layout: FIXED, placeholder: BLURRED)
     }
   }
 }

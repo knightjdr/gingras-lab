@@ -15,7 +15,7 @@ export const pageQuery = graphql`query ($slug: String!) {
     edges {
       node {
         childImageSharp {
-          gatsbyImageData(width: 113, height: 150, formats: [JPG, WEBP], layout: FIXED)
+          gatsbyImageData(width: 113, height: 150, formats: [JPG, WEBP], layout: FIXED, placeholder: BLURRED)
         }
         name
       }
@@ -30,14 +30,14 @@ export const pageQuery = graphql`query ($slug: String!) {
       description
       ogImage {
         childImageSharp {
-          gatsbyImageData(width: 1200, height: 630, placeholder: BLURRED, layout: FIXED)
+          gatsbyImageData(width: 1200, height: 630, layout: FIXED)
         }
       }
       slug
       title
       twitterImage {
         childImageSharp {
-          gatsbyImageData(width: 1200, height: 600, placeholder: BLURRED, layout: FIXED)
+          gatsbyImageData(width: 1200, height: 600, layout: FIXED)
         }
       }
     }

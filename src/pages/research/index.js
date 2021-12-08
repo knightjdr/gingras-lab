@@ -14,22 +14,22 @@ import './research.css';
 export const query = graphql`{
   proteomics: file(relativePath: {eq: "research/proteomics.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 900, placeholder: TRACED_SVG, layout: CONSTRAINED)
+      gatsbyImageData(width: 900, formats: [JPG, WEBP], placeholder: TRACED_SVG, layout: CONSTRAINED)
     }
   }
   serology: file(relativePath: {eq: "research/serology.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 900, placeholder: TRACED_SVG, layout: CONSTRAINED)
+      gatsbyImageData(width: 900, formats: [JPG, WEBP], placeholder: TRACED_SVG, layout: CONSTRAINED)
     }
   }
   signalling: file(relativePath: {eq: "research/signalling.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 900, placeholder: TRACED_SVG, layout: CONSTRAINED)
+      gatsbyImageData(width: 900, formats: [JPG, WEBP], placeholder: TRACED_SVG, layout: CONSTRAINED)
     }
   }
   systemsBiology: file(relativePath: {eq: "research/systemsbiology.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 900, placeholder: TRACED_SVG, layout: CONSTRAINED)
+      gatsbyImageData(width: 900, formats: [JPG, WEBP], placeholder: TRACED_SVG, layout: CONSTRAINED)
     }
   }
 }

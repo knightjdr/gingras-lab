@@ -19,22 +19,22 @@ import './resources.css';
 export const query = graphql`{
   cellmap: file(relativePath: {eq: "resource/cellmap.jpg"}) {
     childImageSharp {
-      gatsbyImageData(width: 400, height: 251, layout: FIXED)
+      gatsbyImageData(width: 400, height: 251, formats: [JPG, WEBP], layout: FIXED, placeholder: BLURRED)
     }
   }
   geneInfo: file(relativePath: {eq: "resource/gene-info.jpg"}) {
     childImageSharp {
-      gatsbyImageData(width: 400, height: 250, layout: FIXED)
+      gatsbyImageData(width: 400, height: 250, formats: [JPG, WEBP], layout: FIXED, placeholder: BLURRED)
     }
   }
   prohitsViz: file(relativePath: {eq: "resource/prohits-viz.jpg"}) {
     childImageSharp {
-      gatsbyImageData(width: 400, height: 210, layout: FIXED)
+      gatsbyImageData(width: 400, height: 210, formats: [JPG, WEBP], layout: FIXED, placeholder: BLURRED)
     }
   }
   diaUmpire: file(relativePath: {eq: "resource/dia-umpire.jpg"}) {
     childImageSharp {
-      gatsbyImageData(width: 125, height: 47, layout: FIXED)
+      gatsbyImageData(width: 125, height: 47, formats: [JPG, WEBP], layout: FIXED, placeholder: BLURRED)
     }
   }
 }

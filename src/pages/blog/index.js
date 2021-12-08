@@ -29,12 +29,12 @@ export const pageQuery = graphql`{
   }
   ogImage: file(relativePath: {eq: "blog/opengraph/og-blog.jpg"}) {
     childImageSharp {
-      gatsbyImageData(width: 1200, height: 630, placeholder: BLURRED, layout: FIXED)
+      gatsbyImageData(width: 1200, height: 630, layout: FIXED)
     }
   }
   twitterImage: file(relativePath: {eq: "blog/opengraph/twitter-blog.jpg"}) {
     childImageSharp {
-      gatsbyImageData(width: 1200, height: 600, placeholder: BLURRED, layout: FIXED)
+      gatsbyImageData(width: 1200, height: 600, layout: FIXED)
     }
   }
 }

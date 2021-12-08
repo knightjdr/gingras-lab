@@ -22,7 +22,7 @@ export const query = graphql`{
     edges {
       node {
         childImageSharp {
-          gatsbyImageData(width: 150, height: 200, formats: [JPG, WEBP], layout: FIXED)
+          gatsbyImageData(width: 150, height: 200, formats: [JPG, WEBP], layout: FIXED, placeholder: BLURRED)
         }
         name
       }
@@ -30,12 +30,12 @@ export const query = graphql`{
   }
   appreciationDay2018: file(relativePath: {eq: "group/2018-appreciation-day.jpg"}) {
     childImageSharp {
-      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH)
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
   christmas2018: file(relativePath: {eq: "group/2018-christmas.jpg"}) {
     childImageSharp {
-      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH)
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
 }
