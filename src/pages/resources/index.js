@@ -29,7 +29,7 @@ export const query = graphql`{
   }
   prohitsViz: file(relativePath: {eq: "resource/prohits-viz.jpg"}) {
     childImageSharp {
-      gatsbyImageData(width: 300, height: 189, layout: FIXED)
+      gatsbyImageData(width: 400, height: 210, layout: FIXED)
     }
   }
   diaUmpire: file(relativePath: {eq: "resource/dia-umpire.jpg"}) {
