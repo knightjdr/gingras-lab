@@ -140,7 +140,7 @@ const alumni = [
   {
     name: 'Wade Dunham',
     position: "Quality Control, Crofter's Organic",
-    role: 'Masters Student, technician and lab manager',
+    role: 'Masters Student, Technician and Lab Manager',
   },
   {
     name: 'Yiwang Zhou',

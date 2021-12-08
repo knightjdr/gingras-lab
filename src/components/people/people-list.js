@@ -6,10 +6,17 @@ const peopleList = [
     title: 'Principal investigator',
   },
   {
-    email: 'bkhatri@lunenfeld.ca',
-    file: 'bhavisha-rathod',
-    name: 'Bhavisha Rathod',
-    title: 'Lab manager',
+    email: 'colwill@lunenfeld.ca',
+    file: 'karen-colwill',
+    name: 'Karen Colwill',
+    title: 'Manager, NBCC',
+  },
+  {
+    email: 'lseifried@lunenfeld.ca',
+    file: '',
+    // file: 'laurie-seifried',
+    name: 'Laurie Seifried',
+    title: 'CoVaRR-Net pillar coordinator',
   },
   {
     email: 'hesketh@lunenfeld.ca',
@@ -120,12 +127,6 @@ const peopleList = [
     title: 'Mass spectrometry technician',
   },
   {
-    email: 'colwill@lunenfeld.ca',
-    file: 'karen-colwill',
-    name: 'Karen Colwill',
-    title: 'Manager, NBCC',
-  },
-  {
     email: 'zlin@lunenfeld.ca',
     file: 'zhenyuan-lin',
     name: 'Zhen-Yuan Lin',
@@ -168,13 +169,6 @@ const peopleList = [
     // file: 'melanie-delgado-brand',
     name: 'Melanie Delgado-Brand',
     title: 'Research technician',
-  },
-  {
-    email: 'lseifried@lunenfeld.ca',
-    file: '',
-    // file: 'laurie-seifried',
-    name: 'Laurie Seifried',
-    title: 'CoVaRR-Net pillar coordinator',
   },
 ];
 

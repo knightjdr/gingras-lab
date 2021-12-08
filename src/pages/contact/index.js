@@ -39,18 +39,6 @@ const Contact = () => (
           </div>
         </address>
         <address>
-          <h2>Bhavisha Rathod, Lab manager</h2>
-          <div>tel: (416) 586-4800 x8272</div>
-          <div>
-            <Link
-              nav
-              to="mailto:bkhatri@lunenfeld.ca"
-            >
-              bkhatri@lunenfeld.ca
-            </Link>
-          </div>
-        </address>
-        <address>
           <h2>Pearl Sequeira, Research administration</h2>
           <div>tel: (416) 586-4800 x2218</div>
           <div>
@@ -71,6 +59,18 @@ const Contact = () => (
               to="mailto:colwill@lunenfeld.ca"
             >
               colwill@lunenfeld.ca
+            </Link>
+          </div>
+        </address>
+        <address>
+          <h2>Laurie Seifried, Pillar coordinator, CoVaRR-Net</h2>
+          <div>tel: (416) 586-4800 x8272</div>
+          <div>
+            <Link
+              nav
+              to="mailto:lseifried@lunenfeld.ca"
+            >
+              lseifried@lunenfeld.ca
             </Link>
           </div>
         </address>
