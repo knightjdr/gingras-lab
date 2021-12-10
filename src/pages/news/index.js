@@ -19,7 +19,7 @@ const News = () => (
       title="News"
     />
     <div className="news">
-      <section>
+      <section id="openings">
         <header>
           <h1>Open positions</h1>
           <img
