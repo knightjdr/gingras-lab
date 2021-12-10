@@ -11,6 +11,10 @@ const alumni = [
     role: 'Postdoctoral Fellow',
   },
   {
+    name: 'Bhavisha Rathod',
+    role: 'Lab Manager',
+  },
+  {
     name: 'Beatriz Gonzalez-Badillo',
     role: 'Technician',
   },
