@@ -85,19 +85,16 @@ const News = () => (
         </p>
         <h2>Summer students</h2>
         <p>
-          The summer student program is currently on hold due to COVID-19.
-        </p>
-        {/* <p>
           Summer students are exclusively selected from successful applicants to the
           {' '}
-          <Link to="http://research.lunenfeld.ca/rtc/">Research Training Center (RTC)</Link>
+          <Link to="https://research.lunenfeld.ca/rtc/">Research Training Center (RTC)</Link>
           {' '}
           at the Lunenfeld-Tanenbaum Research Institute.
           {' '}
-          <Link to="http://research.lunenfeld.ca/rtc/?page=Summer%20Research%20Program">Applications</Link>
+          <Link to="https://research.lunenfeld.ca/rtc/?page=Summer%20Research%20Program">Applications</Link>
           {' '}
-          are available online and need to be filled by February 15th yearly.
-        </p> */}
+          are available online and need to be filled by February 28th.
+        </p>
       </section>
       <section className="news__articles">
         <header>
