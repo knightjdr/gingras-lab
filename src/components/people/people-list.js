@@ -96,6 +96,18 @@ const peopleList = [
     title: 'Graduate student',
   },
   {
+    email: '',
+    file: 'raktan-ahmed',
+    name: 'Raktan Ahmed',
+    title: 'Graduate student',
+  },
+  {
+    email: '',
+    file: '',
+    name: 'Bilan Mohamed',
+    title: 'Graduate student',
+  },
+  {
     email: 'jknight@lunenfeld.ca',
     file: 'james-knight',
     name: 'James Knight',
