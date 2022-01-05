@@ -169,8 +169,7 @@ const peopleList = [
   },
   {
     email: 'gmailhot@lunenfeld.ca',
-    file: '',
-    // file: 'genevieve-mailhot',
+    file: 'genevieve-mailhot',
     name: 'Geneviève Mailhot',
     title: 'Research technician',
   },
