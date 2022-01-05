@@ -54,7 +54,7 @@
 }
 .navbar__menu-button:focus svg,
 .navbar__menu-button:hover svg {
-  fill: #5C6BC0;
+  fill: var(--color-link);
 }
 .navbar__menu-container {
   display: none;
@@ -89,8 +89,8 @@
 .navbar__left a:hover,
 .navbar__right a:focus,
 .navbar__right a:hover {
-  border-bottom: 1px solid #5C6BC0;
-  color: #5C6BC0;
+  border-bottom: 1px solid var(--color-link);
+  color: var(--color-link);
 }
 
 .navbar__shadow {
@@ -107,7 +107,7 @@
 }
 .navbar__right .navbar__icon:focus svg,
 .navbar__right .navbar__icon:hover svg {
-  fill: #5C6BC0;
+  fill: var(--color-link);
 }
 
 .navbar__theme-button {
