@@ -45,10 +45,16 @@
 }
 
 .research__image {
-  border: 1px solid rgba(51, 51, 51, 0.3);
+  background-color: #fff;
   border-radius: 0.3rem;
   box-sizing: border-box;
   height: auto;
   padding: 1rem;
   width: 100%;
+}
+body.light-mode .research__image {
+  border: 1px solid rgba(51, 51, 51, 0.3);
+}
+body.dark-mode .research__image {
+  border: 1px solid rgba(204, 204, 204, 0.3);
 }

@@ -21,8 +21,15 @@
   font-size: 1.3em;
 }
 .resources h3 {
-  color: var(--accentColor);
+  color: var(--color-accent);
   font-size: 1.1em;
+}
+
+.resource__image {
+  background-color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 1rem;
 }
 
 .resources__resource > ul {
@@ -41,7 +48,7 @@
   display: flex;
 }
 .resources__resource-description .resource__image {
-  margin-left: 15px;
+  margin-left: 1rem;
 }
 
 .resources__links {

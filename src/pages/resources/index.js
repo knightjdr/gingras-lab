@@ -211,7 +211,8 @@ const Resources = ({ data }) => (
               <div className="resource__image">
                 <GatsbyImage
                   image={data.diaUmpire.childImageSharp.gatsbyImageData}
-                  alt="DIA-Umpire logo" />
+                  alt="DIA-Umpire logo"
+                />
               </div>
               <p>
                 Chih-Chiang Tsou from the

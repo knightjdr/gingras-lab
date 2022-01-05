@@ -1,3 +1,12 @@
+a:link {
+  color: var(--color-link);
+}
+a:visited {
+  color: var(--color-link-visited);
+}
+a.nav-link {
+  color: var(--color-link);
+}
 a.nav-link:visited {
-  color: #2468e5;
+  color: var(--color-link);
 }

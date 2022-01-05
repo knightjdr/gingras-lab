@@ -40,3 +40,6 @@
   font-size: 0.9rem;
   padding: 0 1rem;
 }
+.blog-post img {
+  background-color: #fff;
+}

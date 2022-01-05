@@ -5,6 +5,7 @@ import Link from '../link/link';
 
 const Menu = forwardRef((
   {
+    children,
     closeMenu,
     handleClick,
     open,
@@ -103,11 +104,15 @@ const Menu = forwardRef((
           Twitter
         </Link>
       </li>
+      <li className="navbar__menu-theme">
+        {children}
+      </li>
     </ul>
   </span>
 ));
 
 Menu.propTypes = {
+  children: PropTypes.node.isRequired,
   closeMenu: PropTypes.func.isRequired,
   handleClick: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired,

@@ -25,3 +25,7 @@
   position: relative;
   top: 1px;
 }
+
+body.dark-mode .blog-index__rss-container img {
+  filter: invert(100%);
+}

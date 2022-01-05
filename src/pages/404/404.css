@@ -2,7 +2,7 @@
   align-items: center;
   background: linear-gradient(160deg,#323639,#2b465c,#215682,#2163aa,#0073b8,#007e9d,#33817e,#658170);
   box-sizing: border-box;
-  color: var(--fontLight);
+  color: var(--color-font-contrast);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -21,10 +21,10 @@
 }
 a.missing__link {
   align-items: center;
-  background-color: #fff;
+  background-color: var(--color-background);
   border-radius: 3px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  color: var(--fontDark);
+  color: var(--color-font);
   display: inline-flex;
   margin-top: 20px;
   padding: 5px 8px;
@@ -33,12 +33,12 @@ a.missing__link {
 }
 a.missing__link:link,
 a.missing__link:visited {
-  color: var(--fontDark);
+  color: var(--color-font);
 }
 a.missing__link:hover,
 a.missing__link:active,
 a.missing__link:focus {
-  background-color: var(--primaryColor);
-  color: var(--fontLight);
+  background-color: var(--color-primary);
+  color: var(--color-font-contrast);
   text-decoration: none;
 }

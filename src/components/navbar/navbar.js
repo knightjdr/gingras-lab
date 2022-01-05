@@ -4,6 +4,7 @@ import React from 'react';
 import Icons from './icons';
 import Link from '../link/link';
 import Menu from './menu-container';
+import Theme from './theme-container';
 
 import './navbar.css';
 
@@ -26,8 +27,11 @@ const Navbar = ({ shadow }) => (
         <Link to="/contact/">
           Contact
         </Link>
+        <Theme />
       </div>
-      <Menu />
+      <Menu>
+        <Theme />
+      </Menu>
     </span>
   </nav>
 );

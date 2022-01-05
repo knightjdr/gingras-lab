@@ -4,14 +4,18 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  --accentColor: #418545;
-  --boxShadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
-  --fontDark: #333;
-  --fontLight: #fdfdfd;
-  --primaryColor: #f64f59;
-  --secondaryColor: #12c2e9;
-  background-color: #fff;
-  color: var(--fontDark);
+  --boxShadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+  --color-accent: #418545;
+  --color-background: #fff;
+  --color-font: #333;
+  --color-font-contrast: #fdfdfd;
+  --color-link: #2468e5;
+  --color-link-visited: #551A8B;
+  --color-primary: #f64f59;
+  --color-secondary: #12c2e9;
+  --timing-function: cubic-bezier(.17, .67, .16, .99);
+  background-color: var(--color-background);
+  color: var(--color-font);
   font-feature-settings: "kern", "liga", "clig", "calt";
   font-kerning: normal;
   font-weight: normal;
@@ -23,6 +27,32 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
 }
+body.light-mode {
+  --boxShadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+  --color-accent: #418545;
+  --color-background: #fff;
+  --color-font: #333;
+  --color-font-contrast: #fdfdfd;
+  --color-link: #2468e5;
+  --color-link-visited: #551A8B;
+  --color-primary: #f64f59;
+  --color-secondary: #12c2e9;
+  background-color: var(--color-background);
+  color: var(--color-font);
+}
+body.dark-mode {
+  --boxShadow: 0 5px 10px rgba(0, 0, 0, .15), 0 15px 40px rgba(0, 0, 0, .15);
+  --color-accent: #418545;
+  --color-background: #252429;
+  --color-font: #F2F2F2;
+  --color-font-contrast: #fdfdfd;
+  --color-link: #80acff;
+  --color-link-visited: #9675FF;
+  --color-primary: #f64f59;
+  --color-secondary: #12c2e9;
+  background-color: var(--color-background);
+  color: var(--color-font);
+}
 a {
   background-color: transparent;
   text-decoration: none;
@@ -33,12 +63,6 @@ a:focus {
 }
 a::-moz-focus-inner {
   border: none;
-}
-a:link {
-  color: #2468e5;
-}
-a:visited {
-  color: #551A8B;
 }
 a:hover,
 a:focus,
@@ -55,6 +79,7 @@ strong {
   font-weight: bolder;
 }
 button {
+  border: none;
   font: inherit;
   margin: 0;
   overflow: visible;
