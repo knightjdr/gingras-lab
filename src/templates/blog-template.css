@@ -35,11 +35,16 @@
 .blog-post figure {
   margin-left: auto;
   margin-right: auto;
+  max-width: 50rem;
+}
+.blog-post figure img {
+  max-width: 100%;
+  object-fit: contain;
 }
 .blog-post figcaption {
   font-size: 0.9rem;
   padding: 0 1rem;
 }
-.blog-post img {
+.blog-post figure.blog-post__figure_background img {
   background-color: #fff;
 }

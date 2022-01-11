@@ -58,6 +58,13 @@ module.exports = {
               withWebp: true,
             },
           },
+          {
+            resolve: 'gatsby-remark-copy-linked-files',
+            options: {
+              destinationDir: 'static/blog',
+              ignoreFileExtensions: ['png', 'jpg', 'jpeg'],
+            },
+          },
         ],
       },
     },
