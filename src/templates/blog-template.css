@@ -48,3 +48,8 @@
 .blog-post figure.blog-post__figure_background img {
   background-color: #fff;
 }
+
+.blog-post__figure_border img {
+  border: 1px solid rgba(51, 51, 51, 0.3);
+  border-radius: 3px;
+}
