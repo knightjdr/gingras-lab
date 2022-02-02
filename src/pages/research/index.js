@@ -86,11 +86,11 @@ const Research = ({ data }) => (
               2018
             </Link>
             ), and protocols to perform proximity-dependent biotinylation in zebrafish embryos (
-            <Link to="https://www.biorxiv.org/content/10.1101/2021.05.16.444353v1">
+            <Link to="https://www.mcponline.org/article/S1535-9476(21)00100-6/fulltext">
               Rosenthal,
               {' '}
               <span className="italic">
-                bioRχiv
+                MCP
               </span>
               {' '}
               2021
@@ -490,11 +490,11 @@ const Research = ({ data }) => (
             autoimmune disease (with Vinod Chandran, Tania Watts, Mark Silverberg, Sasha Bernatsky and Dawn
             Bowdish). We also contribute to development of new therapeutics and vaccines (see, e.g.
             {' '}
-            <Link to="https://www.biorxiv.org/content/10.1101/2021.05.11.443286v1">
+            <Link to="https://www.science.org/doi/10.1126/sciadv.abj9815">
               Liu,
               {' '}
               <span className="italic">
-                bioRχiv
+                Science Advances
               </span>
               {' '}
               2021
