@@ -28,23 +28,8 @@ const News = () => (
             src={UserSearch}
           />
         </header>
-        <h2>Active listings</h2>
+        {/* <h2>Active listings</h2>
         <ul>
-          <li>
-            <Link to="https://apply.interfolio.com/100179">
-              Technician II, 1 year contract
-            </Link>
-            : Join our dynamic team that uses automated approaches to monitor antibody levels
-            following SARS-CoV-2 infection or vaccination.
-          </li>
-          <li>
-            <Link to="https://apply.interfolio.com/100180">
-              Technician II, 1 year contract
-            </Link>
-            : Interested in clinical research and building bridges between basic and clinical
-            research teams? Eager to contribute to research reproducibility and transparent reporting?
-            Apply to this position.
-          </li>
           <li>
             <Link to="https://apply.interfolio.com/100181">
               Bioinformatician / Data Analyst, 1 year contract
@@ -52,14 +37,7 @@ const News = () => (
             : Database design and management and data visualization are your strengths? Join our serology
             team to process, analyze and visualize antibody data for dozens of important COVID-19 projects
           </li>
-          <li>
-            <Link to="https://apply.interfolio.com/100182">
-              Technician II, permanent
-            </Link>
-            : Looking to apply your molecular/cellular biology and biochemistry skills to support a dynamic
-            proteomics group in Toronto?
-          </li>
-        </ul>
+        </ul> */}
         <h2>Postdocs</h2>
         <p>
           The laboratory is always interested in recruiting highly motivated postdoctoral fellows

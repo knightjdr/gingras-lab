@@ -16,6 +16,10 @@ const newsItems = [
         <Link to="/news#openings">job listings</Link>
         {' '}
         for full details.
+        {' '}
+        <strong>
+          Update February 2022: these positions have been filled.
+        </strong>
       </>
     ),
   },
