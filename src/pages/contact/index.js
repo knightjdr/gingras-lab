@@ -63,6 +63,18 @@ const Contact = () => (
           </div>
         </address>
         <address>
+          <h2>Rawan Kalloush, Lab manager</h2>
+          <div>tel: (416) 586-4800 x8272</div>
+          <div>
+            <Link
+              nav
+              to="mailto:rkalloush@lunenfeld.ca"
+            >
+              rkalloush@lunenfeld.ca
+            </Link>
+          </div>
+        </address>
+        <address>
           <h2>Laurie Seifried, Pillar coordinator, CoVaRR-Net</h2>
           <div>tel: (416) 586-4800 x8272</div>
           <div>
