@@ -12,6 +12,12 @@ const peopleList = [
     title: 'Manager, NBCC',
   },
   {
+    email: 'rkalloush@lunenfeld.ca',
+    file: '',
+    name: 'Rawan Kalloush',
+    title: 'Lab manager',
+  },
+  {
     email: 'lseifried@lunenfeld.ca',
     file: 'laurie-seifried',
     name: 'Laurie Seifried',
@@ -96,13 +102,13 @@ const peopleList = [
     title: 'Graduate student',
   },
   {
-    email: '',
+    email: 'bahmed@lunenfeld.ca',
     file: 'raktan-ahmed',
     name: 'Raktan Ahmed',
     title: 'Graduate student',
   },
   {
-    email: '',
+    email: 'bmohamed@lunenfeld.ca',
     file: '',
     name: 'Bilan Mohamed',
     title: 'Graduate student',
@@ -112,6 +118,12 @@ const peopleList = [
     file: 'james-knight',
     name: 'James Knight',
     title: 'Bioinformatician',
+  },
+  {
+    email: 'fqi@lunenfeld.ca',
+    file: '',
+    name: 'Freda Qi',
+    title: 'Bioinformatics specialist',
   },
   {
     email: 'gliu@lunenfeld.ca',
@@ -138,12 +150,6 @@ const peopleList = [
     title: 'Mass spectrometry technician',
   },
   {
-    email: 'zlin@lunenfeld.ca',
-    file: 'zhenyuan-lin',
-    name: 'Zhen-Yuan Lin',
-    title: 'Research technician',
-  },
-  {
     email: 'bseale@lunenfeld.ca',
     file: 'brendon-seale',
     name: 'Brendon  Seale',
@@ -168,6 +174,12 @@ const peopleList = [
     title: 'CoVaRR-Net research associate',
   },
   {
+    email: 'zlin@lunenfeld.ca',
+    file: 'zhenyuan-lin',
+    name: 'Zhen-Yuan Lin',
+    title: 'Research technician',
+  },
+  {
     email: 'gmailhot@lunenfeld.ca',
     file: 'genevieve-mailhot',
     name: 'Geneviève Mailhot',
@@ -176,8 +188,19 @@ const peopleList = [
   {
     email: 'delgadobrand@lunenfeld.ca',
     file: '',
-    // file: 'melanie-delgado-brand',
     name: 'Melanie Delgado-Brand',
+    title: 'Research technician',
+  },
+  {
+    email: 'ttursun@lunenfeld.ca',
+    file: '',
+    name: 'Tulunay Tursun',
+    title: 'Research technician',
+  },
+  {
+    email: 'jly@lunenfeld.ca',
+    file: '',
+    name: 'Jonathan Ly',
     title: 'Research technician',
   },
 ];

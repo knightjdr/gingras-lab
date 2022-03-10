@@ -11,7 +11,7 @@ const formatPeople = (images) => (
       <GatsbyImage image={person.file ? images[person.file] : images.user} alt={person.name} />
       <div>
         <h2>{person.name}</h2>
-        <h3>{person.title}</h3>
+        { person.title && <h3>{person.title}</h3> }
         {
           person.email
           && (
