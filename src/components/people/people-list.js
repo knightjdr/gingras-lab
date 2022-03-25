@@ -13,7 +13,7 @@ const peopleList = [
   },
   {
     email: 'rkalloush@lunenfeld.ca',
-    file: '',
+    file: 'rawan-kalloush',
     name: 'Rawan Kalloush',
     title: 'Lab manager',
   },
