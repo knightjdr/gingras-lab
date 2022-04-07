@@ -21,18 +21,6 @@ npm run publications
 
 Images are 450px wide by 600px tall.
 
-## Build
-
-The path prefix is currently `gingras-lab` for github hosting.
-
-```
-npm run build
-```
-
 ## Deploy
 
-Deploy to `gh-pages`
-
-```
-npm run deploy
-```
+Commit any changes and push to Github for automatic deployment.
