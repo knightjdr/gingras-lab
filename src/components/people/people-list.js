@@ -114,12 +114,6 @@ const peopleList = [
     title: 'Graduate student',
   },
   {
-    email: 'jknight@lunenfeld.ca',
-    file: 'james-knight',
-    name: 'James Knight',
-    title: 'Bioinformatician',
-  },
-  {
     email: 'fqi@lunenfeld.ca',
     file: '',
     name: 'Freda Qi',

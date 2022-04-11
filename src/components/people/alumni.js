@@ -53,6 +53,10 @@ const alumni = [
     role: 'Postdoctoral Fellow',
   },
   {
+    name: 'James Knight',
+    role: 'Bioinformatician',
+  },
+  {
     name: 'Jean-Philippe Lambert',
     position: 'Assistant Professor, Université Laval',
     role: 'Postdoctoral Fellow',
