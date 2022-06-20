@@ -24,12 +24,6 @@ const peopleList = [
     title: 'CoVaRR-Net pillar coordinator',
   },
   {
-    email: 'hesketh@lunenfeld.ca',
-    file: 'geoff-hesketh',
-    name: 'Geoffrey Hesketh',
-    title: 'Postdoctoral fellow',
-  },
-  {
     email: 'clmartin@lunenfeld.ca',
     file: 'claire-martin',
     name: 'Claire Martin',

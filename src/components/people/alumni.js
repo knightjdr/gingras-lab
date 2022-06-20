@@ -38,6 +38,11 @@ const alumni = [
     role: 'Lab Manager',
   },
   {
+    name: 'Geoffery Hesketh',
+    position: 'Assistant Professor, Dalhousie University',
+    role: 'Postdoctoral Fellow',
+  },
+  {
     name: 'Ginny Chen',
     position: 'Lead Consultant, Head of Intellectual Property, Inventya Ltd',
     role: 'PhD Student',
