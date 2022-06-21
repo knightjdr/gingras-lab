@@ -38,7 +38,7 @@ const alumni = [
     role: 'Lab Manager',
   },
   {
-    name: 'Geoffery Hesketh',
+    name: 'Geoffrey Hesketh',
     position: 'Assistant Professor, Dalhousie University',
     role: 'Postdoctoral Fellow',
   },

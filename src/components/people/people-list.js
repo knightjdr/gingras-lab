@@ -191,6 +191,18 @@ const peopleList = [
     name: 'Jonathan Ly',
     title: 'Research technician',
   },
+  {
+    email: '',
+    file: '',
+    name: 'Alexandra Kurtesi',
+    title: 'Student research assistant',
+  },
+  {
+    email: '',
+    file: '',
+    name: 'Martina Tersigni',
+    title: 'Student research assistant',
+  }
 ];
 
 export default peopleList;
