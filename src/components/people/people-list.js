@@ -186,21 +186,9 @@ const peopleList = [
     title: 'Research technician',
   },
   {
-    email: 'jly@lunenfeld.ca',
-    file: '',
-    name: 'Jonathan Ly',
-    title: 'Research technician',
-  },
-  {
     email: '',
     file: '',
     name: 'Alexandra Kurtesi',
-    title: 'Student research assistant',
-  },
-  {
-    email: '',
-    file: '',
-    name: 'Martina Tersigni',
     title: 'Student research assistant',
   }
 ];
