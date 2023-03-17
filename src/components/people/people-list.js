@@ -190,6 +190,24 @@ const peopleList = [
     file: '',
     name: 'Alexandra Kurtesi',
     title: 'Student research assistant',
+  },
+  {
+    email: 'jayco.cheng@mail.utoronto.ca',
+    file: '',
+    name: 'Jayco Cheng',
+    title: 'Graduate student',
+  },
+  {
+    email: 'saya.sedighi@lunenfeld.ca',
+    file: '',
+    name: 'Saya Sedighi',
+    title: 'Graduate student',
+  },
+  {
+    email: 'vesal.kasmaeifar@mail.utoronto.ca',
+    file: '',
+    name: 'Vesal Kasmaeifar',
+    title: 'Graduate student',
   }
 ];
 
