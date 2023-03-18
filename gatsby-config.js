@@ -79,13 +79,6 @@ module.exports = {
       resolve: 'gatsby-plugin-no-sourcemaps',
     },
     {
-      resolve: 'gatsby-plugin-plausible',
-      options: {
-        customDomain: process.env.PLAUSIBLE_DOMAIN,
-        domain: 'gingraslab.org',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-feed',
       options: {
         query: `
