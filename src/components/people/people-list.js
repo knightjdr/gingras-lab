@@ -199,7 +199,7 @@ const peopleList = [
   },
   {
     email: 'saya.sedighi@lunenfeld.ca',
-    file: '',
+    file: 'saya-sedighi',
     name: 'Saya Sedighi',
     title: 'Graduate student',
   },
