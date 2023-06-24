@@ -205,7 +205,7 @@ const peopleList = [
   },
   {
     email: 'vesal.kasmaeifar@mail.utoronto.ca',
-    file: '',
+    file: 'vesal-kasmaeifar',
     name: 'Vesal Kasmaeifar',
     title: 'Graduate student',
   }
