@@ -91,3 +91,9 @@
 .people__photos .appreciation-day-2018 {
   width: 1123px;
 }
+
+.people__photos .center-island-2022,
+.people__photos .cherry-picking-2022,
+.people__photos .LTRI-retreat-2022 {
+  width: 100%;
+}
