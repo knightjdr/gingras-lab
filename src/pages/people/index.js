@@ -38,6 +38,22 @@ export const query = graphql`{
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
+  centerIsland2022: file(relativePath: {eq: "group/2022-center-island.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
+    }
+  }
+  cherryPicking2022: file(relativePath: {eq: "group/2022-cherry-picking.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
+    }
+  }
+  LTRIRetreat2022: file(relativePath: {eq: "group/2022-LTRI-retreat.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
+    }
+  }
+  
 }
 `;
 
@@ -93,6 +109,25 @@ const People = ({ data }) => {
                 alt="Staff appreciation day, 2018" />
               <figcaption>Staff appreciation day, 2018.</figcaption>
             </figure>
+            <figure className="center-island-2022">
+              <GatsbyImage
+                image={data.centerIsland2022.childImageSharp.gatsbyImageData}
+                alt="Center Island 2022" />
+              <figcaption>Center Island, 2022.</figcaption>
+            </figure>
+            <figure className="cherry-picking-2022">
+              <GatsbyImage
+                image={data.cherryPicking2022.childImageSharp.gatsbyImageData}
+                alt="Cherry Picking 2022" />
+              <figcaption>Cherry Picking, 2022.</figcaption>
+            </figure>
+            <figure className="LTRI-retreat-2022">
+              <GatsbyImage
+                image={data.LTRIRetreat2022.childImageSharp.gatsbyImageData}
+                alt="LTRI Retreat 2022" />
+              <figcaption>LTRI Retreat, 2022.</figcaption>
+            </figure>
+
           </div>
         </section>
         <section>
@@ -114,6 +149,7 @@ const People = ({ data }) => {
     </Layout>
   );
 };
+
 
 People.propTypes = {
   data: PropTypes.shape({
@@ -139,7 +175,23 @@ People.propTypes = {
         gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
+    centerIsland2022: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        gatsbyImageData: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
+    cherryPicking2022: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        gatsbyImageData: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
+    LTRIRetreat2022: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        gatsbyImageData: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
   }).isRequired,
 };
+
 
 export default People;
