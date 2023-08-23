@@ -111,19 +111,19 @@ const People = ({ data }) => {
             </figure>
             <figure className="center-island-2023">
               <GatsbyImage
-                image={data.centerIsland2022.childImageSharp.gatsbyImageData}
+                image={data.centerIsland2023.childImageSharp.gatsbyImageData}
                 alt="Center Island 2023" />
               <figcaption>Center Island, 2023.</figcaption>
             </figure>
             <figure className="cherry-picking-2023">
               <GatsbyImage
-                image={data.cherryPicking2022.childImageSharp.gatsbyImageData}
+                image={data.cherryPicking2023.childImageSharp.gatsbyImageData}
                 alt="Cherry Picking 2023" />
               <figcaption>Cherry Picking, 2023.</figcaption>
             </figure>
             <figure className="LTRI-retreat-2023">
               <GatsbyImage
-                image={data.LTRIRetreat2022.childImageSharp.gatsbyImageData}
+                image={data.LTRIRetreat2023.childImageSharp.gatsbyImageData}
                 alt="LTRI Retreat 2023" />
               <figcaption>LTRI Retreat, 2023.</figcaption>
             </figure>
