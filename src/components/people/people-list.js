@@ -181,13 +181,13 @@ const peopleList = [
   },
   {
     email: 'ttursun@lunenfeld.ca',
-    file: '',
+    file: 'tulunay-tursun',
     name: 'Tulunay Tursun',
     title: 'Research technician',
   },
   {
     email: '',
-    file: '',
+    file: 'alexandra-kurtesi',
     name: 'Alexandra Kurtesi',
     title: 'Student research assistant',
   },
@@ -208,6 +208,12 @@ const peopleList = [
     file: 'vesal-kasmaeifar',
     name: 'Vesal Kasmaeifar',
     title: 'Graduate student',
+  },
+  {
+    email: 'lmcgary@lunenfeld.ca',
+    file: 'laura-mcgary',
+    name: 'Laura McGary',
+    title: 'Research Technician II',
   }
 ];
 
