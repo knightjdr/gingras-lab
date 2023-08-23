@@ -38,17 +38,17 @@ export const query = graphql`{
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
-  centerIsland2022: file(relativePath: {eq: "group/2022-center-island.jpg"}) {
+  centerIsland2022: file(relativePath: {eq: "group/2023-center-island.jpg"}) {
     childImageSharp {
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
-  cherryPicking2022: file(relativePath: {eq: "group/2022-cherry-picking.jpg"}) {
+  cherryPicking2022: file(relativePath: {eq: "group/2023-cherry-picking.jpg"}) {
     childImageSharp {
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
-  LTRIRetreat2022: file(relativePath: {eq: "group/2022-LTRI-retreat.jpg"}) {
+  LTRIRetreat2022: file(relativePath: {eq: "group/2023-LTRI-retreat.jpg"}) {
     childImageSharp {
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
@@ -109,23 +109,23 @@ const People = ({ data }) => {
                 alt="Staff appreciation day, 2018" />
               <figcaption>Staff appreciation day, 2018.</figcaption>
             </figure>
-            <figure className="center-island-2022">
+            <figure className="center-island-2023">
               <GatsbyImage
                 image={data.centerIsland2022.childImageSharp.gatsbyImageData}
-                alt="Center Island 2022" />
-              <figcaption>Center Island, 2022.</figcaption>
+                alt="Center Island 2023" />
+              <figcaption>Center Island, 2023.</figcaption>
             </figure>
-            <figure className="cherry-picking-2022">
+            <figure className="cherry-picking-2023">
               <GatsbyImage
                 image={data.cherryPicking2022.childImageSharp.gatsbyImageData}
-                alt="Cherry Picking 2022" />
-              <figcaption>Cherry Picking, 2022.</figcaption>
+                alt="Cherry Picking 2023" />
+              <figcaption>Cherry Picking, 2023.</figcaption>
             </figure>
-            <figure className="LTRI-retreat-2022">
+            <figure className="LTRI-retreat-2023">
               <GatsbyImage
                 image={data.LTRIRetreat2022.childImageSharp.gatsbyImageData}
-                alt="LTRI Retreat 2022" />
-              <figcaption>LTRI Retreat, 2022.</figcaption>
+                alt="LTRI Retreat 2023" />
+              <figcaption>LTRI Retreat, 2023.</figcaption>
             </figure>
 
           </div>
@@ -175,17 +175,17 @@ People.propTypes = {
         gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
-    centerIsland2022: PropTypes.shape({
+    centerIsland2023: PropTypes.shape({
       childImageSharp: PropTypes.shape({
         gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
-    cherryPicking2022: PropTypes.shape({
+    cherryPicking2023: PropTypes.shape({
       childImageSharp: PropTypes.shape({
         gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
-    LTRIRetreat2022: PropTypes.shape({
+    LTRIRetreat2023: PropTypes.shape({
       childImageSharp: PropTypes.shape({
         gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
