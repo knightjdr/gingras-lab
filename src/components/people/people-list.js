@@ -125,12 +125,7 @@ const peopleList = [
     name: 'Jian-Ping Zhang',
     title: 'Programmer',
   },
-  {
-    email: 'larsen@lunenfeld.ca',
-    file: 'brett-larsen',
-    name: 'Brett Larsen',
-    title: 'Mass spectrometry coordinator',
-  },
+
   {
     email: 'cwong@lunenfeld.ca',
     file: 'cassandra-wong',

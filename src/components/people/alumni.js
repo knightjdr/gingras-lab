@@ -160,6 +160,10 @@ const alumni = [
     position: 'Biostatistics, University of Michigan',
     role: 'Masters Student',
   },
+  {
+    name: 'Brett Larsen',
+    role: 'Mass spectrometry coordinator',
+  },
 ];
 
 export default alumni;
