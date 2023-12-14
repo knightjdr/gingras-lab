@@ -214,6 +214,12 @@ const peopleList = [
     file: 'laura-mcgary',
     name: 'Laura McGary',
     title: 'Research Technician II',
+  },
+  {
+    email: 'kosar.vafaee@mail.utoronto.ca',
+    file: 'kosar-vafaee',
+    name: 'Kosar Vafaee',
+    title: 'Graduate Student',
   }
 ];
 
