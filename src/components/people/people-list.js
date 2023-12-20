@@ -212,7 +212,7 @@ const peopleList = [
   },
   {
     email: 'kosar.vafaee@mail.utoronto.ca',
-    file: 'kosar-vafaee',
+    file: 'kosar vafaee',
     name: 'Kosar Vafaee',
     title: 'Graduate Student',
   }
