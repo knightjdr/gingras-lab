@@ -10,6 +10,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Push
+      uses: ad-m/github-push-action@master
+      with:
+        branch: master
+
       - name: Checkout
         uses: actions/checkout@v4
 
